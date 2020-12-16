@@ -43,7 +43,10 @@ layout: default
               <div>
                 <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span class="text-primary">{{
                     post.date | date: "%-d" }}</span>
-                  {{ post.date | date: "%b %Y" }}</div> <a class="d-inline-block btn-link" href="#">Sass</a>
+                  {{ post.date | date: "%b %Y" }}</div>
+                  {% for category in post.categories %}
+                  <a class="d-inline-block btn-link" href="#">{{ category }}</a>
+                  {% endfor %}
               </div>
               <h2 class="h5 my-3">
                 <a class="link-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -86,50 +89,36 @@ layout: default
           </nav>
         </div>
         <div class="col-12 col-lg-4 ml-auto">
+          <!--
           <form class="my-2 my-lg-0 row g-0">
             <input class="form-control mr-sm-2 col" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-primary my-2 my-sm-0 col-auto" type="submit">Search Blog</button>
           </form>
           <div class="mt-5 mb-5 p-4 rounded" data-bg-color="#ffeff8">
+        -->
+          <div class="mb-5 p-4 rounded" data-bg-color="#ffeff8">
             <h4 class="mb-3">Kategorie</h4>
             <ul class="list-unstyled list-group list-group-flush">
               <li class="mb-3"> <a class="list-group-item list-group-item-action border-0" href="#">
-                  All
-                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">74</span>
+                Wszystkie
+                <span class="badge bg-primary font-weight-normal p-2 rounded float-right"></span>
+              </a>
+            </li>
+              {% for category in site.categories %}
+              <li class="mb-3"> <a class="list-group-item list-group-item-action border-0" href="/category/{{ category | first | slugify }}">
+                  {{ category | first }}
+                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">{{ category[1].size }}</span>
                 </a>
               </li>
-              <li class="mb-3"> <a class="list-group-item list-group-item-action border-0" href="#">
-                  Arts and Entertainment
-                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">23</span>
-                </a>
-              </li>
-              <li class="mb-3"> <a class="list-group-item list-group-item-action border-0" href="#">
-                  Featured
-                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">14</span>
-                </a>
-              </li>
-              <li class="mb-3"> <a class="list-group-item list-group-item-action border-0" href="#">
-                  Daily news
-                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">48</span>
-                </a>
-              </li>
-              <li> <a class="list-group-item list-group-item-action border-0" href="#">
-                  Blog Post
-                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">32</span>
-                </a>
-              </li>
+              {% endfor %}
             </ul>
           </div>
           <div class="p-4 rounded" data-bg-color="#d3f6fe">
             <h4 class="mb-3">Tagi</h4>
-            <div> <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Winck</a>
-              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Web Design</a>
-              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Saas</a>
-              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Corporate</a>
-              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Sass</a>
-              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Software</a>
-              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Landing</a>
-              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Startup</a>
+            <div>
+              {% for tag in site.tags %}
+              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="/tag/{{ tag | first | slugify }}">{{ tag | first }}</a>
+              {% endfor %}
             </div>
           </div>
         </div>

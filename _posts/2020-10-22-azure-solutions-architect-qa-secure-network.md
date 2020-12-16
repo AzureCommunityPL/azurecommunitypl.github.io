@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Zabezpieczenie komunikacji pomiedzy on-prem a Azure"
-categories: "Architecture Meetings"
+categories:
+- "Architecture Meetings"
 tags:
 - "Service endpoints"
 - "Private endpoints"

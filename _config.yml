@@ -1,9 +1,52 @@
 repository: AzureCommunityPL/azurecommunitypl.github.io
-exclude: ["assets/scss", "docs"]
+exclude:
+- assets/scss
+- docs
+- Dockerfile
+- docker.sh
+- create_Gemfile.lock.sh
+- Gemfile
+- Gemfile.lock
 sass:
   style: compressed
   sass_dir: assets/scss
-plugins:
-- jekyll-feed
-- jekyll-github-metadata
-- jekyll-sitemap
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      permalink: blog/:title
+
+autopages:
+  enabled: true
+  categories:
+    layouts: 
+      - 'autopage_categories.html'
+    title: 'Wszytskie strony z tagiem :cat' # :tag is replaced by the tag name
+    permalink: '/category/:cat'
+    slugify:
+      mode: 'default'   # :tag is slugified.
+      case: false
+  tags:
+    layouts: 
+      - 'autopage_tags.html'
+    title: 'Wszytskie strony z tagiem :tag' # :tag is replaced by the tag name
+    permalink: '/tag/:tag'
+    slugify:
+      mode: 'default'   # :tag is slugified.
+      case: false
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/:num/'
+  title: ':title | :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+ # extension: htm
+ # indexpage: 'default'
+  trail: 
+    before: 2
+    after: 2

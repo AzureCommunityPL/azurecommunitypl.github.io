@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Przegląd zaproponowanych rozwiązań"
-categories: "Architecture Meetings"
+categories:
+- "Architecture Meetings"
 tags:
 - "Review sessions"
 author:

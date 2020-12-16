@@ -8,15 +8,6 @@ layout: default
     <div class="row text-white text-center z-index-1">
       <div class="col">
         <h1 class="text-white">{{ page.title | escape }}</h1>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb justify-content-center bg-transparent p-0 m-0">
-            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a>
-            </li>
-            <li class="breadcrumb-item">Pages</li>
-            <li class="breadcrumb-item">Blog</li>
-            <li class="breadcrumb-item active text-primary" aria-current="page">Blog Single</li>
-          </ol>
-        </nav>
       </div>
     </div>
     <!-- / .row -->
@@ -51,7 +42,10 @@ layout: default
               <div>
                 <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span class="text-primary">{{
                     page.date | date: "%-d" }}</span>
-                  {{ page.date | date: "%b %Y" }}</div> <a class="d-inline-block btn-link" href="#">Sass</a>
+                  {{ page.date | date: "%b %Y" }}</div>
+                {% for category in page.categories %}
+                <a class="d-inline-block btn-link" href="/category/{{ category | slugify }}#">{{ category }}</a>
+                {% endfor %}
               </div>
               {{ content }}
             </div>
@@ -78,17 +72,14 @@ layout: default
                 </ul>
               </div>
               <div class="d-flex align-items-center text-md-right mt-5 mt-md-0">
-                <h6 class="mb-0 mr-4">Tags: </h6>
+                <h6 class="mb-0 mr-4">Tagi: </h6>
                 <ul class="list-inline mb-0">
-                  <li class="list-inline-item"><a class="btn-link rounded d-inline-block p-2 bg-light m-1"
-                      href="#">Bootstrap 5</a>
+                  {% for tag in page.tags %}
+                  <li class="list-inline-item">
+                    <a class="btn-link rounded d-inline-block p-2 bg-light m-1"
+                      href="/tag/{{ tag | slugify }}">{{ tag }}</a>
                   </li>
-                  <li class="list-inline-item"><a class="btn-link rounded d-inline-block p-2 bg-light m-1"
-                      href="#">Software</a>
-                  </li>
-                  <li class="list-inline-item"><a class="btn-link rounded d-inline-block p-2 bg-light m-1"
-                      href="#">Sass</a>
-                  </li>
+                  {% endfor %}
                 </ul>
               </div>
             </div>

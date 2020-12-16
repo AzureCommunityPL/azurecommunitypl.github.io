@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Wykorzystanie Azure AD w aplikacjach - część 1"
-categories: "Architecture Meetings"
+categories:
+- "Architecture Meetings"
 tags:
 - "Azure AD"
 - "CosmosDB"
