@@ -11,6 +11,7 @@ tags:
 author:
 - "Agnieszka Cent"
 - "Maciej Gos"
+image: /assets/images/blog/01.jpg
 ---
 
 # #azure-solutions-architect Wykorzystanie Azure AD w aplikacjach

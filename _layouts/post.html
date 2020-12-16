@@ -24,7 +24,6 @@ layout: default
 
 <!--hero section end-->
 
-
 <!--body content start-->
 
 <div class="page-content">
@@ -37,7 +36,9 @@ layout: default
         <div class="col-12">
           <!-- Blog Card -->
           <div class="card border-0 bg-transparent">
-            <img class="card-img-top shadow" src="/assets/images/blog/01.jpg" alt="Image">
+            {%- if page.image -%}
+            <img class="card-img-top shadow" src="{{ page.image }}" alt="Image">
+            {% endif %}
             <div class="card-body pt-5 px-0">
               <div>
                 <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span class="text-primary">{{
@@ -54,19 +55,16 @@ layout: default
               <div class="d-flex align-items-center">
                 <h6 class="mb-0 mr-4">Share It:</h6>
                 <ul class="list-inline mb-0">
-                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"><i
                         class="la la-facebook"></i></a>
                   </li>
-                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
-                        class="la la-dribbble"></i></a>
-                  </li>
-                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
-                        class="la la-instagram"></i></a>
-                  </li>
-                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text="><i
                         class="la la-twitter"></i></a>
                   </li>
-                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title=&summary=&source="><i
                         class="la la-linkedin"></i></a>
                   </li>
                 </ul>
@@ -76,13 +74,59 @@ layout: default
                 <ul class="list-inline mb-0">
                   {% for tag in page.tags %}
                   <li class="list-inline-item">
-                    <a class="btn-link rounded d-inline-block p-2 bg-light m-1"
-                      href="/tag/{{ tag | slugify }}">{{ tag }}</a>
+                    <a class="btn-link rounded d-inline-block p-2 bg-light m-1" href="/tag/{{ tag | slugify }}">{{ tag
+                      }}</a>
                   </li>
                   {% endfor %}
                 </ul>
               </div>
             </div>
+            {%- if page.author -%}
+            <div class="mt-6 shadow p-5">
+              <div class="mb-4">
+                <h2>
+                  {% if page.author.size > 1 %}
+                  Autorzy
+                  {% else %}
+                  Autor
+                  {% endif %}
+                </h2>
+              </div>
+              {% for author in page.author %}
+              <div class="d-block d-md-flex my-5">
+                <div class="mr-md-4 mb-4 mb-md-0 w-50">
+                  <img class="img-fluid rounded" alt="image" src="/assets/images/thumbnail/01.png">
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
+                    <h6 class="mb-0">{{ author }}</h6>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                          class="la la-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                          class="la la-dribbble"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                          class="la la-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                          class="la la-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+            {%- endif -%}
           </div>
           <!-- End Blog Card -->
         </div>

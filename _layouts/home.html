@@ -3,12 +3,12 @@ layout: default
 ---
 <!--hero section start-->
 
-<section class="hero-banner position-relative custom-pt-1 custom-pb-2 bg-dark" data-bg-img="assets/images/bg/02.png">
+<section class="hero-banner position-relative custom-pt-1 custom-pb-2 bg-dark" data-bg-img="/assets/images/bg/02.png">
   <div class="container">
     <div class="row text-white text-center z-index-1">
       <div class="col">
-        <h1 class="text-white">Microsoft Azure User Group Poland</h1>
-        <p>tu jakis opis...</p>
+        <h1 class="text-white">{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
       </div>
     </div>
     <!-- / .row -->
@@ -35,18 +35,20 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-7 mb-6 mb-lg-0">
-          {% for post in site.posts limit:100 %}
+          {% for post in paginator.posts %}
           <!-- Blog Card -->
           <div class="card border-0 shadow bg-transparent">
-            <img class="card-img-top" src="assets/images/blog/01.jpg" alt="Image">
+            {%- if post.image -%}
+            <img class="card-img-top shadow" src="{{ post.image }}" alt="Image">
+            {% endif %}
             <div class="card-body p-4">
               <div>
                 <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span class="text-primary">{{
                     post.date | date: "%-d" }}</span>
                   {{ post.date | date: "%b %Y" }}</div>
-                  {% for category in post.categories %}
-                  <a class="d-inline-block btn-link" href="#">{{ category }}</a>
-                  {% endfor %}
+                {% for category in post.categories %}
+                <a class="d-inline-block btn-link" href="#">{{ category }}</a>
+                {% endfor %}
               </div>
               <h2 class="h5 my-3">
                 <a class="link-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -71,21 +73,40 @@ layout: default
             </div>
           </div>
           <!-- End Blog Card -->
+          {% if forloop.last == false %}
           <hr class="my-5">
+          {% endif %}
           {%- endfor -%}
+
           <nav aria-label="Page navigation" class="mt-6">
+            {% if paginator.total_pages > 1 %}
             <ul class="pagination">
-              <li class="page-item"><a class="page-link rounded text-dark" href="#">Previous</a>
+
+              {% if paginator.previous_page %}
+              <li class="page-item">
+                <a class="page-link rounded text-dark"
+                  href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
+                  < </a>
               </li>
-              <li class="page-item"><a class="page-link rounded text-dark" href="#">1</a>
+              {% endif %}
+              {% if paginator.page_trail %}
+              {% for trail in paginator.page_trail %}
+              <li class="page-item {% if page.url==trail.path %}active{% endif %}">
+                <a class="page-link rounded text-dark" href="{{ trail.path | prepend: site.baseurl | remove: "index.html" }}">
+                  {{ trail.num }}
+                </a>
               </li>
-              <li class="page-item"><a class="page-link rounded text-dark" href="#">2</a>
+              {% endfor %}
+              {% endif %}
+              {% if paginator.next_page %}
+              <li class="page-item"></li>
+              <a class="page-link rounded text-dark" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+                >
+              </a>
               </li>
-              <li class="page-item"><a class="page-link rounded text-dark" href="#">3</a>
-              </li>
-              <li class="page-item"><a class="page-link rounded text-dark" href="#">Next</a>
-              </li>
+              {% endif %}
             </ul>
+            {% endif %}
           </nav>
         </div>
         <div class="col-12 col-lg-4 ml-auto">
@@ -100,14 +121,16 @@ layout: default
             <h4 class="mb-3">Kategorie</h4>
             <ul class="list-unstyled list-group list-group-flush">
               <li class="mb-3"> <a class="list-group-item list-group-item-action border-0" href="#">
-                Wszystkie
-                <span class="badge bg-primary font-weight-normal p-2 rounded float-right"></span>
-              </a>
-            </li>
+                  Wszystkie
+                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right"></span>
+                </a>
+              </li>
               {% for category in site.categories %}
-              <li class="mb-3"> <a class="list-group-item list-group-item-action border-0" href="/category/{{ category | first | slugify }}">
+              <li class="mb-3"> <a class="list-group-item list-group-item-action border-0"
+                  href="/category/{{ category | first | slugify }}">
                   {{ category | first }}
-                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">{{ category[1].size }}</span>
+                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">{{ category[1].size
+                    }}</span>
                 </a>
               </li>
               {% endfor %}
@@ -117,7 +140,8 @@ layout: default
             <h4 class="mb-3">Tagi</h4>
             <div>
               {% for tag in site.tags %}
-              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="/tag/{{ tag | first | slugify }}">{{ tag | first }}</a>
+              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="/tag/{{ tag | first | slugify }}">{{ tag
+                | first }}</a>
               {% endfor %}
             </div>
           </div>

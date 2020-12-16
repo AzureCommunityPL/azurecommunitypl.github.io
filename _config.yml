@@ -1,4 +1,8 @@
-baseurl: /
+title: Microsoft Azure User Group Poland
+description: >
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+url: "https://azurecommunity.pl"
+baseurl: ""
 
 exclude:
 - assets/scss
@@ -40,14 +44,12 @@ autopages:
 
 pagination:
   enabled: true
-  per_page: 3
+  per_page: 5
   permalink: '/:num/'
   title: ':title | :num of :max'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
- # extension: htm
- # indexpage: 'default'
   trail: 
-    before: 2
-    after: 2
+    before: 1
+    after: 1
