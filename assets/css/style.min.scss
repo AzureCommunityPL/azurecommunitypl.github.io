@@ -1,0 +1,13 @@
+---
+---
+@import 'theme.min.scss';
+
+.page-item {
+    &.active .page-link {
+        color: $white !important;
+        background-color: $bg-primary;
+        border-color: $border-primary;
+        pointer-events: none;
+        cursor: default;
+    }
+}
