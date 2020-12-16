@@ -1,3 +1,4 @@
+baseurl: /
 repository: AzureCommunityPL/azurecommunitypl.github.io
 exclude:
 - assets/scss
