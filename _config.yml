@@ -1,0 +1,7 @@
+
+exclude: ["assets/scss", "docs"]
+sass:
+  style: compressed
+  sass_dir: assets/scss
+plugins:
+- jekyll-feed
