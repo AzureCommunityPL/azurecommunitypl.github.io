@@ -5,3 +5,5 @@ sass:
   sass_dir: assets/scss
 plugins:
 - jekyll-feed
+- jekyll-github-metadata
+- jekyll-sitemap
