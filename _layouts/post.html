@@ -1,0 +1,106 @@
+---
+layout: default
+---
+<!--hero section start-->
+
+<section class="hero-banner position-relative custom-pt-1 custom-pb-2 bg-dark" data-bg-img="/assets/images/bg/02.png">
+  <div class="container">
+    <div class="row text-white text-center z-index-1">
+      <div class="col">
+        <h1 class="text-white">{{ page.title | escape }}</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center bg-transparent p-0 m-0">
+            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">Pages</li>
+            <li class="breadcrumb-item">Blog</li>
+            <li class="breadcrumb-item active text-primary" aria-current="page">Blog Single</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- / .row -->
+  </div>
+  <!-- / .container -->
+  <div class="shape-1 bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,208C672,213,768,267,864,245.3C960,224,1056,128,1152,96C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+</section>
+
+<!--hero section end-->
+
+
+<!--body content start-->
+
+<div class="page-content">
+
+  <!--blog start-->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Blog Card -->
+          <div class="card border-0 bg-transparent">
+            <img class="card-img-top shadow" src="/assets/images/blog/01.jpg" alt="Image">
+            <div class="card-body pt-5 px-0">
+              <div>
+                <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span class="text-primary">{{
+                    page.date | date: "%-d" }}</span>
+                  {{ page.date | date: "%b %Y" }}</div> <a class="d-inline-block btn-link" href="#">Sass</a>
+              </div>
+              {{ content }}
+            </div>
+
+            <div class="d-md-flex justify-content-between">
+              <div class="d-flex align-items-center">
+                <h6 class="mb-0 mr-4">Share It:</h6>
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                        class="la la-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                        class="la la-dribbble"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                        class="la la-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                        class="la la-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                        class="la la-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center text-md-right mt-5 mt-md-0">
+                <h6 class="mb-0 mr-4">Tags: </h6>
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item"><a class="btn-link rounded d-inline-block p-2 bg-light m-1"
+                      href="#">Bootstrap 5</a>
+                  </li>
+                  <li class="list-inline-item"><a class="btn-link rounded d-inline-block p-2 bg-light m-1"
+                      href="#">Software</a>
+                  </li>
+                  <li class="list-inline-item"><a class="btn-link rounded d-inline-block p-2 bg-light m-1"
+                      href="#">Sass</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Card -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--blog end-->
+
+</div>
+
+<!--body content end-->

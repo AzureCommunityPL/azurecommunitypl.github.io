@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+$font-primary: 'Nunito', sans-serif;
+
+$text-primary: #01a479;
+$text-dark: #2f2f41;
+$text-muted: #535353;
+$text-light: #a6aaad;
+$white: #ffffff;
+
+
+$box-shadow: 0 10px 30px 5px rgba(1, 164, 121, .06);
+$box-shadow-primary: 0 0.5rem 1rem rgba(1, 164, 121, .30);
+$box-shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .075);
+$box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+
+$transition-base: all 0.5s ease-in-out 0s;
+
+
+$font-weight-300: 300 !default;
+$font-weight-400: 400 !default;
+$font-weight-500: 500 !default;
+$font-weight-600: 600 !default;
+$font-weight-700: 700 !default;
+$font-weight-800: 800 !default;
+$font-weight-900: 900 !default;
+
+
+$border-primary:  #01a479;
+$border-light:  #d5e0f2;
+$border-dark:  #43434d;
+$border-rounded: 50%;
+$border-rounded-100: 100%;
+
+$bg-primary: #01a479;
+$bg-dark: #1e1d2d;
+$bg-light: #fcfbf7;

@@ -1,0 +1,144 @@
+---
+layout: default
+---
+<!--hero section start-->
+
+<section class="hero-banner position-relative custom-pt-1 custom-pb-2 bg-dark" data-bg-img="assets/images/bg/02.png">
+  <div class="container">
+    <div class="row text-white text-center z-index-1">
+      <div class="col">
+        <h1 class="text-white">Microsoft Azure User Group Poland</h1>
+        <p>tu jakis opis...</p>
+      </div>
+    </div>
+    <!-- / .row -->
+  </div>
+  <!-- / .container -->
+  <div class="shape-1 bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,208C672,213,768,267,864,245.3C960,224,1056,128,1152,96C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+</section>
+
+<!--hero section end-->
+
+<!--body content start-->
+
+<div class="page-content">
+
+  <!--blog start-->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-7 mb-6 mb-lg-0">
+          {% for post in site.posts limit:100 %}
+          <!-- Blog Card -->
+          <div class="card border-0 shadow bg-transparent">
+            <img class="card-img-top" src="assets/images/blog/01.jpg" alt="Image">
+            <div class="card-body p-4">
+              <div>
+                <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span class="text-primary">{{
+                    post.date | date: "%-d" }}</span>
+                  {{ post.date | date: "%b %Y" }}</div> <a class="d-inline-block btn-link" href="#">Sass</a>
+              </div>
+              <h2 class="h5 my-3">
+                <a class="link-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h2>
+              <ul class="list-inline mb-0">
+                {%- if post.author -%}
+                {% for author in post.author %}
+                <li class="list-inline-item pr-3"> <a href="#" class="list-group-item-action"><i
+                      class="lar la-user-circle mr-1 text-primary ic-1x"></i>{{ author }}</a>
+                </li>
+                {% endfor %}
+                {%- endif -%}
+                <!-- TO DO views count / comments count
+                <li class="list-inline-item pr-3"> <a href="#" class="list-group-item-action"><i
+                      class="las la-eye mr-1 text-primary ic-1x"></i> 275</a>
+                </li>
+                <li class="list-inline-item"> <a href="#" class="list-group-item-action"><i
+                      class="lar la-comments mr-1 text-primary ic-1x"></i> 300</a>
+                </li>
+                -->
+              </ul>
+            </div>
+          </div>
+          <!-- End Blog Card -->
+          <hr class="my-5">
+          {%- endfor -%}
+          <nav aria-label="Page navigation" class="mt-6">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link rounded text-dark" href="#">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link rounded text-dark" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link rounded text-dark" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link rounded text-dark" href="#">3</a>
+              </li>
+              <li class="page-item"><a class="page-link rounded text-dark" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-12 col-lg-4 ml-auto">
+          <form class="my-2 my-lg-0 row g-0">
+            <input class="form-control mr-sm-2 col" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0 col-auto" type="submit">Search Blog</button>
+          </form>
+          <div class="mt-5 mb-5 p-4 rounded" data-bg-color="#ffeff8">
+            <h4 class="mb-3">Kategorie</h4>
+            <ul class="list-unstyled list-group list-group-flush">
+              <li class="mb-3"> <a class="list-group-item list-group-item-action border-0" href="#">
+                  All
+                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">74</span>
+                </a>
+              </li>
+              <li class="mb-3"> <a class="list-group-item list-group-item-action border-0" href="#">
+                  Arts and Entertainment
+                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">23</span>
+                </a>
+              </li>
+              <li class="mb-3"> <a class="list-group-item list-group-item-action border-0" href="#">
+                  Featured
+                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">14</span>
+                </a>
+              </li>
+              <li class="mb-3"> <a class="list-group-item list-group-item-action border-0" href="#">
+                  Daily news
+                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">48</span>
+                </a>
+              </li>
+              <li> <a class="list-group-item list-group-item-action border-0" href="#">
+                  Blog Post
+                  <span class="badge bg-primary font-weight-normal p-2 rounded float-right">32</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="p-4 rounded" data-bg-color="#d3f6fe">
+            <h4 class="mb-3">Tagi</h4>
+            <div> <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Winck</a>
+              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Web Design</a>
+              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Saas</a>
+              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Corporate</a>
+              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Sass</a>
+              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Software</a>
+              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Landing</a>
+              <a class="btn-link rounded d-inline-block p-2 bg-white m-1" href="#">Startup</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--blog end-->
+
+</div>
+
+<!--body content end-->
