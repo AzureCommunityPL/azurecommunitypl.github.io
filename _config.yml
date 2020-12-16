@@ -1,4 +1,4 @@
-
+repository: AzureCommunityPL/azurecommunitypl.github.io
 exclude: ["assets/scss", "docs"]
 sass:
   style: compressed
