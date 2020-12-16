@@ -1,0 +1,159 @@
+/* ------------------------------------------------
+  Project:   Winck - Bootstrap 5 Multipurpose Landing Page
+  Author:    ThemeHt
+------------------------------------------------ */
+/* ------------------------
+    Table of Contents
+
+  1. General
+  2. Transition
+  3. Helper class
+  4. Text color
+  5. Background color
+  6. Header
+  7. Navigation
+  8. Section Title
+  09. Button
+  10. Table And Precode
+  11. Scroll To Top
+ 
+/* ------------------------
+    General
+------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {font-family: 'Nunito', sans-serif; font-weight: 400; font-style: normal; font-size: 1rem; color: #535353; overflow-x: hidden; }
+a, .btn, span { -webkit-transition: all 0.5s ease-in-out 0s; -moz-transition: all 0.5s ease-in-out 0s; -ms-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s;
+transition: all 0.5s ease-in-out 0s; }
+a:focus { text-decoration: none !important; }
+a:focus, a:hover { color: #01a479; text-decoration: none !important; }
+a, button, input { outline: medium none !important; color: #01a479; }
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  color: #2f2f41;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1, .h1 {
+  font-size: 3.5rem;
+}
+
+h2, .h2 {
+  font-size: 2.5rem;
+}
+
+h3, .h3 {
+  font-size: 1.875rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1.125rem;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+  font-weight: 600;
+}
+
+ul { margin: 0px; padding: 0px; }
+*::-moz-selection { background: #01a479; color: #fff; text-shadow: none; }
+::-moz-selection { background: #01a479; color: #fff; text-shadow: none; }
+::selection { background: #01a479; color: #fff; text-shadow: none; }
+
+section{padding: 40px 0;}
+
+/* ------------------------
+    Text color
+------------------------*/
+.text-dark {
+  color: #2f2f41 !important;
+}
+
+.text-primary {
+  color: #01a479 !important;
+}
+
+
+/* ------------------------
+    Background color
+------------------------*/
+.bg-primary {
+  background-color: #01a479 !important;
+}
+
+.bg-light {
+  background-color: #fcfbf7 !important;
+}
+
+.bg-dark {
+  background-color: #1e1d2d !important;
+}
+
+/* ------------------------
+    Header
+------------------------*/
+.site-header, .fullscreen, .banner{position: relative;} 
+.site-header + .fullscreen{margin-bottom: -85px; top:-85px;} 
+.site-header,.top-bar,header .container {position: relative; z-index: 99;}
+.header-transparent{background: transparent;}
+#header-wrap{padding: 20px; width: 100%; background: #01a479}
+#header-wrap.fixed-header {position: fixed; padding: 15px 0; top:0; left:0; width: 100%; z-index: 999 !important; background: #01a479; -webkit-box-shadow: 0 0.5rem 1rem rgba(1, 164, 121, .30);
+-moz-box-shadow: 0 0.5rem 1rem rgba(1, 164, 121, .30); box-shadow: 0 0.5rem 1rem rgba(1, 164, 121, .30);}
+
+
+/* ------------------------
+    Navigation
+------------------------*/
+.navbar{padding: 0;}
+.navbar-nav li{margin: 0 10px;}
+.navbar-nav li:last-child{margin-right: 0;}
+.navbar-nav .nav-link {position: relative; color: #ffffff; font-size: 14px; font-weight: 500; text-transform: uppercase;}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-item .nav-link.active{color: #01a479; background: #ffffff;}
+.fixed-header .navbar-nav .nav-item .nav-link{color: #ffffff}
+.fixed-header .navbar-nav .nav-link:hover,
+.fixed-header .navbar-nav .nav-link:focus,
+.fixed-header .navbar-nav .nav-item .nav-link.active {color: #01a479; background: #ffffff;}
+
+
+/* ------------------------
+    Section Title
+------------------------*/
+.section-title h3{position: relative; margin-bottom: 10px; color: #1d1d33; line-height: inherit;}
+
+
+/* ------------------------
+    Table And Precode
+------------------------*/
+.str, .atv {color: #ee1f71;}
+.typ, .atn, .dec, .var {color: #FF512F;}
+.kwd, .linenums .tag {color: #2575fc;}
+.pln {color: #222533;}
+.overflow-auto {overflow: auto;}
+.prettyprint {background-color: #ffffff; padding: 15px; border-radius: 5px; box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15)}
+ol.linenums {padding: 0; margin: 0; list-style-type: none;}
+ol.linenums li {color: #bebec5; line-height: 18px;}
+table {border: 1px solid #e1e1e8; border-collapse: collapse; border-spacing: 0; width: 100%;}
+td {border-bottom: 1px solid #e1e1e8; border-right: 1px solid #e1e1e8; padding: 15px;}
+.label-danger {display: inline-block; background-color: #FF0000; padding: 0.5em 0.6em; color: #ffffff; border-radius: 5px; font-size: 12px; margin-right: 5px;}
+.table > tbody > tr > td, .cart-table.table > tbody > tr > th, .cart-table.table > tfoot > tr > td, .cart-table.table > tfoot > tr > th, .cart-table.table > thead > tr > td, .cart-table.table > thead > tr > th {
+  vertical-align: middle;}
+
+/* ------------------------
+    Scroll To Top
+------------------------*/
+.scroll-top {position: fixed; bottom: 30px; right: 30px; z-index: 600; opacity: 0; visibility: hidden; -webkit-transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; -webkit-transform: translate3d(0, 200%, 0); -ms-transform: translate3d(0, 200%, 0); transform: translate3d(0, 200%, 0);}
+.scroll-top a, .scroll-top a:visited {display: block; height: 60px; width: 60px; line-height: 60px; text-align: center; border-radius: 7px; -webkit-box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); -moz-box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; font-size:32px; color: #ffffff; background: #01a479;}
+.scroll-top a:hover, .scroll-top a:focus {color: #01a479; background: #ffffff;}
+.scroll-top.scroll-visible {opacity: 1; visibility: visible; -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);}

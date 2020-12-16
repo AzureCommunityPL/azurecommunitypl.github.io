@@ -1,0 +1,24 @@
+/* ------------------------------------------------
+  Project:   Winck - Bootstrap 5 Multipurpose Landing Page
+  Author:    ThemeHt
+------------------------------------------------ */
+
+/* ------------------------
+    Table of Css
+
+  1. Bootstrap
+  2. Animate
+  3. Line Awesome
+  4. magnific-popup
+  5. Owl Carousel
+  6. Lightslider  
+  7. Spacing
+ ------------------------ */
+
+@import 'bootstrap.min.css';
+@import 'animate.css';
+@import 'line-awesome.min.css';
+@import 'magnific-popup.css';
+@import 'owl.carousel.css';
+@import 'lightslider.min.css';
+@import 'spacing.css';
