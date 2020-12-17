@@ -8,6 +8,9 @@ layout: default
     <div class="row text-white text-center z-index-1">
       <div class="col">
         <h1 class="text-white">{{ site.title }}</h1>
+        <a href="https://github.com/AzureCommunityPL/group/discussions" class="btn btn-white mb-3">
+          Dołącz do dyskusji‼️
+        </a>
         <p>{{ site.description }}</p>
       </div>
     </div>
@@ -92,7 +95,8 @@ layout: default
               {% if paginator.page_trail %}
               {% for trail in paginator.page_trail %}
               <li class="page-item {% if page.url==trail.path %}active{% endif %}">
-                <a class="page-link rounded text-dark" href="{{ trail.path | prepend: site.baseurl | remove: "index.html" }}">
+                <a class="page-link rounded text-dark" href="{{ trail.path | prepend: site.baseurl | remove: "
+                  index.html" }}">
                   {{ trail.num }}
                 </a>
               </li>
