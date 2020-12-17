@@ -9,8 +9,8 @@ tags:
 - "App Service"
 - "Private endpoints"
 author:
-- "Agnieszka Cent"
-- "Maciej Gos"
+- aryll
+- maciejgos
 image: /assets/images/blog/01.jpg
 ---
 

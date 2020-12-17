@@ -6,7 +6,7 @@ categories:
 tags:
 - "Review sessions"
 author:
-- "Łukasz Kałużny"
+- kaluzaaa
 ---
 
 # #azure-solutions-architect Review proposed solutions

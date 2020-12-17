@@ -1,0 +1,33 @@
+kaluzaaa:
+  image: https://github.com/kaluzaaa.png?size=200
+  name: "Łukasz Kałużny"
+  twitter: kaluzaaa
+  facebook: https://www.facebook.com/kaluznypro
+  linkedin: https://www.linkedin.com/in/lukaszkaluzny/
+  url: https://kaluzny.io/
+  bio: >
+    dupa
+
+
+kmadof:
+  image: https://github.com/kmadof.png?size=200
+  name: "Krzysztof Madej"
+  twitter: kmadof
+  linkedin: https://www.linkedin.com/in/krzysztof-madej/
+  url: hhttp://thecodemanual.pl/
+  bio: >
+    To jakieś bio
+
+aryll:
+  image: https://github.com/aryll.png?size=200
+  name: "Agnieszka Cent"
+  bio: >
+    To jakieś bio
+
+maciejgos:
+  image: https://github.com/maciejgos.png?size=200
+  name: "Maciej Gos"
+  twitter: maciejgos
+  url: https://blog.maciejgos.com
+  bio: >
+    To jakieś bio

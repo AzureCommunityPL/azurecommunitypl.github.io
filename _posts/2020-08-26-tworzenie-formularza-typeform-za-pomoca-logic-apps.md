@@ -6,7 +6,7 @@ categories:
 tags:
 - "Logic Apps"
 author:
-- "Krzysztof Madej"
+- kmadof
 ---
 
 

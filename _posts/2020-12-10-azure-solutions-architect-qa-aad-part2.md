@@ -9,8 +9,8 @@ tags:
 - "App Service"
 - "Private endpoints"
 author:
-- "Agnieszka Cent"
-- "Maciej Gos"
+- aryll
+- maciejgos
 ---
 
 # #azure-solutions-architect Wykorzystanie Azure AD w aplikacjach - część 2

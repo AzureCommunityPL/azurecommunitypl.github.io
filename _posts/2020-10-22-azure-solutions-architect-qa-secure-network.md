@@ -7,8 +7,8 @@ tags:
 - "Service endpoints"
 - "Private endpoints"
 author:
-- "Agnieszka Cent"
-- "Maciej Gos"
+- aryll
+- maciejgos
 ---
 
 # #azure-solutions-architect zabezpieczenie komunikacji pomiedzy on-prem a Azure

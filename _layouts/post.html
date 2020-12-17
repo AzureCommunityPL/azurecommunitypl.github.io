@@ -93,34 +93,44 @@ layout: default
                 </h2>
               </div>
               {% for author in page.author %}
+              {% assign person = site.data.authors[author] %}
               <div class="d-block d-md-flex my-5">
-                <div class="mr-md-4 mb-4 mb-md-0 w-50">
-                  <img class="img-fluid rounded" alt="image" src="/assets/images/thumbnail/01.png">
+                <div class="mr-md-4 mb-4 mb-md-0">
+                  <img class="img-fluid rounded-circle" alt="image" src="{{ person.image }}">
                 </div>
                 <div>
                   <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
-                    <h6 class="mb-0">{{ author }}</h6>
+                    <h6 class="mb-0">{{ person.name }}</h6>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    {{ person.bio }}
                   </p>
                   <ul class="list-inline mb-0">
-                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                    {% if author %}
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="https://github.com/{{ author }}"><i
+                          class="la la-github"></i></a>
+                    </li>
+                    {% endif %}
+                    {% if person.url %}
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="{{ person.url }}"><i
+                          class="la la-link"></i></a>
+                    </li>
+                    {% endif %}
+                    {% if person.facebook %}
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="{{ person.facebook }}"><i
                           class="la la-facebook"></i></a>
                     </li>
-                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
-                          class="la la-dribbble"></i></a>
-                    </li>
-                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                    {% endif %}
+                    {% if person.twitter %}
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="https://twitter.com/{{ person.twitter }}"><i
                           class="la la-twitter"></i></a>
                     </li>
-                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="#"><i
+                    {% endif %}
+                    {% if person.linkedin %}
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="{{ person.linkedin }}"><i
                           class="la la-linkedin"></i></a>
                     </li>
+                    {% endif %}
                   </ul>
                 </div>
               </div>
