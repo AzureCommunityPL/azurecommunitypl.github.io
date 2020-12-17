@@ -4,6 +4,17 @@ description: >
 url: "https://azurecommunity.pl"
 baseurl: ""
 
+locale: pl_PL
+timezone: Europe/Warsaw
+
+twitter:
+  username: AzureGroupPL
+  card: summary
+
+facebook:
+  publisher: 933066520134721
+  admins: 1234
+
 exclude:
 - assets/scss
 - docs
