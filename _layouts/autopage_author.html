@@ -1,0 +1,117 @@
+---
+layout: default
+---
+<!--hero section start-->
+
+<section class="hero-banner position-relative custom-pb-2 bg-dark" data-bg-img="/assets/images/bg/02.png">
+    <div class="container">
+        <div class="row text-white text-center z-index-1">
+            <div class="col mb-5">
+                <img class="img-fluid rounded-circle" alt="image" src="{{ page.image }}">
+                <h1 class="text-white">
+                    {{ page.display_name }}
+                </h1>
+                <ul class="list-inline mb-4">
+                    {% if page.github %}
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-primary"
+                            href="https://github.com/{{ page.github }}"><i class="la la-github"></i></a>
+                    </li>
+                    {% endif %}
+                    {% if page.url %}
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-primary"
+                            href="{{ page.url }}"><i class="la la-link"></i></a>
+                    </li>
+                    {% endif %}
+                    {% if page.facebook %}
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-primary"
+                            href="{{ page.facebook }}"><i class="la la-facebook"></i></a>
+                    </li>
+                    {% endif %}
+                    {% if page.twitter %}
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-primary"
+                            href="https://twitter.com/{{ page.twitter }}"><i class="la la-twitter"></i></a>
+                    </li>
+                    {% endif %}
+                    {% if page.linkedin %}
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-primary"
+                            href="{{ page.linkedin }}"><i class="la la-linkedin"></i></a>
+                    </li>
+                    {% endif %}
+                </ul>
+                <p>{{ page.bio }}</p>
+            </div>
+        </div>
+        <!-- / .row -->
+    </div>
+    <!-- / .container -->
+    <div class="shape-1 bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,208C672,213,768,267,864,245.3C960,224,1056,128,1152,96C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+</section>
+
+<!--hero section end-->
+
+<!--blog start-->
+
+<section>
+    <div class="container">
+        <!-- / .row -->
+        <div class="row">
+            <div class="col">
+                {% assign filtered_posts = site.posts | where: 'author', page.title %}
+                {% for post in filtered_posts %}
+                <!-- Blog Card -->
+                <div class="card bg-transparent flex-md-row align-items-center p-md-0 p-3 mt-5">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="/assets/images/blog/01.jpg" alt="Image">
+                    </div>
+                    <div class="card-body col-md-6">
+                        <div>
+                            <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span
+                                    class="text-primary">{{
+                                    post.date | date: "%-d" }}</span>
+                                {{ post.date | date: "%b %Y" }}</div>
+                            {% for category in post.categories %}
+                            <a class="d-inline-block btn-link" href="/category/{{ category | slugify }}">{{ category
+                                }}</a>
+                            {% endfor %}
+                        </div>
+                        <h2 class="h5 my-3">
+                            <a class="link-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        </h2>
+                        <ul class="list-inline mb-0">
+                            {%- if post.author -%}
+                            {% for author in post.author %}
+                            {% assign person = site.data.authors[author] %}
+                            <li class="list-inline-item pr-3"> <a href="/author/{{ author }}"
+                                    class="list-group-item-action"><i
+                                        class="lar la-user-circle ml-1 text-primary ic-1x"></i>{{ person.display_name
+                                    }}</a>
+                            </li>
+                            {% endfor %}
+                            {%- endif -%}
+                            <li class="list-inline-item pr-3"> <a href="#" class="list-group-item-action"><i
+                                        class="las la-eye ml-1 text-primary ic-1x"></i> 275</a>
+                            </li>
+                            <li class="list-inline-item"> <a href="#" class="list-group-item-action"><i
+                                        class="lar la-comments ml-1 text-primary ic-1x"></i> 300</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2"> <a href="{{ post.url | relative_url }}" class="btn btn-primary">
+                            Zobacz wpis
+                        </a>
+                    </div>
+                </div>
+                <!-- End Blog Card -->
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--blog end-->

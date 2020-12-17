@@ -54,8 +54,9 @@ layout: default
             <ul class="list-inline mb-0">
               {%- if post.author -%}
               {% for author in post.author %}
-              <li class="list-inline-item pr-3"> <a href="#" class="list-group-item-action"><i
-                    class="lar la-user-circle ml-1 text-primary ic-1x"></i>{{ author }}</a>
+              {% assign person = site.data.authors[author] %}
+              <li class="list-inline-item pr-3"> <a href="/author/{{ author }}" class="list-group-item-action"><i
+                    class="lar la-user-circle ml-1 text-primary ic-1x"></i>{{ person.display_name }}</a>
               </li>
               {% endfor %}
               {%- endif -%}
@@ -68,7 +69,7 @@ layout: default
             </ul>
           </div>
           <div class="col-md-2"> <a href="{{ post.url | relative_url }}" class="btn btn-primary">
-            Zobacz wpis
+              Zobacz wpis
             </a>
           </div>
         </div>
