@@ -100,35 +100,35 @@ layout: default
                 </div>
                 <div>
                   <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
-                    <h6 class="mb-0">{{ person.name }}</h6>
+                    <h6 class="mb-0">{{ person.display_name }}</h6>
                   </div>
                   <p>
                     {{ person.bio }}
                   </p>
                   <ul class="list-inline mb-0">
                     {% if author %}
-                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="https://github.com/{{ author }}"><i
-                          class="la la-github"></i></a>
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://github.com/{{ author }}"><i class="la la-github"></i></a>
                     </li>
                     {% endif %}
                     {% if person.url %}
-                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="{{ person.url }}"><i
-                          class="la la-link"></i></a>
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="{{ person.url }}"><i class="la la-link"></i></a>
                     </li>
                     {% endif %}
                     {% if person.facebook %}
-                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="{{ person.facebook }}"><i
-                          class="la la-facebook"></i></a>
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="{{ person.facebook }}"><i class="la la-facebook"></i></a>
                     </li>
                     {% endif %}
                     {% if person.twitter %}
-                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="https://twitter.com/{{ person.twitter }}"><i
-                          class="la la-twitter"></i></a>
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://twitter.com/{{ person.twitter }}"><i class="la la-twitter"></i></a>
                     </li>
                     {% endif %}
                     {% if person.linkedin %}
-                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark" href="{{ person.linkedin }}"><i
-                          class="la la-linkedin"></i></a>
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="{{ person.linkedin }}"><i class="la la-linkedin"></i></a>
                     </li>
                     {% endif %}
                   </ul>

@@ -34,6 +34,15 @@ defaults:
     values:
       permalink: blog/:title
 
+  
+page_gen-dirs: true
+
+page_gen:
+  - data: 'authors'
+    template: 'autopage_author'
+    name: 'github'
+    dir: 'author'
+
 autopages:
   enabled: true
   categories:

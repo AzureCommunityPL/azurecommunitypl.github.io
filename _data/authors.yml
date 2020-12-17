@@ -1,6 +1,7 @@
 kaluzaaa:
+  github: kaluzaaa
   image: https://github.com/kaluzaaa.png?size=200
-  name: "Łukasz Kałużny"
+  display_name: "Łukasz Kałużny"
   twitter: kaluzaaa
   facebook: https://www.facebook.com/kaluznypro
   linkedin: https://www.linkedin.com/in/lukaszkaluzny/
@@ -9,8 +10,9 @@ kaluzaaa:
     Pracuje jako doradca technologiczny w zakresie strategii i architektury IT, głównie związanych z technologiami chmurowymi i kontenerowymi. Z Azure związany zawodowo na pełen etat od 2014 roku. Poza pracą prowadzi podcast <a href="http://patoarchitekci.io/">Patoarchitekci</a> o technologii skierowany deweloperów, architektów IT i CTO. Jest aktywny członkiem społeczności IT, na których organizuje warsztaty, meetupy czy występuję na konferencjach. Od 2012 roku Microsoft MVP, w tym Azure.
 
 kmadof:
+  github: kmadof
   image: https://github.com/kmadof.png?size=200
-  name: "Krzysztof Madej"
+  display_name: "Krzysztof Madej"
   twitter: kmadof
   linkedin: https://www.linkedin.com/in/krzysztof-madej/
   url: hhttp://thecodemanual.pl/
@@ -18,14 +20,16 @@ kmadof:
     To jakieś bio
 
 aryll:
+  github: aryll
   image: https://github.com/aryll.png?size=200
-  name: "Agnieszka Cent"
+  display_name: "Agnieszka Cent"
   bio: >
     To jakieś bio
 
 maciejgos:
+  github: maciejgos
   image: https://github.com/maciejgos.png?size=200
-  name: "Maciej Gos"
+  display_name: "Maciej Gos"
   twitter: maciejgos
   url: https://blog.maciejgos.com
   bio: >
