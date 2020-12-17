@@ -44,7 +44,7 @@ Założenia:
 - Ile będzie kosztować system na przestrzeni 1, 12 i 24 miesięcy?
 
 ### Poglądowy schemat architektury:
-![Schemat architektury](assets/images/posts/architektura02072020.jpg)
+![Schemat architektury](../assets/images/posts/2020-07-02/architektura02072020.jpg)
 
 ### Opis
 - `Azure Blob Storage` geo-redundant 
