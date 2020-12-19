@@ -39,7 +39,7 @@ Jeżeli powyższe kroki masz za sobą to jesteś na dobrej drodze aby zacząc tw
 4. Uruchom polecenie `bash docker.sh`
 5. Uruchom stronę `http://127.0.0.1:4000/`
 6. Jeżeli jest to twoja pierwsza kontrybucja dodaj parę słów o sobie w pliku `_data/authors.yml`
-7. Jeżeli chcesz stworzyć post to stwórz plik w folderze `_posts` o nazwie `2020_12_18-tytul-twojego-artykulu` gdzie `2020_12_18` to data publikacji. Prosimy aby to była przyszła data (+ trzy dni od dnia stworzenia pull request'a). Na samej górze pliku umieść metadane w poniższej postaci.
+7. Jeżeli chcesz stworzyć post to stwórz plik w folderze `_posts` o nazwie `2020_12_18_tytul_twojego_artykulu` gdzie `2020_12_18` to data publikacji. Prosimy aby to była przyszła data (+ trzy dni od dnia stworzenia pull request'a). Na samej górze pliku umieść metadane w poniższej postaci.
 
   ```yaml
   ---
@@ -48,9 +48,10 @@ title: "Przegląd zaproponowanych rozwiązań"
 categories:
 - "Architecture Meetings"
 tags:
-- "Review sessions" "300"
+- "Review sessions"
+- "300"
 author:
-- "Łukasz Kałużny"
+- kaluzaaa
 ---
 ```  
   Pamiętaj aby w tagach umieścić poziom sesji. Poziomy sesji są określone przez [Microsoft Standard Level Definitions](https://akfash.wordpress.com/2010/10/31/microsoft-standard-level-definitions/)
