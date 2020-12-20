@@ -39,11 +39,10 @@ Jeżeli powyższe kroki masz za sobą to jesteś na dobrej drodze aby zacząc tw
 4. Uruchom polecenie `bash docker.sh`
 5. Uruchom stronę `http://127.0.0.1:4000/`
 6. Jeżeli jest to twoja pierwsza kontrybucja dodaj parę słów o sobie w pliku `_data/authors.yml`
-7. Jeżeli chcesz stworzyć post to stwórz plik w folderze `_posts` o nazwie `2020_12_18_tytul_twojego_artykulu` gdzie `2020_12_18` to data publikacji. Prosimy aby to była przyszła data (+ trzy dni od dnia stworzenia pull request'a). Na samej górze pliku umieść metadane w poniższej postaci.
+7. Jeżeli chcesz stworzyć post to stwórz plik w folderze `_posts` o nazwie `2020-12-18-tytul-twojego-artykulu` gdzie `2020-12-18` to data publikacji. Prosimy aby to była przyszła data (+ trzy dni od dnia stworzenia pull request'a). Na samej górze pliku umieść metadane w poniższej postaci.
 
   ```yaml
   ---
-layout: post
 title: "Przegląd zaproponowanych rozwiązań"
 categories:
 - "Architecture Meetings"
@@ -64,7 +63,7 @@ author:
   >
   > - 400 - Expert material. Assumes a deep level of technical knowledge and experience and a detailed, thorough understanding of topic. Provides expert-to-expert interaction and coverage of specialized topics
 
-  Jeżeli w poście zamierzasz wykorzystać grafiki to umieść je w folderze `assets/images/posts/2020_12_18/` gdzie `2020_12_18` to data publikacji
+  Jeżeli w poście zamierzasz wykorzystać grafiki to umieść je w folderze `assets/images/posts/2020-12-18/` gdzie `2020-12-18` to data publikacji
 
 
-8. Jeżeli jesteś zadowolony z rezultatu swojej pracy to śmiało stwórz pull requesta. Aby twój post został umieszczony na stronie musi on otrzymać zgodę dwóch osób. Pamiętaj jednak, że może czasem zająć nam chwilę zanim przejrzymy twój artykuł. 
+8. Jeżeli jesteś zadowolony z rezultatu swojej pracy to śmiało stwórz pull requesta. Aby twój post został umieszczony na stronie musi on otrzymać zgodę dwóch osób. Pamiętaj jednak, że może czasem zająć nam chwilę zanim przejrzymy twój artykuł.
