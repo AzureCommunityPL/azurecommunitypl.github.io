@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Tworzenie formularza typeform za pomocą Logic Apps"
 categories:
 - "Examples"

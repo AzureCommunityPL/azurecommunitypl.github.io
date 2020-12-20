@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Wykorzystanie Azure AD w aplikacjach - część 2"
 categories:
 - "Architecture Meetings"

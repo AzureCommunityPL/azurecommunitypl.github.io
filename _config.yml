@@ -27,13 +27,23 @@ sass:
   style: compressed
   sass_dir: assets/scss
 
+collections:
+  og-images:
+    output: true
+
 defaults:
   - scope:
-      path: "_posts"
+      path: ""
       type: posts
     values:
       permalink: blog/:title
-
+      layout: post
+  - scope:
+      path: ""
+      type: og-images
+    values:
+      permalink: og-image/:title
+      layout: og-image
   
 page_gen-dirs: true
 

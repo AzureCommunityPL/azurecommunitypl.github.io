@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    {%- include head.html -%}
+
+</head>
+
+<body>
+
+    <!-- page wrapper start -->
+
+    <div class="page-wrapper">
+
+        <!--content here start-->
+        <h1 class="text-dark">{{ page.title | escape }}</h1>
+        {% for author in page.author %}
+        {% assign person = site.data.authors[author] %}
+        {{ person.display_name }}
+        <img class="img-fluid rounded-circle" alt="image" src="{{ person.image }}">
+        {% endfor %}
+        <!--content end-->
+
+    </div>
+
+    <!-- page wrapper end -->
+
+    <!-- inject js start -->
+
+    <script src="/assets/js/theme-plugin.js"></script>
+    <script src="/assets/js/theme-script.js"></script>
+
+    <!-- inject js end -->
+
+</body>
+
+</html>
