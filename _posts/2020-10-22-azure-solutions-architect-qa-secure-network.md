@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Zabezpieczenie komunikacji pomiedzy on-prem a Azure"
 categories:
 - "Architecture Meetings"

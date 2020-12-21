@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Przegląd zaproponowanych rozwiązań"
 categories:
 - "Architecture Meetings"

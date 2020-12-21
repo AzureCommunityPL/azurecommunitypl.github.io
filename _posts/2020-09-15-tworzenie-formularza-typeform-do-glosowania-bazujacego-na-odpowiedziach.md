@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Tworzenie formularza typeform do głosowania bazującego na odpowiedziach udzielonych w ramach innego formularza"
 categories:
 - "Examples"
