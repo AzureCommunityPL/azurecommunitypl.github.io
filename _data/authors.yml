@@ -1,7 +1,7 @@
 kaluzaaa:
   github: kaluzaaa
   image: https://github.com/kaluzaaa.png?size=200
-  display_name: "Łukasz Kałużny"
+  name: "Łukasz Kałużny"
   twitter: kaluzaaa
   facebook: https://www.facebook.com/kaluznypro
   linkedin: https://www.linkedin.com/in/lukaszkaluzny/
@@ -12,7 +12,7 @@ kaluzaaa:
 kmadof:
   github: kmadof
   image: https://github.com/kmadof.png?size=200
-  display_name: "Krzysztof Madej"
+  name: "Krzysztof Madej"
   twitter: kmadof
   linkedin: https://www.linkedin.com/in/krzysztof-madej/
   url: hhttp://thecodemanual.pl/
@@ -22,14 +22,14 @@ kmadof:
 aryll:
   github: aryll
   image: https://github.com/aryll.png?size=200
-  display_name: "Agnieszka Cent"
+  name: "Agnieszka Cent"
   bio: >
     To jakieś bio
 
 maciejgos:
   github: maciejgos
   image: https://github.com/maciejgos.png?size=200
-  display_name: "Maciej Gos"
+  name: "Maciej Gos"
   twitter: maciejgos
   url: https://blog.maciejgos.com
   bio: >

@@ -17,7 +17,7 @@
         <h1 class="text-dark">{{ page.title | escape }}</h1>
         {% for author in page.author %}
         {% assign person = site.data.authors[author] %}
-        {{ person.display_name }}
+        {{ person.name }}
         <img class="img-fluid rounded-circle" alt="image" src="{{ person.image }}">
         {% endfor %}
         <!--content end-->

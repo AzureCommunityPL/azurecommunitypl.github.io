@@ -61,7 +61,7 @@ layout: default
                 {% for author in post.author %}
                 {% assign person = site.data.authors[author] %}
                 <li class="list-inline-item pr-3"> <a href="/author/{{ author }}" class="list-group-item-action"><i
-                      class="lar la-user-circle mr-1 text-primary ic-1x"></i>{{ person.display_name }}</a>
+                      class="lar la-user-circle mr-1 text-primary ic-1x"></i>{{ person.name }}</a>
                 </li>
                 {% endfor %}
                 {%- endif -%}

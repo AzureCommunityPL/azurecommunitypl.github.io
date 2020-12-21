@@ -8,7 +8,7 @@ layout: default
     <div class="row text-white text-center z-index-1">
       <div class="col">
         <h1 class="text-white">
-          Wszytskie strony z tagiem {% if page.autopages %}{{page.autopages.display_name}}{% endif%}
+          Wszytskie strony z tagiem {% if page.autopages %}{{page.autopages.name}}{% endif%}
         </h1>
       </div>
     </div>
@@ -56,7 +56,7 @@ layout: default
               {% for author in post.author %}
               {% assign person = site.data.authors[author] %}
               <li class="list-inline-item pr-3"> <a href="/author/{{ author }}" class="list-group-item-action"><i
-                    class="lar la-user-circle ml-1 text-primary ic-1x"></i>{{ person.display_name }}</a>
+                    class="lar la-user-circle ml-1 text-primary ic-1x"></i>{{ person.name }}</a>
               </li>
               {% endfor %}
               {%- endif -%}

@@ -9,7 +9,7 @@ layout: default
             <div class="col mb-5">
                 <img class="img-fluid rounded-circle" alt="image" src="{{ page.image }}">
                 <h1 class="text-white">
-                    {{ page.display_name }}
+                    {{ page.name }}
                 </h1>
                 <ul class="list-inline mb-4">
                     {% if page.github %}
@@ -89,7 +89,7 @@ layout: default
                             {% assign person = site.data.authors[author] %}
                             <li class="list-inline-item pr-3"> <a href="/author/{{ author }}"
                                     class="list-group-item-action"><i
-                                        class="lar la-user-circle ml-1 text-primary ic-1x"></i>{{ person.display_name
+                                        class="lar la-user-circle ml-1 text-primary ic-1x"></i>{{ person.name
                                     }}</a>
                             </li>
                             {% endfor %}
