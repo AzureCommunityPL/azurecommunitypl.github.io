@@ -6,7 +6,7 @@
         {
             "label": "Serve",
             "type": "shell",
-            "command": "bundle exec jekyll serve --drafts --future --watch --host=0.0.0.0",
+            "command": "bundle install && bundle exec jekyll serve --drafts --future --watch --host=0.0.0.0",
             "group": {
                 "kind": "test",
                 "isDefault": true
