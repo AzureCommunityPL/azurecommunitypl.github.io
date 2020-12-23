@@ -45,15 +45,15 @@ layout: default
             <img class="card-img-top shadow" src="{{ post.image }}" alt="Image">
             {% endif %}
             <div class="card-body p-4">
-              <div>
-                <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span class="text-primary">{{
-                    post.date | date: "%-d" }}</span>
-                  {{ post.date | date: "%b %Y" }}</div>
-                {% for category in post.categories %}
-                <a class="d-inline-block btn-link" href="#">{{ category }}</a>
-                {% endfor %}
-              </div>
-              <h2 class="h5 my-3">
+                <div>
+                    <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span class="text-primary">{{
+                            post.date | date: "%-d" }}</span>
+                        {{ post.date | date: "%b %Y" }}</div>
+                    {% for category in post.categories %}
+                    <a class="d-inline-block btn-link" href="/category/{{ category | slugify}}">{{ category }}</a>
+                    {% endfor %}
+                </div>
+                <h2 class="h5 my-3">
                 <a class="link-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
               </h2>
               <ul class="list-inline mb-0">
