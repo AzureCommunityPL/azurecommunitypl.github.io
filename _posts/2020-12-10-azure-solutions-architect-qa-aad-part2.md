@@ -35,10 +35,10 @@ Elementy który warto wziąć pod uwagę to:
 
 
 ## Linki
-- OAuth 2.0 oraz OpenID Connect: https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols
-- Implicit flow: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow
-- Authorization code flow: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow
-- On-Behalf-Of flow: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow
-- Ograniczanie dostępu do danych w CosmosDB: https://docs.microsoft.com/en-us/azure/cosmos-db/secure-access-to-data
-- Autoryzacja i uwierzytelnianie w App Service: https://docs.microsoft.com/en-us/azure/app-service/app-service-authentication-how-to
-- Konfiguracja App Service w Azure AD: https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad
+- [OAuth 2.0 oraz OpenID Connect](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols)
+- [Implicit flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)
+- [Authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+- [On-Behalf-Of flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+- [Ograniczanie dostępu do danych w CosmosDB](https://docs.microsoft.com/en-us/azure/cosmos-db/secure-access-to-data)
+- [Autoryzacja i uwierzytelnianie w App Service](https://docs.microsoft.com/en-us/azure/app-service/app-service-authentication-how-to)
+- [Konfiguracja App Service w Azure AD](https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad)
