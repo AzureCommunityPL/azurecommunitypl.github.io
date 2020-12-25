@@ -1,5 +1,5 @@
 ---
-title: "Przegląd zaproponowanych rozwiązań"
+title: "#azure-solutions-architect Przegląd zaproponowanych rozwiązań"
 categories:
 - "Architecture Meetings"
 tags:
@@ -7,25 +7,22 @@ tags:
 author:
 - kaluzaaa
 ---
-
-# #azure-solutions-architect Review proposed solutions
-
 [Add to calendar](https://evt.mx/KuVfnCVp)
 
 [Meeting link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGNjMTU5MTktN2QxMi00YTRhLThkYmUtYzZkZTM0MGUyYjY5%40thread.v2/0?context=%7b%22Tid%22%3a%22cc58971a-0481-4ec0-bf8d-bb2e265db003%22%2c%22Oid%22%3a%22f907c950-2a9a-4012-b163-af67be63b5d6%22%7d)
 
 [Recording](https://youtu.be/2H8VoSQAw1c)
 
-# Agenda
+## Agenda
 
 1. Review przygotowany rozwiązań.
 2. Jak przygotowany projekt przełożyć na stawiane przez biznes SLA.
 3. Jak dobrze przełożyć [Overview of the reliability pillar](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/overview) na nasz projekt architektury?
 4. Q&A.
 
-# Discussion
+## Discussion
 
-## Review projektu architektury
+### Review projektu architektury
 
 Zadanie dla was to zaprojektować usługę, do której będą trafiać zdjęcia współdzielone przez kilka systemów.
 
@@ -43,7 +40,7 @@ Założenia:
 - Ile będzie kosztować system na przestrzeni 1, 12 i 24 miesięcy?
 
 ### Poglądowy schemat architektury:
-![Schemat architektury](../assets/images/posts/2020-07-02/architektura02072020.jpg)
+![Schemat architektury](/assets/images/posts/2020-07-02/architektura02072020.jpg)
 
 ### Opis
 - `Azure Blob Storage` geo-redundant 
@@ -72,7 +69,8 @@ Zalety architektury: można napisać w tydzień i puścić na produkcję
 Wady architektury: regiony są sparowane - żeby nie być zmuszonym do parowania regionów trzeba napisać kod do replikacji na event gridze lub azure function  
 
 
-## Q&A
+### Q&A
+
 1.Czy CosmosDb może zabić kosztami?
 
 CosmosDb karze głupotę. Sprawdza się przy średnich i dużych rozwiązaniach (np. replikacja danych między regionami)
