@@ -1,6 +1,17 @@
 <!-- meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.title %}
+<title>{{ page.title }}</title>
+{% else %}
+<title>{{ site.title }}</title>
+{% endif %}
+
+{% if page.description %}
+<meta content="{{ page.description }}" name="description">
+{% else %}
+<meta content="{{ site.description }}" name="description">
+{% endif %}
 
 <!-- SEO -->
 {%- include meta-og.html -%}
