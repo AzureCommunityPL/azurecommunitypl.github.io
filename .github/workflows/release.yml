@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-   
+
       # Use GitHub Actions' cache to shorten build times and decrease load on servers.
       - uses: actions/cache@v1
         with:
@@ -19,7 +19,10 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-     
+
+      - name: Copy post for og-images
+        run: cp _posts/* _og-images/
+
       - uses: helaili/jekyll-action@2.0.4
         env:
           # Ideally use GITHUB_TOKEN but it gives error for this action.

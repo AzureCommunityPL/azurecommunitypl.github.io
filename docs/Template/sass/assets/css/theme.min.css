@@ -15,7 +15,8 @@ body {
   overflow-x: hidden; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #01a479; }
   a:hover {
     color: #01a479; }
 

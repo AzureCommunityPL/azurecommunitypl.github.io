@@ -61,7 +61,7 @@ autopages:
   categories:
     layouts: 
       - 'autopage_categories.html'
-    title: 'Wszystkie strony z tagiem :cat' # :tag is replaced by the tag name
+    title: 'Wszystkie strony w kategorii :cat' # :tag is replaced by the tag name
     permalink: '/category/:cat'
     slugify:
       mode: 'default'   # :tag is slugified.
