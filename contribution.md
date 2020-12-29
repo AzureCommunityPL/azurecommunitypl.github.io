@@ -1,4 +1,8 @@
-# Witaj na stronie Microsoft Azure User Group Poland
+---
+layout: contribution_guide
+pagination: 
+  enabled: false
+---
 
 Jesteśmy otwarci na naszą społeczność i dlatego też oddajemy stronę w Wasze ręcę. Każdy może uczestniczyć w tworzeniu tej strony poprzez naprawienie błędów (jeżeli jakieś pomineliśmy), ale przede wszystkim przez publikacje na tej stronie. Dlatego jeżeli masz pomysł na artykuł i chcesz go zamieścić na stronie grupy to zapraszam się do [poradnika kontrybucji](#Poradnik-kontrybucji). Pamiętaj, że grupa zrzesza nie tyle co ekspertów Azure, co **miłośników** tej chmury. Każdy kiedyś zaczynał i każdy stawiał pierwsze kroki. Będziemy bardzo zadowloeni, jeżeli to właśnie z nami zaczniesz swoją przygodę!
 
