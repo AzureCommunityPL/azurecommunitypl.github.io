@@ -43,6 +43,8 @@ layout: default
           <div class="card border-0 shadow bg-transparent">
             {%- if post.image -%}
             <img class="card-img-top shadow" src="{{ post.image }}" alt="Image">
+            {% else %}
+            <img class="card-img-top shadow" src="{{ site.og_image_generator_url }}{{ site.url }}/og-image/{{ post.slug }}" alt="Image">
             {% endif %}
             <div class="card-body p-4">
                 <div>

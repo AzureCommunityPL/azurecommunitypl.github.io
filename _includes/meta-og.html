@@ -22,7 +22,7 @@
 <meta content="{{ site.url }}/about/" property="article:author">
 {% endif %}
 
-<meta content="https://image.thum.io/get/ogImage/{{ site.url }}/og-image/{{ page.slug }}" property="og:image">
+<meta content="{{ site.og_image_generator_url }}{{ site.url }}/og-image/{{ page.slug }}" property="og:image">
 
 {% if page.categories %}
 {% for category in page.categories limit:1 %}
