@@ -1,13 +1,15 @@
 ---
-layout: contribution_guide
-pagination: 
-  enabled: false
+title: "Dołącz do Nas"
 ---
 
-Jesteśmy otwarci na naszą społeczność i dlatego też oddajemy stronę w Wasze ręcę. Każdy może uczestniczyć w tworzeniu tej strony poprzez naprawienie błędów (jeżeli jakieś pomineliśmy), ale przede wszystkim przez publikacje na tej stronie. Dlatego jeżeli masz pomysł na artykuł i chcesz go zamieścić na stronie grupy to zapraszam się do [poradnika kontrybucji](#Poradnik-kontrybucji). Pamiętaj, że grupa zrzesza nie tyle co ekspertów Azure, co **miłośników** tej chmury. Każdy kiedyś zaczynał i każdy stawiał pierwsze kroki. Będziemy bardzo zadowloeni, jeżeli to właśnie z nami zaczniesz swoją przygodę!
+Wszyscy jesteśmy jedną wielką społecznością Azure i dlatego chcielibyśmy wspólnie tworzyć tą stronę. Jeśli masz ciekawy artykuł i chcesz się nim podzielić - to jest idealne miejsce! Jeśli widzisz coś czego my nie widzimy - dodaj nowe funkcjonalności lub napraw błędy. Stworzyliśmy [poradnik](#Poradnik), który pomoże Ci zacząć.
+
+Pamiętaj, że grupa zrzesza nie tyle co ekspertów Azure, co **miłośników** tej chmury - każdy kiedyś zaczynał i każdy stawiał pierwsze kroki. Jeśli napotkasz problemy bądź potrzebujesz rady odezwij się do nas: [Łukasz Kałużny](mailto:blog@kaluzny.io?subject=[Microsoft%20Azure%20User%20Group%20Poland])
+
+Będziemy bardzo super szczęśliwi, jeżeli to właśnie z nami zaczniesz swoją przygodę!
 
 
-## Poradnik kontrybucji
+## Poradnik
 
 Przed przystąpienie do tej wspaniałej przygody upewnij się, że jesteś w stanie poprawnie uruchomić stronę lokalnie na swojej maszynie. Dołożyliśmy wszelkich starań, aby proces ten był tak samo łatwy niezależnie od systemu operacyjnego na którym pracujesz. Na MacOS i Linux korzystaj ze swojego terminala. Jeżeli korzystasz w Windows zainstaluj WSL.
 
