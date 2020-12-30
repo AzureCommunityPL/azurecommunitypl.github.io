@@ -5,7 +5,7 @@ module.exports = async function (context, req) {
     const url = decodeURIComponent(context.bindingData.url).replace('https:/','https://');
     context.log(url);
     // --no-sandbox for local docer run
-    const pageres = new Pageres({ launchOptions: { args: ['--no-sandbox', '--disable-setuid-sandbox'] } })
+    const pageres = new Pageres({ launchOptions: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }, crop: true })
         .src(url, ['1200x630']);
 
     const streams = await pageres.run();
