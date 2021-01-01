@@ -9,7 +9,7 @@ layout: default
             <div class="col mb-5">
                 <img class="img-fluid rounded-circle" alt="image" src="{{ page.image }}">
                 <h1 class="text-white">
-                    {{ page.name }}
+                    {{ site.data.authors[page.title].name }}
                 </h1>
                 <ul class="list-inline mb-4">
                     {% if page.github %}

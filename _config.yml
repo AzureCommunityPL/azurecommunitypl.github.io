@@ -86,3 +86,5 @@ pagination:
   trail: 
     before: 1
     after: 1
+
+og_image_generator_url: https://azurecommunitypl.azurefd.net/og-image/
