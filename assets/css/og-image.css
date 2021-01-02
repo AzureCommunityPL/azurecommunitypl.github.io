@@ -8,7 +8,8 @@ html, body {
     height: 630px; 
     background-color: rgb(255, 255, 255); 
     position: relative;
-    background-image: url('/assets/images/bg/04.png');
+    background-image: url('/assets/images/bg/05.jpg');
+    background-size: 1200px 630px;
   }
   
   .content-inside {
@@ -33,6 +34,7 @@ html, body {
       max-height: 120px;
       position: absolute;
       right: 0;
+      margin-right: 20px;
   }
   
   h1 {
