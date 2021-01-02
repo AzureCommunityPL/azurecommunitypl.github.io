@@ -10,7 +10,6 @@ tags:
 author:
 - aryll
 - maciejgos
-image: https://image.thum.io/get/ogImage/https://azurecommunity.pl/og-image/azure-solutions-architect-qa-aad-part2
 ---
 
 # #azure-solutions-architect Wykorzystanie Azure AD w aplikacjach - część 2
