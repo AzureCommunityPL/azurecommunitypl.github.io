@@ -11,7 +11,7 @@ Będziemy bardzo super szczęśliwi, jeżeli to właśnie z nami zaczniesz swoj�
 
 ## Poradnik
 
-Przed przystąpienie do tej wspaniałej przygody upewnij się, że jesteś w stanie poprawnie uruchomić stronę lokalnie na swojej maszynie. Dołożyliśmy wszelkich starań, aby proces ten był tak samo łatwy niezależnie od systemu operacyjnego na którym pracujesz. Na MacOS i Linux korzystaj ze swojego terminala. Jeżeli korzystasz w Windows zainstaluj WSL.
+Przed przystąpieniem do tej wspaniałej przygody upewnij się, że jesteś w stanie poprawnie uruchomić stronę lokalnie na swojej maszynie. Dołożyliśmy wszelkich starań, aby proces ten był tak samo łatwy niezależnie od systemu operacyjnego na którym pracujesz. Na MacOS i Linux korzystaj ze swojego terminala. Jeżeli korzystasz w Windows zainstaluj WSL.
 
 ### Jak zainstalować WSL
 
