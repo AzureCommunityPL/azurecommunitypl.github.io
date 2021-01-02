@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .content {
+    max-width: 1200px; 
+    height: 630px; 
+    background-color: rgb(255, 255, 255); 
+    position: relative;
+    background-image: url('/assets/images/bg/05.jpg');
+    background-size: 1200px 630px;
+  }
+  
+  .content-inside {
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  
+  }
+  
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(11, 10, 27);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .logo {
+      max-height: 120px;
+      position: absolute;
+      right: 0;
+      margin-right: 20px;
+  }
+  
+  h1 {
+      font-size: 4.5rem;
+  }
+  
+  .authors {
+      position: absolute; 
+      bottom: 55px;
+  }
+  
+  .authors div {
+      display: inline-block; 
+      margin-right: 20px;
+  }
+  
+  .authors img {
+      max-height: 50px;
+  }
+  
+  .authors h3 {
+      display:inline-block;
+      vertical-align: -webkit-baseline-middle;
+  }
