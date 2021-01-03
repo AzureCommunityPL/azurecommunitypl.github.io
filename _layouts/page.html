@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<!--hero section start-->
+
+<section class="hero-banner position-relative custom-pt-1 custom-pb-2 bg-dark" data-bg-img="/assets/images/bg/02.png">
+  <div class="container">
+    <div class="row text-white text-center z-index-1">
+      <div class="col">
+        <h1 class="text-white">{{ page.title | escape }}</h1>
+      </div>
+    </div>
+    <!-- / .row -->
+  </div>
+  <!-- / .container -->
+  <div class="shape-1 bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,208C672,213,768,267,864,245.3C960,224,1056,128,1152,96C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+</section>
+
+<!--hero section end-->
+
+<!--body content start-->
+
+<div class="page-content">
+
+  <!--blog start-->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Blog Card -->
+          <div class="card border-0 bg-transparent">
+            {%- if page.image -%}
+            <img class="card-img-top shadow" src="{{ page.image }}" alt="Image">
+            {% endif %}
+            <div class="card-body post pt-5 px-0">
+              {{ content }}
+            </div>
+
+            <div class="d-md-flex justify-content-between">
+              <div class="d-flex align-items-center">
+                <h6 class="mb-0 mr-4">Share It:</h6>
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"><i
+                        class="la la-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text="><i
+                        class="la la-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title=&summary=&source="><i
+                        class="la la-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Blog Card -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--blog end-->
+
+</div>
+
+<!--body content end-->

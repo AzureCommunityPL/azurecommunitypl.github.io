@@ -54,7 +54,7 @@ defaults:
       type: pages
     values:
       permalink: /:name
-      layout: post
+      layout: page
   
 page_gen-dirs: true
 

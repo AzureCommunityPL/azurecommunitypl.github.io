@@ -30,35 +30,35 @@ Na MacOS wystarczy zainstalować [Docker'a](https://docs.docker.com/docker-for-m
 
 W przypadku Linuxa również wysatrczy zainstlować Docker'a
 
-- [instalacka na Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+- [instalacja na Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 - [instalacja na CentOS](https://docs.docker.com/engine/install/centos/)
 - [instalacja na Debian](https://docs.docker.com/engine/install/debian/)
 - [instalacja na Fedora](https://docs.docker.com/engine/install/fedora/)
 
 ### Klonowanie repozytorium
 
-Jeżeli powyższe kroki masz za sobą to jesteś na dobrej drodze aby zacząc tworzyć wspólnie naszą społczeność.
+Mając powyższe kroki za sobą to jesteś na dobrej drodze aby zacząć tworzyć wspólnie naszą społczeność.
 
-1. Stwórz forka naszego repozytorium
-2. Sklonuj swojego forka w swoim terminalu (pamiętaj aby na Windows sklonować repozytorium bezpośrednio z WSL)
-3. Przejdź do folderu `azurecommunitypl.github.io`
-4. Uruchom polecenie `bash docker.sh`
-5. Uruchom stronę `http://127.0.0.1:4000/`
-6. Jeżeli jest to twoja pierwsza kontrybucja dodaj parę słów o sobie w pliku `_data/authors.yml`
-7. Jeżeli chcesz stworzyć post to stwórz plik w folderze `_posts` o nazwie `2020-12-18-tytul-twojego-artykulu` gdzie `2020-12-18` to data publikacji. Prosimy aby to była przyszła data (+ trzy dni od dnia stworzenia pull request'a). Na samej górze pliku umieść metadane w poniższej postaci.
+- Stwórz forka naszego repozytorium.
+- Sklonuj swojego forka w swoim terminalu (pamiętaj aby na Windows sklonować repozytorium bezpośrednio z WSL).
+- Przejdź do folderu `azurecommunitypl.github.io`.
+- Uruchom polecenie `bash docker.sh`.
+- Sprawdź czy pod adresem `http://127.0.0.1:4000/` masz dostępną stronę.
+- Upewnij się, że w pliku `_data/authors.yml` zanjduje się wpis w podstawowymi informacjami o Tobie.
+- Jeżeli chcesz stworzyć post to stwórz plik w folderze `_posts` o nazwie `2020-12-18-tytul-twojego-artykulu` gdzie `2020-12-18` to data publikacji. Prosimy aby to była przyszła data (+ trzy dni od dnia stworzenia pull request'a). Na samej górze pliku umieść metadane w poniższej postaci:
 
   ```yaml
   ---
-title: "Przegląd zaproponowanych rozwiązań"
-categories:
-- "Architecture Meetings"
-tags:
-- "Review sessions"
-- "300"
-author:
-- kaluzaaa
----
-```  
+  title: "Przegląd zaproponowanych rozwiązań"
+  categories:
+  - "Architecture Meetings"
+  tags:
+  - "Review sessions"
+  - "300"
+  author:
+  - kaluzaaa
+  ---
+  ```  
   Pamiętaj aby w tagach umieścić poziom sesji. Poziomy sesji są określone przez [Microsoft Standard Level Definitions](https://akfash.wordpress.com/2010/10/31/microsoft-standard-level-definitions/)
 
   > - 100 - Introductory and overview material. Assumes little or no expertise with topic and covers topic concepts, functions, features, and benefits.
@@ -69,7 +69,7 @@ author:
   >
   > - 400 - Expert material. Assumes a deep level of technical knowledge and experience and a detailed, thorough understanding of topic. Provides expert-to-expert interaction and coverage of specialized topics
 
-  Jeżeli w poście zamierzasz wykorzystać grafiki to umieść je w folderze `assets/images/posts/2020-12-18/` gdzie `2020-12-18` to data publikacji
+  Grafiki wykorzystane w poście umieść w folderze `assets/images/posts/2020-12-18/`, gdzie `2020-12-18` to data publikacji.
 
 
-8. Jeżeli jesteś zadowolony z rezultatu swojej pracy to śmiało stwórz pull requesta. Aby twój post został umieszczony na stronie musi on otrzymać zgodę dwóch osób. Pamiętaj jednak, że może czasem zająć nam chwilę zanim przejrzymy twój artykuł.
+- Teraz śmiało stwórz pull requesta. Aby twój post został umieszczony na stronie musi otrzymać zgodę dwóch osób. Pamiętaj jednak, że może to czasem zająć nam chwilę zanim przejrzymy twój artykuł.
