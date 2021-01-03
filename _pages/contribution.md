@@ -4,7 +4,7 @@ title: "Dołącz do Nas"
 
 Wszyscy jesteśmy jedną wielką społecznością Azure i dlatego chcielibyśmy wspólnie tworzyć tą stronę. Jeśli masz ciekawy artykuł i chcesz się nim podzielić - to jest idealne miejsce! Jeśli widzisz coś czego my nie widzimy - dodaj nowe funkcjonalności lub napraw błędy. Stworzyliśmy [poradnik](#Poradnik), który pomoże Ci zacząć.
 
-Pamiętaj, że grupa zrzesza nie tyle co ekspertów Azure, co **miłośników** tej chmury - każdy kiedyś zaczynał i każdy stawiał pierwsze kroki. Jeśli napotkasz problemy bądź potrzebujesz rady odezwij się do nas: [Łukasz Kałużny](mailto:blog@kaluzny.io?subject=[Microsoft%20Azure%20User%20Group%20Poland])
+Pamiętaj, że grupa zrzesza nie tyle co ekspertów Azure, co **miłośników** tej chmury - każdy kiedyś zaczynał i każdy stawiał pierwsze kroki. Jeśli napotkasz problemy bądź potrzebujesz rady odezwij się do nas: [Łukasz Kałużny](mailto:blog@kaluzny.io?subject=[Microsoft%20Azure%20User%20Group%20Poland]), [Michał Smereczyński](mailto:michal@entropyguru.com?subject=[Microsoft%20Azure%20User%20Group%20Poland]), [Emil Wasilewski](mailto:emil@zapytajemila.pl?subject=[Microsoft%20Azure%20User%20Group%20Poland]), [Tomasz Wisniewski](mailto:kontakt@tomaszwisniewski.com?subject=[Microsoft%20Azure%20User%20Group%20Poland]), [Kamil Mrzygłód](mailto:kamil@thecloudtheory.com?subject=[Microsoft%20Azure%20User%20Group%20Poland]), [Adam Marczak](mailto:adam@marczak.io?subject=[Microsoft%20Azure%20User%20Group%20Poland]).
 
 Będziemy bardzo super szczęśliwi, jeżeli to właśnie z nami zaczniesz swoją przygodę!
 
