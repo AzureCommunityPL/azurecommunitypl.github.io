@@ -2,7 +2,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% if page.title %}
+{% assign author = site.data.authors[page.title].name %}
+{% if author %}
+<title>{{ author }}</title>
+{% else %}
 <title>{{ page.title }}</title>
+{% endif %}
 {% else %}
 <title>{{ site.title }}</title>
 {% endif %}

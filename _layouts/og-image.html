@@ -4,27 +4,35 @@
 <head>
 
     {%- include head.html -%}
-
+    <link rel="stylesheet" href="/assets/css/og-image.css">
 </head>
 
 <body>
+    <div class="content">
+        <div class="content-inside">
+            <div class="container">
+                <img src="/assets/images/logo.png" class="logo" alt="logo" />
+                <div class="row">
+                    <div class="col-10">
+                      <h1 class="text-dark bold">{{ page.title | escape }}</h1>
+                    </div>
+                </div>
 
-    <!-- page wrapper start -->
-
-    <div class="page-wrapper">
-
-        <!--content here start-->
-        <h1 class="text-dark">{{ page.title | escape }}</h1>
-        {% for author in page.author %}
-        {% assign person = site.data.authors[author] %}
-        {{ person.name }}
-        <img class="img-fluid rounded-circle" alt="image" src="{{ person.image }}">
-        {% endfor %}
-        <!--content end-->
-
-    </div>
-
-    <!-- page wrapper end -->
+                <authors class="authors">
+                    {% for author in page.author %}
+                    <div>
+                        {% assign person = site.data.authors[author] %}
+                        <img class="img-fluid rounded-circle" alt="{{ person.name }}" src="{{ person.image }}">
+                        <h3>{{ person.name }}</h3>                    
+                    </div>
+                    {% endfor %}
+                </authors>
+            </div>
+        </div>
+        <footer class="footer">
+           <i>Powered by <b>Microsoft Azure User Group Poland</b></i>
+        </footer>
+      </div>
 
     <!-- inject js start -->
 

@@ -33,6 +33,8 @@ feed:
 collections:
   og-images:
     output: true
+  pages:
+    output: true
 
 defaults:
   - scope:
@@ -47,6 +49,12 @@ defaults:
     values:
       permalink: og-image/:title
       layout: og-image
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      permalink: /:name
+      layout: page
   
 page_gen-dirs: true
 
@@ -86,3 +94,5 @@ pagination:
   trail: 
     before: 1
     after: 1
+
+og_image_generator_url: https://azurecommunitypl.azurefd.net/og-image/
