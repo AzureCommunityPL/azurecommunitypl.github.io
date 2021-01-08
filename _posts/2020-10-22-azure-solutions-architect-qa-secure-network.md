@@ -44,7 +44,7 @@ istotna jest analiza wdrożenia innych usług hostowanych na Azure w przyszłoś
 #### Private link
 ![Schemat architektury - Private Link](../assets/images/posts/2020-10-22/private_link.png)
 #### Service endpoints
-![Schemat architectury - Service endpotins](../assets/images/posts/2020-10-22/service_endpoint.png)
+![Schemat architektury - Service endpoints](../assets/images/posts/2020-10-22/service_endpoint.png)
 
 ## Q&A
 - miesięczny koszt rozwiązania opartego o Private Link to ok. $9. Przy załozeniu transferu inbound/outbound na poziomie 100GB, oraz wykorzystaniu jednego "link" dla usług!!!
