@@ -24,7 +24,11 @@ Zasady użytkownika grafik, logo (księga znaku/branding book)
 - Patnerzy?
 
 ### Główna strona
-
+- Krótkie info o community (kim jesteśmy), moze być na tle banner-u
+- Najblizsze wydarzenia (2-3, reszta na stronie z listą wydarzeń)
+- Najnowsze wpisy na blog community
+- Sponsorzy
+- miejsce pod hero/lead do promowania 3 rzeczy (blog, cfp, wydarzenie)
 
 ### Jak publikować
 
