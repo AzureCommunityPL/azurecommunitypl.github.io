@@ -21,7 +21,7 @@ Zasady użytkownika grafik, logo (księga znaku/branding book)
 - Wpis wydarzenia
 - Wpis o CFP (automat)
 - Lista autorów
-- Patnerzy?
+- Partnerzy?
 
 ### Główna strona
 - Krótkie info o community (kim jesteśmy), moze być na tle banner-u
