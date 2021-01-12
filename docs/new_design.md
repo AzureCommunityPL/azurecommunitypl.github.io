@@ -6,7 +6,11 @@
 - Generycznych obraz og-image (og-image, cover filmu w 1920x1080px, og-image/cover dla eventu, og-image/cover dla meetup)
 - Banery do social media
 
-Zasady użytkownika grafik, logo (księga znaku/branding book)
+Zasady użytkowania grafik, logo (księga znaku/branding book)
+
+## Mapa strony
+
+![site map](site_map.png "Site map")
 
 ## Strona
 
@@ -21,13 +25,19 @@ Zasady użytkownika grafik, logo (księga znaku/branding book)
 - Wpis wydarzenia
 - Wpis o CFP (automat)
 - Lista autorów
-- Patnerzy?
+- Partnerzy?
 
 ### Główna strona
-
+- Krótkie info o community (kim jesteśmy), moze być na tle banner-u
+- Najblizsze wydarzenia (2-3, reszta na stronie z listą wydarzeń)
+- Najnowsze wpisy na blog community
+- Sponsorzy
+- miejsce pod hero/lead do promowania 3 rzeczy (blog, cfp, wydarzenie)
 
 ### Jak publikować
 
+- instrukcja jak lokalnie skonfigurować stronę - jako opcja może skrypt do tego gdzie wykorzystamy github cli żeby zrobić forka
+- wymagania formalne co do publikowanej treści
 
 ### Jak publikować meetup
 
@@ -37,6 +47,15 @@ Zasady użytkownika grafik, logo (księga znaku/branding book)
 
 ### Strona autora
 
+- bio/about me
+- name
+- github profile
+- linked in profile
+- twitter profile
+- facebook profile
+- website link
+- image url
+- wpisy autora
 
 ### Post
 
