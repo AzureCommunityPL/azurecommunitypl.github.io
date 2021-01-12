@@ -8,6 +8,10 @@
 
 Zasady użytkownika grafik, logo (księga znaku/branding book)
 
+## Mapa strony
+
+![site map](site_map.png "Site map")
+
 ## Strona
 
 - Główna strona
@@ -32,6 +36,8 @@ Zasady użytkownika grafik, logo (księga znaku/branding book)
 
 ### Jak publikować
 
+- instrukcja jak lokalnie skonfigurować stronę - jako opcja może skrypt do tego gdzie wykorzystamy github cli żeby zrobić forka
+- wymagania formalne co do publikowanej treści
 
 ### Jak publikować meetup
 
