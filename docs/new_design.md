@@ -103,7 +103,3 @@ A ponadto może jakieś małe ikonaki w stylu
 
 - Emil znajdzie zdjecia!!!
 
-## Kto? Co?
-
-- Mapa strony
-
