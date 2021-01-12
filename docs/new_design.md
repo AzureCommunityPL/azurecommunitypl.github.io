@@ -74,6 +74,21 @@ Zasady użytkowania grafik, logo (księga znaku/branding book)
 
 ### Lista autorów
 
+Lista autorów w zasadniczej częsci pokrywałaby się ze stroną o autorze w takim sensie że każda wizytówka zawierałaby (prawie) te same informacje co strona dla pojedynczego autora:
+
+- bio/about me
+- name
+- github profile
+- linked in profile
+- twitter profile
+- facebook profile
+- website link
+- image url
+
+A ponadto może jakieś małe ikonaki w stylu
+- organizator
+- uczestnik
+- i do tego jakieś country dla wpisów/wystąpień/uczestnictwa w hackatonach
 
 ### Patnerzy?
 
