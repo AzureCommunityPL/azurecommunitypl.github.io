@@ -47,6 +47,15 @@ Zasady użytkowania grafik, logo (księga znaku/branding book)
 
 ### Strona autora
 
+- bio/about me
+- name
+- github profile
+- linked in profile
+- twitter profile
+- facebook profile
+- website link
+- image url
+- wpisy autora
 
 ### Post
 
