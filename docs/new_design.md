@@ -6,7 +6,7 @@
 - Generycznych obraz og-image (og-image, cover filmu w 1920x1080px, og-image/cover dla eventu, og-image/cover dla meetup)
 - Banery do social media
 
-Zasady użytkownika grafik, logo (księga znaku/branding book)
+Zasady użytkowania grafik, logo (księga znaku/branding book)
 
 ## Mapa strony
 
