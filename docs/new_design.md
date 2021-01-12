@@ -65,6 +65,13 @@ Zasady użytkowania grafik, logo (księga znaku/branding book)
 
 ### Lista wydarzeń
 
+1. lista wydarzeń 
+- myślę że mniej-więc w takiej podobnej formie jak tu (obstawiam, że nie będziemy mieli więcej niż 3-5 wydarzeń w miesiącu) https://nil.org.pl/lista-wydarzen?year=2021&month=1&week=53&day=null&active_page=1&by=month -> dałabym tylko miesiące bez konkretnych dni na górnej listwie)
+- informacje na wydarzeniu: data, tytuł, autor/autorzy (może w formie awatarów) , poziom - kilknięcie przenosiłoby do postu z większą ilością informacji
+2.  filtrowanie (miesiąc/rok, online/stacjonarnie, autor, tag, poziom)
+3.  instrukcja jak dodać wydarzenie
+4.  informacje kto może publikować wydarzenia, na jakich warunkach i gdzie są publikowane (FB, GitHub, Meetup itp)
+
 
 ### Wpis wydarzenia
 
