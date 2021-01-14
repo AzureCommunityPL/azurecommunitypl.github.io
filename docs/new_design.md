@@ -96,8 +96,26 @@ A ponadto może jakieś małe ikonaki w stylu
 ## Event
 
 - One pager - https://themes.3rdwavemedia.com/demo/devconf/
+- tytuł wydarzenia
+- data / venue
+- one liner z opisem
+- link / button do kupna biletów / rejestracji
+- dłuższy opis wydarzenia
+- organizatorzy
+- sponsorzy
+- regulamin
+- code of conduct
+- privacy policy
+- harmonogram wydarzenia
 
-@Kamil M.
+Opcjonalne elementy:
+
+- wrzutka z poprzednich edycji
+- lista speakerów(jeśli to event typu meetup / konferencja)
+- box z biletami(jeśli wydarzenie płatne)
+- social linki do wydarzenia
+- nagrody(w kontekście np. hackathonu)
+- opis venue
 
 ## Luźne uwagi
 
