@@ -6,7 +6,11 @@
 - Generycznych obraz og-image (og-image, cover filmu w 1920x1080px, og-image/cover dla eventu, og-image/cover dla meetup)
 - Banery do social media
 
-Zasady użytkownika grafik, logo (księga znaku/branding book)
+Zasady użytkowania grafik, logo (księga znaku/branding book)
+
+## Mapa strony
+
+![site map](site_map.png "Site map")
 
 ## Strona
 
@@ -21,7 +25,7 @@ Zasady użytkownika grafik, logo (księga znaku/branding book)
 - Wpis wydarzenia
 - Wpis o CFP (automat)
 - Lista autorów
-- Patnerzy?
+- Partnerzy?
 
 ### Główna strona
 - Krótkie info o community (kim jesteśmy), moze być na tle banner-u
@@ -32,6 +36,8 @@ Zasady użytkownika grafik, logo (księga znaku/branding book)
 
 ### Jak publikować
 
+- instrukcja jak lokalnie skonfigurować stronę - jako opcja może skrypt do tego gdzie wykorzystamy github cli żeby zrobić forka
+- wymagania formalne co do publikowanej treści
 
 ### Jak publikować meetup
 
@@ -41,6 +47,15 @@ Zasady użytkownika grafik, logo (księga znaku/branding book)
 
 ### Strona autora
 
+- bio/about me
+- name
+- github profile
+- linked in profile
+- twitter profile
+- facebook profile
+- website link
+- image url
+- wpisy autora
 
 ### Post
 
@@ -49,6 +64,13 @@ Zasady użytkownika grafik, logo (księga znaku/branding book)
 
 
 ### Lista wydarzeń
+
+1. lista wydarzeń 
+- myślę że mniej-więc w takiej podobnej formie jak tu (obstawiam, że nie będziemy mieli więcej niż 3-5 wydarzeń w miesiącu) https://nil.org.pl/lista-wydarzen?year=2021&month=1&week=53&day=null&active_page=1&by=month -> dałabym tylko miesiące bez konkretnych dni na górnej listwie)
+- informacje na wydarzeniu: data, tytuł, autor/autorzy (może w formie awatarów) , poziom - kilknięcie przenosiłoby do postu z większą ilością informacji
+2.  filtrowanie (miesiąc/rok, online/stacjonarnie, autor, tag, poziom)
+3.  instrukcja jak dodać wydarzenie
+4.  informacje kto może publikować wydarzenia, na jakich warunkach i gdzie są publikowane (FB, GitHub, Meetup itp)
 
 
 ### Wpis wydarzenia
@@ -59,6 +81,21 @@ Zasady użytkownika grafik, logo (księga znaku/branding book)
 
 ### Lista autorów
 
+Lista autorów w zasadniczej częsci pokrywałaby się ze stroną o autorze w takim sensie że każda wizytówka zawierałaby (prawie) te same informacje co strona dla pojedynczego autora:
+
+- bio/about me
+- name
+- github profile
+- linked in profile
+- twitter profile
+- facebook profile
+- website link
+- image url
+
+A ponadto może jakieś małe ikonaki w stylu
+- organizator
+- uczestnik
+- i do tego jakieś country dla wpisów/wystąpień/uczestnictwa w hackatonach
 
 ### Patnerzy?
 
@@ -72,8 +109,4 @@ Zasady użytkownika grafik, logo (księga znaku/branding book)
 ## Luźne uwagi
 
 - Emil znajdzie zdjecia!!!
-
-## Kto? Co?
-
-- Mapa strony
 
