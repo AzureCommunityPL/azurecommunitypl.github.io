@@ -19,7 +19,7 @@ Zasady użytkowania grafik, logo (księga znaku/branding book)
 - [ ] Jak publikować meetup
 - [X] Strona tagu/kategorii
 - [X] Strona autora
-- [ ] Post
+- [X] Post
 - [X] Lista postów
 - [X] Lista wydarzeń
 - [X] Wpis wydarzenia
