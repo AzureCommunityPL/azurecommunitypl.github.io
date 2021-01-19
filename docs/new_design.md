@@ -33,6 +33,7 @@ Zasady użytkowania grafik, logo (księga znaku/branding book)
 - Najnowsze wpisy na blog community
 - Sponsorzy
 - miejsce pod hero/lead do promowania 3 rzeczy (blog, cfp, wydarzenie)
+- link do Discussions na GitHub
 
 ### Jak publikować
 
