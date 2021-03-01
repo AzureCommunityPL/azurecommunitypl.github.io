@@ -15,7 +15,7 @@ author:
 
 ## Notatka ze spotkania 'Architektura w Azure - Governance' #azuresolutionsarchitect
 
-[Nagranie]()
+[Nagranie](https://youtu.be/buLZfbBVRW4)
 
 ### 🚀🚀🚀 Zadanie, na którym się wzorowaliśmy
 Firma ACME Inc 😉 chce przenieść swoje zasoby utrzymywane we własnej serwerowni do chmury. Będzie to pierwsza mała testowa migracja nie kluczowych systemów.
@@ -32,7 +32,7 @@ Powinny być utworzone oddzielne środowiska dla produkcji oraz development, dzi
 - jak wygląda podejście do Governance w firmach, które znamy
 - po co nam CAF i czy biznes go lubi
 - jak przekonać biznes do korzystania z Landing Zone
-- omawialiśmy Terraformowy Landng Zone z doświadczeń Łukasza
+- omawialiśmy Terraformowy Landing Zone z doświadczeń Łukasza
 - rozmawialiśmy o odpowiednim parowaniu regionów dla usług
 
 
