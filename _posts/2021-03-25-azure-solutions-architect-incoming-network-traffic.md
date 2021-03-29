@@ -38,5 +38,7 @@ author:
 - [Wybór load balancera](https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview)
 - [Azure Front Door](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-overview)
 - [Azure Load Balancer](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-overview)
+- [Azure Load Balancer SLA](https://azure.microsoft.com/en-us/support/legal/sla/load-balancer/v1_0/)
 - [Azure Application Gateway](https://docs.microsoft.com/en-us/azure/application-gateway/overview)
 - [Azure Traffic Manager](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview)
+- [Multi Regional Web Application with Azure Front Door](https://cloud-right.com/2019/07/multi-regional-azure-front-door)
