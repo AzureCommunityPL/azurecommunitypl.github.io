@@ -14,37 +14,44 @@ Zasady użytkowania grafik, logo (księga znaku/branding book)
 
 ## Strona
 
-- Główna strona
-- Jak publikować
-- Jak publikować meetup
-- Strona tagu/kategorii
-- Strona autora
-- Post
-- Lista wpisów
-- Lista wydarzeń
-- Wpis wydarzenia
-- Wpis o CFP (automat)
-- Lista autorów
-- Partnerzy?
+- [X] Główna strona
+- [X] Jak publikować
+- [ ] Jak publikować meetup
+- [X] Strona tagu/kategorii
+- [X] Strona autora
+- [X] Post
+- [X] Lista postów
+- [X] Lista wydarzeń
+- [X] Wpis wydarzenia
+- [ ] Wpis o CFP (automat)
+- [X] Lista autorów
 
 ### Główna strona
-- Krótkie info o community (kim jesteśmy), moze być na tle banner-u
+
+- Trochę styl one pager Sekcje
+- Krótkie info o community (kim jesteśmy), moze być na tle banner-u, **link do Discussions na GitHub**
+- miejsce pod hero/lead do promowania 3 rzeczy (blog, cfp, wydarzenie)
+- Sponsorzy (w stopce)
+
+#### Sekcje
+
 - Najblizsze wydarzenia (2-3, reszta na stronie z listą wydarzeń)
 - Najnowsze wpisy na blog community
-- Sponsorzy
-- miejsce pod hero/lead do promowania 3 rzeczy (blog, cfp, wydarzenie)
-- link do Discussions na GitHub
 
-### Jak publikować
+### [Zwykła strona] Jak publikować
 
 - instrukcja jak lokalnie skonfigurować stronę - jako opcja może skrypt do tego gdzie wykorzystamy github cli żeby zrobić forka
 - wymagania formalne co do publikowanej treści
 
-### Jak publikować meetup
+### [Zwykła strona] Jak publikować meetup
 
+-  informacje kto może publikować wydarzenia, na jakich warunkach i gdzie są publikowane (FB, GitHub, Meetup itp)
 
 ### Strona tagu/kategorii
 
+- Jak w opisie
+
+Przykład -> https://azurecommunity.pl/category/architecture-meetings/
 
 ### Strona autora
 
@@ -58,34 +65,57 @@ Zasady użytkowania grafik, logo (księga znaku/branding book)
 - image url
 - wpisy autora
 
+Koniecznie jakies stronicowanie
+
 ### Post
 
+- Tytuł
+- Data publikacji
+- Data akutalizacji
+- Miejsce na hero image/główny do posta
+- Przygotowane style dla każdego elemntu z przykładu z konwersji z markdown -> https://themes.gohugo.io/theme/axiom/post/markdown-syntax/
+- Autorzy
+- Kategorie
+- Tagi
+- Komentarze -> będą https://utteranc.es/ domyślnem stylem
 
-### Lista wpisów
+### Lista postów (jak na blogu)
 
+Przykład -> https://azurecommunity.pl/category/architecture-meetings/
+Stronicowanie
 
 ### Lista wydarzeń
 
-1. lista wydarzeń 
+- lista wydarzeń 
 - myślę że mniej-więc w takiej podobnej formie jak tu (obstawiam, że nie będziemy mieli więcej niż 3-5 wydarzeń w miesiącu) https://nil.org.pl/lista-wydarzen?year=2021&month=1&week=53&day=null&active_page=1&by=month -> dałabym tylko miesiące bez konkretnych dni na górnej listwie)
 - informacje na wydarzeniu: data, tytuł, autor/autorzy (może w formie awatarów) , poziom - kilknięcie przenosiłoby do postu z większą ilością informacji
-2.  filtrowanie (miesiąc/rok, online/stacjonarnie, autor, tag, poziom)
-3.  instrukcja jak dodać wydarzenie
-4.  informacje kto może publikować wydarzenia, na jakich warunkach i gdzie są publikowane (FB, GitHub, Meetup itp)
-
+-  filtrowanie (miesiąc/rok, online/stacjonarnie, autor, tag, poziom)
+- link do "Jak dodać wydarzenie"
 
 ### Wpis wydarzenia
 
-
-### Wpis o CFP (automat)
-
+- Nazwa wydarzenia
+- Opis wydarzenia
+- Data
+- Lista organizatorów (co jak w liscie autorów)
+- Lista prelegentów/prowadzących
+- Typ Meetup, Online, Warsztaty, Szkolenie, Hackaton, Konferencja
+- Lokalizacja (Online, lub adres)
+- Jeśli adres to mapka z pinezką
+- Jeśli online
+- Link do rejestracji
+- Link do kalndarza
+- Agenda
+- Sponsorzy
 
 ### Lista autorów
 
+http://themeht.com/winck/ltr/feature-team.html
+
 Lista autorów w zasadniczej częsci pokrywałaby się ze stroną o autorze w takim sensie że każda wizytówka zawierałaby (prawie) te same informacje co strona dla pojedynczego autora:
 
-- bio/about me
-- name
+- Imię i nazwisko
+- Lead/Headline
 - github profile
 - linked in profile
 - twitter profile
@@ -93,21 +123,36 @@ Lista autorów w zasadniczej częsci pokrywałaby się ze stroną o autorze w ta
 - website link
 - image url
 
-A ponadto może jakieś małe ikonaki w stylu
+małe ikonki w stylu
 - organizator
 - uczestnik
-- i do tego jakieś country dla wpisów/wystąpień/uczestnictwa w hackatonach
-
-### Patnerzy?
-
+- i do tego licznik dla wpisów/wystąpień/uczestnictwa w hackatonach
 
 ## Event
 
 - One pager - https://themes.3rdwavemedia.com/demo/devconf/
+- tytuł wydarzenia
+- data / venue
+- one liner z opisem
+- link / button do kupna biletów / rejestracji
+- dłuższy opis wydarzenia
+- organizatorzy
+- sponsorzy
+- (link)regulamin
+- (link)code of conduct
+- (link)privacy policy
+- harmonogram wydarzenia
 
-@Kamil M.
+Opcjonalne elementy:
+
+- wrzutka z poprzednich edycji
+- lista speakerów(jeśli to event typu meetup / konferencja)
+- box z biletami(jeśli wydarzenie płatne)
+- social linki do wydarzenia
+- nagrody(w kontekście np. hackathonu)
+- opis venue
 
 ## Luźne uwagi
 
 - Emil znajdzie zdjecia!!!
-
+- [19.01.2021] Emil odpali swoje stare nasy i komputery...
