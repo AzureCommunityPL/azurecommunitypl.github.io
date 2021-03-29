@@ -23,7 +23,6 @@ author:
 
 [Prezentacja](https://www.slideshare.net/AgnieszkaCent/azure-incoming-network-traffic)
 
-
 ### O czym dyskutowaliśmy:
 - o modelu OSI - szczególnie warstwie transportowej i aplikacji, które są wykorzystywane przez Front Door, Application Gateway, Traffic Manager i Load Balancer
 - o globalnych i regionalnych usługach oraz jaki ma to wpływ na odporność na awarie Data Center
