@@ -14,7 +14,12 @@ author:
 
 ## Notatka ze spotkania 'Architektura w Azure - Incoming network traffic' #azuresolutionsarchitect
 
-{% youtube EMdhcEhaCGw %}
+<iframe width="560"
+        height="315"
+        src="https://youtu.be/EMdhcEhaCGw"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen></iframe>
 
 [Prezentacja](https://www.slideshare.net/AgnieszkaCent/azure-incoming-network-traffic)
 
