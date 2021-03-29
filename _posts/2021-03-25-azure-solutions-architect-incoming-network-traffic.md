@@ -14,14 +14,10 @@ author:
 
 ## Notatka ze spotkania 'Architektura w Azure - Incoming network traffic' #azuresolutionsarchitect
 
-<iframe width="560"
-        height="315"
-        src="https://youtu.be/EMdhcEhaCGw"
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
+{% youtube EMdhcEhaCGw %}
 
 [Prezentacja](https://www.slideshare.net/AgnieszkaCent/azure-incoming-network-traffic)
+
 
 ### O czym dyskutowaliśmy:
 - o modelu OSI - szczególnie warstwie transportowej i aplikacji, które są wykorzystywane przez Front Door, Application Gateway, Traffic Manager i Load Balancer
