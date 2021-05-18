@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head><!-- meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>Wykorzystanie Azure AD w aplikacjach - część 2</title>
+
+
+
+
+<meta content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+" name="description">
+
+
+<!-- SEO --><meta content="Microsoft Azure User Group Poland" property="og:site_name">
+
+<meta content="Wykorzystanie Azure AD w aplikacjach - część 2" property="og:title">
+
+
+<meta content="article" property="og:type">
+
+
+<meta content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+" property="og:description">
+
+
+<meta content="https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-part2" property="og:url">
+
+
+<meta content="2020-12-10T00:00:00+01:00" property="article:published_time">
+<meta content="https://azurecommunity.pl/about/" property="article:author">
+
+
+<meta content="https://azurecommunitypl.azurefd.net/og-image/https://azurecommunity.pl/og-image/azure-solutions-architect-qa-aad-part2" property="og:image">
+
+
+
+<meta content="Architecture Meetings" property="article:section">
+
+
+
+
+<meta content="Azure AD" property="article:tag">
+
+<meta content="CosmosDB" property="article:tag">
+
+<meta content="App Service" property="article:tag">
+
+<meta content="Private endpoints" property="article:tag">
+
+<!-- SEO -->
+
+<!-- Twitter card --><meta name="twitter:site" content="@AzureGroupPL">
+
+
+<meta name="twitter:creator" content="@">
+
+
+<meta name="twitter:title" content="Wykorzystanie Azure AD w aplikacjach - część 2">
+
+
+<meta name="twitter:description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://image.thum.io/get/ogImage/https://azurecommunity.pl/og-image/azure-solutions-architect-qa-aad-part2">
+<!-- Twitter card -->
+
+<!-- Favicon Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- inject css start -->
+
+<link href="/assets/css/theme-plugin.css" rel="stylesheet" />
+<link href="/assets/css/style.min.css" rel="stylesheet" />
+
+<!-- inject css end --></head>
+
+<body>
+
+  <!-- page wrapper start -->
+
+  <div class="page-wrapper">
+
+    <!--header start--><header class="site-header">
+  <div id="header-wrap">
+    <div class="container">
+      <div class="row">
+        <!--menu start-->
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand logo text-primary mb-0 font-w-7" href="/">
+              Microsoft<span class="text-dark font-w-4"> Azure User Group Poland</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle active" href="#"
+                    data-toggle="dropdown">Home</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="contribution.html">Dołącz do Nas</a>
+                    </li>
+                    <li><a class="dropdown-item" href="index-2.html">Landing 2</a>
+                    </li>
+                    <li><a class="dropdown-item" href="index-3.html">Landing 3</a>
+                    </li>
+                    <li><a class="dropdown-item" href="index-4.html">Landing 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#"
+                    data-toggle="dropdown">Pages</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Company</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about-us-1.html">About Us</a>
+                        </li>
+                        <li><a class="dropdown-item" href="about-us-2.html">About Us 2</a>
+                        </li>
+                        <li><a class="dropdown-item" href="career.html">Career</a>
+                        </li>
+                        <li><a class="dropdown-item" href="career-single.html">Career Single</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Blogs</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="blog-card.html">Blog Card</a>
+                        </li>
+                        <li><a class="dropdown-item" href="blog-listing.html">Blog Listing 1</a>
+                        </li>
+                        <li><a class="dropdown-item" href="blog-listing-2.html">Blog Listing 2</a>
+                        </li>
+                        <li><a class="dropdown-item" href="blog-single.html">Blog Single</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Contacts</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="contact-us.html">Contact 1</a>
+                        </li>
+                        <li><a class="dropdown-item" href="contact-us-2.html">Contact 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Account</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="login.html">Sign In</a>
+                        </li>
+                        <li><a class="dropdown-item" href="login-2.html">Sign In 2</a>
+                        </li>
+                        <li><a class="dropdown-item" href="signup.html">Sign Up</a>
+                        </li>
+                        <li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Utilities</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="pricing.html">Pricing</a>
+                        </li>
+                        <li><a class="dropdown-item" href="faq.html">Faq</a>
+                        </li>
+                        <li><a class="dropdown-item" href="maintenance.html">Maintenance</a>
+                        </li>
+                        <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+                        </li>
+                        <li><a class="dropdown-item" href="error-404.html">Error 404</a>
+                        </li>
+                        <li><a class="dropdown-item" href="privacy-policy.html">Privacy & Policy</a>
+                        </li>
+                        <li><a class="dropdown-item" href="terms-and-conditions.html">Terms & Conditions</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+        <!--menu end-->
+      </div>
+    </div>
+  </div>
+</header><!--header end-->
+
+
+    <!--body content start-->
+
+    <!--hero section start-->
+
+<section class="hero-banner position-relative custom-pt-1 custom-pb-2 bg-dark" data-bg-img="/assets/images/bg/02.png">
+  <div class="container">
+    <div class="row text-white text-center z-index-1">
+      <div class="col">
+        <h1 class="text-white">Wykorzystanie Azure AD w aplikacjach - część 2</h1>
+      </div>
+    </div>
+    <!-- / .row -->
+  </div>
+  <!-- / .container -->
+  <div class="shape-1 bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,208C672,213,768,267,864,245.3C960,224,1056,128,1152,96C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+</section>
+
+<!--hero section end-->
+
+<!--body content start-->
+
+<div class="page-content">
+
+  <!--blog start-->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Blog Card -->
+          <div class="card border-0 bg-transparent">
+            <div class="card-body post pt-5 px-0">
+              <div>
+                <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span class="text-primary">10</span>
+                  Dec 2020</div>
+                
+                <a class="d-inline-block btn-link" href="/category/architecture-meetings#">Architecture Meetings</a>
+                
+              </div>
+              <h1 id="azure-solutions-architect-wykorzystanie-azure-ad-w-aplikacjach---część-2">#azure-solutions-architect Wykorzystanie Azure AD w aplikacjach - część 2</h1>
+
+<p><a href="https://bit.ly/3loHI9n">Add to calendar</a></p>
+
+<p><a href="https://bit.ly/36jLuwk">Meeting link</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=LVDt0l-u8Y8">Recording</a></p>
+
+<h1 id="agenda">Agenda</h1>
+<ol>
+  <li>Omówienie zaproponowanego rozwiązania zadania</li>
+  <li>Application flows - czyli jak połączyć użytkowników AAD z aplikacją hostowaną w chmurze</li>
+</ol>
+
+<h2 id="zadanie">Zadanie</h2>
+<p>Połącz w bezpieczny sposób aplikację web z bazą danych (np. Cosmos DB) i pobierz informacje korzystając z tokenu użytkownika.</p>
+
+<p>Elementy który warto wziąć pod uwagę to:</p>
+<ul>
+  <li>App Service</li>
+  <li>Cosmos DB</li>
+  <li>Azure AD</li>
+  <li>Private Endpoint (dla BARDZO chętnych)</li>
+</ul>
+
+<h2 id="linki">Linki</h2>
+<ul>
+  <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols">OAuth 2.0 oraz OpenID Connect</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow">Implicit flow</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow">Authorization code flow</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow">On-Behalf-Of flow</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/cosmos-db/secure-access-to-data">Ograniczanie dostępu do danych w CosmosDB</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/app-service/app-service-authentication-how-to">Autoryzacja i uwierzytelnianie w App Service</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad">Konfiguracja App Service w Azure AD</a></li>
+</ul>
+
+            </div>
+
+            <div class="d-md-flex justify-content-between">
+              <div class="d-flex align-items-center">
+                <h6 class="mb-0 mr-4">Share It:</h6>
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-part2"><i
+                        class="la la-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://twitter.com/intent/tweet?url=https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-part2&text="><i
+                        class="la la-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://www.linkedin.com/shareArticle?mini=true&url=https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-part2&title=&summary=&source="><i
+                        class="la la-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center text-md-right mt-5 mt-md-0">
+                <h6 class="mb-0 mr-4">Tagi: </h6>
+                <ul class="list-inline mb-0">
+                  
+                  <li class="list-inline-item">
+                    <a class="btn-link rounded d-inline-block p-2 bg-light m-1" href="/tag/azure-ad">Azure AD</a>
+                  </li>
+                  
+                  <li class="list-inline-item">
+                    <a class="btn-link rounded d-inline-block p-2 bg-light m-1" href="/tag/cosmosdb">CosmosDB</a>
+                  </li>
+                  
+                  <li class="list-inline-item">
+                    <a class="btn-link rounded d-inline-block p-2 bg-light m-1" href="/tag/app-service">App Service</a>
+                  </li>
+                  
+                  <li class="list-inline-item">
+                    <a class="btn-link rounded d-inline-block p-2 bg-light m-1" href="/tag/private-endpoints">Private endpoints</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div><div class="mt-6 shadow p-5">
+              <div class="mb-4">
+                <h2>
+                  
+                  Autorzy
+                  
+                </h2>
+              </div>
+              
+              
+              <div class="d-block d-md-flex my-5">
+                <div class="mr-md-4 mb-4 mb-md-0">
+                  <img class="img-fluid rounded-circle img-author" alt="image" src="https://github.com/aryll.png?size=200">
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
+                    <h6 class="mb-0">Agnieszka Cent</h6>
+                  </div>
+                  <p>
+                    ☁️ Wierzy, że dobrze zaprojektowana chmura może zmienić świat i właśnie takich wyzwań szuka. 🔋 Wie, że IoT i chmury to kolejny etap w rozwoju technologii. 🤝 Ceni doświadczenie i współpracę z kreatywnymi ludźmi. 🧑‍🤝‍🧑 Pomaga innym zrozumieć jak tworzyć dobrą architekturę w Azure. 
+
+                  </p>
+                  <ul class="list-inline mb-0">
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://github.com/aryll"><i class="la la-github"></i></a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+              
+              
+              <div class="d-block d-md-flex my-5">
+                <div class="mr-md-4 mb-4 mb-md-0">
+                  <img class="img-fluid rounded-circle img-author" alt="image" src="https://github.com/maciejgos.png?size=200">
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
+                    <h6 class="mb-0">Maciej Gos</h6>
+                  </div>
+                  <p>
+                    To jakieś bio
+                  </p>
+                  <ul class="list-inline mb-0">
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://github.com/maciejgos"><i class="la la-github"></i></a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://blog.maciejgos.com"><i class="la la-link"></i></a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://twitter.com/maciejgos"><i class="la la-twitter"></i></a>
+                    </li>
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+              
+            </div></div>
+          <!-- End Blog Card -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--blog end-->
+
+</div>
+
+<!--body content end-->
+
+    <!--body content end-->
+
+
+    <!--footer start--><footer class="bg-dark py-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-5 col-xl-4 mr-auto mb-5 mb-lg-0">
+        <a class="footer-logo h2 text-primary mb-0 font-w-7" href="index.html">
+          W<span class="text-white font-w-4">inck.</span>
+        </a>
+        <p class="my-3 text-light">Winck - Bootstrap 5 Multipurpose Landing Page Is fully responsible, Build whatever
+          you like with the Winck.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-facebook"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-dribbble"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-instagram"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-twitter"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-7">
+        <div class="row">
+          <div class="col-12 col-sm-4">
+            <h5 class="mb-4 text-white">Pages</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3"><a class="list-group-item-action text-light" href="about-us-1.html">About</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="product-grid.html">Shop</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="faq.html">Faq</a>
+              </li>
+              <li><a class="list-group-item-action text-light" href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4 mt-6 mt-sm-0">
+            <h5 class="mb-4 text-white">Service</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3"><a class="list-group-item-action text-light" href="#">Content Writing</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="#">Documentation</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="login.html">Account</a>
+              </li>
+              <li><a class="list-group-item-action text-light" href="career.html">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4 mt-6 mt-sm-0">
+            <h5 class="mb-4 text-white">Our Address</h5>
+            <div class="mb-3">
+              <p class="mb-0 text-light">423B, Road Wordwide Country, USA</p>
+            </div>
+            <div class="mb-3">
+              <a class="btn-link text-light" href="mailto:themeht23@gmail.com"> themeht23@gmail.com</a>
+            </div>
+            <div>
+              <a class="btn-link text-light" href="tel:+912345678900">+91-234-567-8900</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col">
+        <hr class="m-0">
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6 text-light">
+        Copyright ©2020 All rights reserved | Winck is made by <i class="lar la-heart text-primary heartBeat2"></i>
+        <u><a class="text-primary" href="#">ThemeHt</a></u></div>
+      <div class="col-md-6 text-md-right">
+        <ul class="list-inline mb-0">
+          <li class="mr-3 list-inline-item"> <a class="list-group-item-action text-light" href="#">
+              Term Of Service
+            </a>
+          </li>
+          <li class="mr-3 list-inline-item"> <a class="list-group-item-action text-light" href="#">
+              Privacy Policy
+            </a>
+          </li>
+          <li class="list-inline-item"> <a class="list-group-item-action text-light" href="#">
+              Support
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer><!--footer end-->
+
+  </div>
+
+  <!-- page wrapper end -->
+
+
+  <!--back-to-top start-->
+
+  <div class="scroll-top"><a class="smoothscroll" href="#top">Do góry</a></div>
+
+  <!--back-to-top end-->
+
+  <!-- inject js start -->
+
+  <script src="/assets/js/theme-plugin.js"></script>
+  <script src="/assets/js/theme-script.js"></script>
+
+  <!-- inject js end -->
+
+</body>
+
+</html>

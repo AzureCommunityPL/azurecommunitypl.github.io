@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head><!-- meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>Tworzenie formularza typeform za pomocą Logic Apps</title>
+
+
+
+
+<meta content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+" name="description">
+
+
+<!-- SEO --><meta content="Microsoft Azure User Group Poland" property="og:site_name">
+
+<meta content="Tworzenie formularza typeform za pomocą Logic Apps" property="og:title">
+
+
+<meta content="article" property="og:type">
+
+
+<meta content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+" property="og:description">
+
+
+<meta content="https://azurecommunity.pl/blog/tworzenie-formularza-typeform-za-pomoca-logic-apps" property="og:url">
+
+
+<meta content="2020-08-26T00:00:00+02:00" property="article:published_time">
+<meta content="https://azurecommunity.pl/about/" property="article:author">
+
+
+<meta content="https://azurecommunitypl.azurefd.net/og-image/https://azurecommunity.pl/og-image/tworzenie-formularza-typeform-za-pomoca-logic-apps" property="og:image">
+
+
+
+<meta content="Examples" property="article:section">
+
+
+
+
+<meta content="Logic Apps" property="article:tag">
+
+<!-- SEO -->
+
+<!-- Twitter card --><meta name="twitter:site" content="@AzureGroupPL">
+
+
+<meta name="twitter:creator" content="@kmadof">
+
+
+<meta name="twitter:title" content="Tworzenie formularza typeform za pomocą Logic Apps">
+
+
+<meta name="twitter:description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://image.thum.io/get/ogImage/https://azurecommunity.pl/og-image/tworzenie-formularza-typeform-za-pomoca-logic-apps">
+<!-- Twitter card -->
+
+<!-- Favicon Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- inject css start -->
+
+<link href="/assets/css/theme-plugin.css" rel="stylesheet" />
+<link href="/assets/css/style.min.css" rel="stylesheet" />
+
+<!-- inject css end --></head>
+
+<body>
+
+  <!-- page wrapper start -->
+
+  <div class="page-wrapper">
+
+    <!--header start--><header class="site-header">
+  <div id="header-wrap">
+    <div class="container">
+      <div class="row">
+        <!--menu start-->
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand logo text-primary mb-0 font-w-7" href="/">
+              Microsoft<span class="text-dark font-w-4"> Azure User Group Poland</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle active" href="#"
+                    data-toggle="dropdown">Home</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="contribution.html">Dołącz do Nas</a>
+                    </li>
+                    <li><a class="dropdown-item" href="index-2.html">Landing 2</a>
+                    </li>
+                    <li><a class="dropdown-item" href="index-3.html">Landing 3</a>
+                    </li>
+                    <li><a class="dropdown-item" href="index-4.html">Landing 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#"
+                    data-toggle="dropdown">Pages</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Company</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about-us-1.html">About Us</a>
+                        </li>
+                        <li><a class="dropdown-item" href="about-us-2.html">About Us 2</a>
+                        </li>
+                        <li><a class="dropdown-item" href="career.html">Career</a>
+                        </li>
+                        <li><a class="dropdown-item" href="career-single.html">Career Single</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Blogs</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="blog-card.html">Blog Card</a>
+                        </li>
+                        <li><a class="dropdown-item" href="blog-listing.html">Blog Listing 1</a>
+                        </li>
+                        <li><a class="dropdown-item" href="blog-listing-2.html">Blog Listing 2</a>
+                        </li>
+                        <li><a class="dropdown-item" href="blog-single.html">Blog Single</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Contacts</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="contact-us.html">Contact 1</a>
+                        </li>
+                        <li><a class="dropdown-item" href="contact-us-2.html">Contact 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Account</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="login.html">Sign In</a>
+                        </li>
+                        <li><a class="dropdown-item" href="login-2.html">Sign In 2</a>
+                        </li>
+                        <li><a class="dropdown-item" href="signup.html">Sign Up</a>
+                        </li>
+                        <li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Utilities</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="pricing.html">Pricing</a>
+                        </li>
+                        <li><a class="dropdown-item" href="faq.html">Faq</a>
+                        </li>
+                        <li><a class="dropdown-item" href="maintenance.html">Maintenance</a>
+                        </li>
+                        <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+                        </li>
+                        <li><a class="dropdown-item" href="error-404.html">Error 404</a>
+                        </li>
+                        <li><a class="dropdown-item" href="privacy-policy.html">Privacy & Policy</a>
+                        </li>
+                        <li><a class="dropdown-item" href="terms-and-conditions.html">Terms & Conditions</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+        <!--menu end-->
+      </div>
+    </div>
+  </div>
+</header><!--header end-->
+
+
+    <!--body content start-->
+
+    <!--hero section start-->
+
+<section class="hero-banner position-relative custom-pt-1 custom-pb-2 bg-dark" data-bg-img="/assets/images/bg/02.png">
+  <div class="container">
+    <div class="row text-white text-center z-index-1">
+      <div class="col">
+        <h1 class="text-white">Tworzenie formularza typeform za pomocą Logic Apps</h1>
+      </div>
+    </div>
+    <!-- / .row -->
+  </div>
+  <!-- / .container -->
+  <div class="shape-1 bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,208C672,213,768,267,864,245.3C960,224,1056,128,1152,96C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+</section>
+
+<!--hero section end-->
+
+<!--body content start-->
+
+<div class="page-content">
+
+  <!--blog start-->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Blog Card -->
+          <div class="card border-0 bg-transparent">
+            <div class="card-body post pt-5 px-0">
+              <div>
+                <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span class="text-primary">26</span>
+                  Aug 2020</div>
+                
+                <a class="d-inline-block btn-link" href="/category/examples#">Examples</a>
+                
+              </div>
+              <p>Aby stworzyć formularz najpierw należy przygotować jego <a href="https://developer.typeform.com/create/reference/create-form/">definicję</a> w postaci pliku json. Najprostszą metodą jest pobranie definicji istniejącego formularza wykonując zapytanie <code class="language-plaintext highlighter-rouge">GET</code> pod adres <code class="language-plaintext highlighter-rouge">https://api.typeform.com/forms/&lt;formId&gt;</code> gdzie w miejscu <code class="language-plaintext highlighter-rouge">&lt;formId&gt;</code> należy podać identyfikator formularza. Z tak pobranej definicji usuwamy pola <code class="language-plaintext highlighter-rouge">id</code>.</p>
+
+<p>Kolejnym krokiem jest wygenerowanie tokena z poziomu konta użytkownika w zakładce <code class="language-plaintext highlighter-rouge">Personal tokens</code> umożliwiającego tworzenie formularzy:</p>
+
+<p><img src="../assets/images/posts/2020-08-26/typeform-personal-token-create-form.png" alt="Token z uprawnieniami do tworzenia formularzy" /></p>
+
+<p>Mając wykonane te czynności możemy przejść do częsci zasadniczej czyli wywołania <code class="language-plaintext highlighter-rouge">HTTP POST</code> na adres <code class="language-plaintext highlighter-rouge">https://api.typeform.com/forms</code> z wykorzystaniem zadania <code class="language-plaintext highlighter-rouge">HTTP - Choose a REST API to invoke</code></p>
+
+<p><img src="../assets/images/posts/2020-08-26/typeform-logic-apps-http-action.png" alt="Konfiguracja zadania w Log Apps" /></p>
+
+<p>Po wybraniu zadania ustawiamy:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Method</code> na <code class="language-plaintext highlighter-rouge">POST</code></li>
+  <li><code class="language-plaintext highlighter-rouge">URI</code> na <code class="language-plaintext highlighter-rouge">https://api.typeform.com/forms</code></li>
+  <li>nagłówek <code class="language-plaintext highlighter-rouge">Authorization</code> na <code class="language-plaintext highlighter-rouge">Bearer &lt;personal-token&gt;</code>,</li>
+  <li>oraz body w którym umieszczamy wcześniej przygotowaną definicję formularza.</li>
+</ul>
+
+<p><img src="../assets/images/posts/2020-08-26/typeform-logic-apps-action.png" alt="Konfiguracja zadania w Log Apps" /></p>
+
+<p>Przykładowa definicja formularza CFP grupy wygląda następująca:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0615d4db-3a69-4241-8df6-e19cf0f40d8f"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Imię i nazwisko"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"short_text"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jak będziesz popisany"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"83537ee4-7fea-4a73-a74c-1971d20f6304"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tagline(tytuł)"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"short_text"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6ccc0676-af91-4dd7-8413-953c2a58d426"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Email"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"email"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"default_country_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PL"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ae867632-2cb5-4ee8-ad85-a115f4b00f69"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Telefon kontaktowy"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phone_number"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6eea5984-f273-4e8a-9164-825389cba877"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bio"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"long_text"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"80d0695d-9b6b-4443-a1b2-10c4bc882c0b"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Twój LinkedIn"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"website"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"551407f3-449b-4e89-85dd-a205e9bc62f5"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Twój Twitter"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"website"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5b82571a-0dbc-45b4-bbd0-75e9ef6acc28"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Inna Twoja strona"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"website"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jakby się dało, to w proporcjach 1:1 ;)"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f72cf5e8-fa0a-41d6-a270-331956d43df7"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Zdjęcie profilowe"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"file_upload"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6de7c0f9-e951-45ba-98a2-fb9cec9848cf"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tytuł sesji"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"short_text"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3a5a2015-ef95-4f6b-9968-04b2e7fa9d47"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Krótki opis sesji"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"long_text"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"allow_multiple_selection"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"allow_other_choice"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"choices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15 min"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d66f9c12-4474-421f-bdf0-79abed2a3fca"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"30 min"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9cb59522-eacc-4441-b12b-2c646d4df67a"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"45 min"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e2dd3bce-dbf8-455b-88dc-0a685274187e"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"60 min"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c6c3fa55-ef07-40ee-bb68-01e5522c9e66"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"randomize"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"vertical_alignment"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"79983597-68cb-491b-87ba-c3277b93c284"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Długość sesji"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"multiple_choice"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"allow_multiple_selection"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"allow_other_choice"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"choices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"200"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fa8745f1-1677-4c8a-b3a8-bd54d34f093d"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"300"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3057b898-66db-4c39-9f0a-9e90da15ad81"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"400"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5c8a8295-45ec-4f71-9001-b5d37ad8db34"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"- 200 - Intermediate material. Assumes 100-level knowledge and provides specific details about the topic.</span><span class="se">\n\n</span><span class="s2">- 300 - Advanced material. Assumes 200-level knowledge, in-depth understanding of features in a real-world environment, and strong coding skills. Provides a detailed technical overview of a subset of product/technology features, covering architecture, performance, migration, deployment, and development.</span><span class="se">\n\n</span><span class="s2">- 400 - Expert material. Assumes a deep level of technical knowledge and experience and a detailed, thorough understanding of topic. Provides expert-to-expert interaction and coverage of specialized topics."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"randomize"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"vertical_alignment"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10e2a2cf-28d0-4bec-84af-da5e9126ba15"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Poziom sesji"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"multiple_choice"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"validations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"are_uploads_public"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"is_public"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"is_trial"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pl"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"allow_indexing"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"progress_bar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"proportion"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"show_progress_bar"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"show_typeform_branding"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"thankyou_screens"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://images.typeform.com/images/rwHFbTuxH9ne"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"button_mode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reload"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"button_text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"again"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"share_icons"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"show_button"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"103b1ee2-9f54-4bc8-b800-953c865f03e3"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dzięki!</span><span class="se">\n\n</span><span class="s2">Na grupie odbędzie się głosowanie na sesje!"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"share_icons"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"show_button"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"default_tys"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Udało się! Twoje informacje zostały przesłane."</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"theme"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.typeform.com/themes/rqYVKG"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@{triggerBody()?['title']}"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"form"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"welcome_screens"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"button_text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Start"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"show_button"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1664a2c2-2674-4db9-8786-f48880e1cd9a"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@{triggerBody()?['welcome-screen-details']}"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"workspace"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.typeform.com/workspaces/DEwVv8"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>W definicji tej znajdują się dwa parametry dynamicznie ustawiane po stronie Log Apps. Są to:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">"title": "@{triggerBody()?['title']}",</code></li>
+  <li><code class="language-plaintext highlighter-rouge">"welcome_screens.title": "@{triggerBody()?['welcome-screen-details']}"</code></li>
+</ul>
+
+<p>których to wartości mogą wyglądać tak: <code class="language-plaintext highlighter-rouge">CFP - [ONLINE] 43 spotkanie Microsoft Azure User Group Poland</code> i <code class="language-plaintext highlighter-rouge">Zgłoszenia sesji na 43 spotkanie Microsoft Azure User Group Poland\n\nData: 09 października od 18:00\nMiejsce: Online</code> odpowiednio, a są przekazywane jako parametry wywołania Logic Apps.</p>
+
+            </div>
+
+            <div class="d-md-flex justify-content-between">
+              <div class="d-flex align-items-center">
+                <h6 class="mb-0 mr-4">Share It:</h6>
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https://azurecommunity.pl/blog/tworzenie-formularza-typeform-za-pomoca-logic-apps"><i
+                        class="la la-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://twitter.com/intent/tweet?url=https://azurecommunity.pl/blog/tworzenie-formularza-typeform-za-pomoca-logic-apps&text="><i
+                        class="la la-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://www.linkedin.com/shareArticle?mini=true&url=https://azurecommunity.pl/blog/tworzenie-formularza-typeform-za-pomoca-logic-apps&title=&summary=&source="><i
+                        class="la la-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center text-md-right mt-5 mt-md-0">
+                <h6 class="mb-0 mr-4">Tagi: </h6>
+                <ul class="list-inline mb-0">
+                  
+                  <li class="list-inline-item">
+                    <a class="btn-link rounded d-inline-block p-2 bg-light m-1" href="/tag/logic-apps">Logic Apps</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div><div class="mt-6 shadow p-5">
+              <div class="mb-4">
+                <h2>
+                  
+                  Autor
+                  
+                </h2>
+              </div>
+              
+              
+              <div class="d-block d-md-flex my-5">
+                <div class="mr-md-4 mb-4 mb-md-0">
+                  <img class="img-fluid rounded-circle img-author" alt="image" src="https://github.com/kmadof.png?size=200">
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
+                    <h6 class="mb-0">Krzysztof Madej</h6>
+                  </div>
+                  <p>
+                    To jakieś bio
+
+                  </p>
+                  <ul class="list-inline mb-0">
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://github.com/kmadof"><i class="la la-github"></i></a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="hhttp://thecodemanual.pl/"><i class="la la-link"></i></a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://twitter.com/kmadof"><i class="la la-twitter"></i></a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://www.linkedin.com/in/krzysztof-madej/"><i class="la la-linkedin"></i></a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+              
+            </div></div>
+          <!-- End Blog Card -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--blog end-->
+
+</div>
+
+<!--body content end-->
+
+    <!--body content end-->
+
+
+    <!--footer start--><footer class="bg-dark py-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-5 col-xl-4 mr-auto mb-5 mb-lg-0">
+        <a class="footer-logo h2 text-primary mb-0 font-w-7" href="index.html">
+          W<span class="text-white font-w-4">inck.</span>
+        </a>
+        <p class="my-3 text-light">Winck - Bootstrap 5 Multipurpose Landing Page Is fully responsible, Build whatever
+          you like with the Winck.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-facebook"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-dribbble"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-instagram"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-twitter"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-7">
+        <div class="row">
+          <div class="col-12 col-sm-4">
+            <h5 class="mb-4 text-white">Pages</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3"><a class="list-group-item-action text-light" href="about-us-1.html">About</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="product-grid.html">Shop</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="faq.html">Faq</a>
+              </li>
+              <li><a class="list-group-item-action text-light" href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4 mt-6 mt-sm-0">
+            <h5 class="mb-4 text-white">Service</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3"><a class="list-group-item-action text-light" href="#">Content Writing</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="#">Documentation</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="login.html">Account</a>
+              </li>
+              <li><a class="list-group-item-action text-light" href="career.html">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4 mt-6 mt-sm-0">
+            <h5 class="mb-4 text-white">Our Address</h5>
+            <div class="mb-3">
+              <p class="mb-0 text-light">423B, Road Wordwide Country, USA</p>
+            </div>
+            <div class="mb-3">
+              <a class="btn-link text-light" href="mailto:themeht23@gmail.com"> themeht23@gmail.com</a>
+            </div>
+            <div>
+              <a class="btn-link text-light" href="tel:+912345678900">+91-234-567-8900</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col">
+        <hr class="m-0">
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6 text-light">
+        Copyright ©2020 All rights reserved | Winck is made by <i class="lar la-heart text-primary heartBeat2"></i>
+        <u><a class="text-primary" href="#">ThemeHt</a></u></div>
+      <div class="col-md-6 text-md-right">
+        <ul class="list-inline mb-0">
+          <li class="mr-3 list-inline-item"> <a class="list-group-item-action text-light" href="#">
+              Term Of Service
+            </a>
+          </li>
+          <li class="mr-3 list-inline-item"> <a class="list-group-item-action text-light" href="#">
+              Privacy Policy
+            </a>
+          </li>
+          <li class="list-inline-item"> <a class="list-group-item-action text-light" href="#">
+              Support
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer><!--footer end-->
+
+  </div>
+
+  <!-- page wrapper end -->
+
+
+  <!--back-to-top start-->
+
+  <div class="scroll-top"><a class="smoothscroll" href="#top">Do góry</a></div>
+
+  <!--back-to-top end-->
+
+  <!-- inject js start -->
+
+  <script src="/assets/js/theme-plugin.js"></script>
+  <script src="/assets/js/theme-script.js"></script>
+
+  <!-- inject js end -->
+
+</body>
+
+</html>

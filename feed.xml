@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://azurecommunity.pl/feed.xml" rel="self" type="application/atom+xml" /><link href="https://azurecommunity.pl/" rel="alternate" type="text/html" /><updated>2021-05-18T06:12:08+02:00</updated><id>https://azurecommunity.pl/feed.xml</id><title type="html">Microsoft Azure User Group Poland</title><subtitle>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</subtitle><entry><title type="html">[Notatka] Architektura w Azure - Event-driven architecture</title><link href="https://azurecommunity.pl/blog/azure-solutions-architect-eda" rel="alternate" type="text/html" title="[Notatka] Architektura w Azure - Event-driven architecture" /><published>2021-05-06T00:00:00+02:00</published><updated>2021-05-06T00:00:00+02:00</updated><id>https://azurecommunity.pl/blog/azure-solutions-architect-eda</id><content type="html" xml:base="https://azurecommunity.pl/blog/azure-solutions-architect-eda">&lt;h2 id=&quot;notatka-ze-spotkania-architektura-w-azure---event-driven-architecture-azuresolutionsarchitect&quot;&gt;Notatka ze spotkania ‘Architektura w Azure - Event-driven architecture’ #azuresolutionsarchitect&lt;/h2&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;https://www.youtube.com/embed/QyJweYtpjdE?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;o-czym-dyskutowaliśmy&quot;&gt;O czym dyskutowaliśmy:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Różnica między eventem a wiadomością&lt;/li&gt;
+  &lt;li&gt;Wzorce projektowe związane z messaging&lt;/li&gt;
+  &lt;li&gt;Publisher-Subscriber&lt;/li&gt;
+  &lt;li&gt;Event-sourcing&lt;/li&gt;
+  &lt;li&gt;Przypadek obsługi eventów związanych ze stworzeniem konkretnych zasobów w Azure&lt;/li&gt;
+  &lt;li&gt;Landing zones &amp;amp; cloud adoption framework&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;linki&quot;&gt;Linki&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven&quot;&gt;Event driven architecture&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging&quot;&gt;Messaging design patterns&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/&quot;&gt;Cloud adoption framework&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/terraform-module-caf-enterprise-scale&quot;&gt;Terraform for CAF&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Azure/caf-terraform-landingzones&quot;&gt;Terraform for CAF - GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/architecture#high-level-architecture&quot;&gt;Landing zone in enterprise scale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[&quot;aryll&quot;, &quot;maciejgos&quot;]</name></author><category term="Architecture Meetings" /><category term="Event-driven architecture" /><summary type="html">Notatka ze spotkania ‘Architektura w Azure - Event-driven architecture’ #azuresolutionsarchitect</summary></entry><entry><title type="html">[Notatka] Architektura w Azure - Networking</title><link href="https://azurecommunity.pl/blog/azure-solutions-architect-networking" rel="alternate" type="text/html" title="[Notatka] Architektura w Azure - Networking" /><published>2021-04-22T00:00:00+02:00</published><updated>2021-04-22T00:00:00+02:00</updated><id>https://azurecommunity.pl/blog/azure-solutions-architect-networking</id><content type="html" xml:base="https://azurecommunity.pl/blog/azure-solutions-architect-networking">&lt;h2 id=&quot;notatka-ze-spotkania-architektura-w-azure---networking-azuresolutionsarchitect&quot;&gt;Notatka ze spotkania ‘Architektura w Azure - Networking’ #azuresolutionsarchitect&lt;/h2&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;https://www.youtube.com/embed/JvOYNWkMCcA?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;o-czym-dyskutowaliśmy&quot;&gt;O czym dyskutowaliśmy:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;O skali projektów - kiedy pojawają się zagadnienia związane z infrastrukturą sieciową&lt;/li&gt;
+  &lt;li&gt;Jak infrastrukturą wygląda w projektach - w jaki sposób jest dzielona na środowiska dev oraz prod?&lt;/li&gt;
+  &lt;li&gt;O subnet-ach - należy pamiętać, że kazda podsieci traci na starcie 5 adresów które są wykorzystywane przez Azure&lt;/li&gt;
+  &lt;li&gt;VPN Gateway vs Express Route - kiedy tego użyć oraz co to jest?&lt;/li&gt;
+  &lt;li&gt;Network Security Group vs Application Security Group - kiedy użyć oraz co to jest?&lt;/li&gt;
+  &lt;li&gt;Virtual WAN - czym jest i jakie problemy rozwiązuje&lt;/li&gt;
+  &lt;li&gt;Czym różni się połączenie Site-To-Site i Point-to-Site?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;linki&quot;&gt;Linki&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/browse/&quot;&gt;Architektury Azure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/virtual-network&quot;&gt;Virtual Networks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview&quot;&gt;Network Security Groups&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/virtual-network/application-security-groups&quot;&gt;Application Security Groups&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/virtual-network/service-tags-overview&quot;&gt;Service Tags&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/expressroute/expressroute-howto-coexist-resource-manager&quot;&gt;Configure ExpressRoute and Site-to-Site&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections&quot;&gt;Source Network Address Translation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/load-balancer/skus&quot;&gt;Azure Load Balancer SKUs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/learn/modules/connect-on-premises-network-with-vpn-gateway&quot;&gt;Connect your on-premises network to Azure with VPN Gateway&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7EJtmX1Vcmc&quot;&gt;Projektowanie sieci w chmurze z perspektywy bezpieczeństwa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[&quot;aryll&quot;, &quot;maciejgos&quot;]</name></author><category term="Architecture Meetings" /><category term="Virtual Networks" /><category term="Subnets" /><category term="VPN Gateway" /><category term="Virtual WAN" /><summary type="html">Notatka ze spotkania ‘Architektura w Azure - Networking’ #azuresolutionsarchitect</summary></entry><entry><title type="html">[Notatka] Architektura w Azure - Incoming network traffic</title><link href="https://azurecommunity.pl/blog/azure-solutions-architect-incoming-network-traffic" rel="alternate" type="text/html" title="[Notatka] Architektura w Azure - Incoming network traffic" /><published>2021-03-25T00:00:00+01:00</published><updated>2021-03-25T00:00:00+01:00</updated><id>https://azurecommunity.pl/blog/azure-solutions-architect-incoming-network-traffic</id><content type="html" xml:base="https://azurecommunity.pl/blog/azure-solutions-architect-incoming-network-traffic">&lt;h2 id=&quot;notatka-ze-spotkania-architektura-w-azure---incoming-network-traffic-azuresolutionsarchitect&quot;&gt;Notatka ze spotkania ‘Architektura w Azure - Incoming network traffic’ #azuresolutionsarchitect&lt;/h2&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;https://www.youtube.com/embed/EMdhcEhaCGw?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.slideshare.net/AgnieszkaCent/azure-incoming-network-traffic&quot;&gt;Prezentacja&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;o-czym-dyskutowaliśmy&quot;&gt;O czym dyskutowaliśmy:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;o modelu OSI - szczególnie warstwie transportowej i aplikacji, które są wykorzystywane przez Front Door, Application Gateway, Traffic Manager i Load Balancer&lt;/li&gt;
+  &lt;li&gt;o globalnych i regionalnych usługach oraz jaki ma to wpływ na odporność na awarie Data Center&lt;/li&gt;
+  &lt;li&gt;SSL termination&lt;/li&gt;
+  &lt;li&gt;Azure Traffic Manager oraz jego metody routowania&lt;/li&gt;
+  &lt;li&gt;Azure Front Door oraz jego cechy&lt;/li&gt;
+  &lt;li&gt;Azure Load Balancer oraz różnice między wersją Basic i Standard&lt;/li&gt;
+  &lt;li&gt;Application Gateway&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;linki&quot;&gt;Linki&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/browse/&quot;&gt;Architektury Azure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview&quot;&gt;Wybór load balancera&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/frontdoor/front-door-overview&quot;&gt;Azure Front Door&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-overview&quot;&gt;Azure Load Balancer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://azure.microsoft.com/en-us/support/legal/sla/load-balancer/v1_0/&quot;&gt;Azure Load Balancer SLA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/application-gateway/overview&quot;&gt;Azure Application Gateway&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview&quot;&gt;Azure Traffic Manager&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cloud-right.com/2019/07/multi-regional-azure-front-door&quot;&gt;Multi Regional Web Application with Azure Front Door&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[&quot;aryll&quot;, &quot;maciejgos&quot;]</name></author><category term="Architecture Meetings" /><category term="Traffic Manager" /><category term="Front Door" /><category term="Application Gateway" /><category term="Load Balancer" /><summary type="html">Notatka ze spotkania ‘Architektura w Azure - Incoming network traffic’ #azuresolutionsarchitect</summary></entry><entry><title type="html">[Notatka] Architektura w Azure - Governance</title><link href="https://azurecommunity.pl/blog/azure-solutions-architect-governance" rel="alternate" type="text/html" title="[Notatka] Architektura w Azure - Governance" /><published>2021-02-25T00:00:00+01:00</published><updated>2021-02-25T00:00:00+01:00</updated><id>https://azurecommunity.pl/blog/azure-solutions-architect-governance</id><content type="html" xml:base="https://azurecommunity.pl/blog/azure-solutions-architect-governance">&lt;h2 id=&quot;notatka-ze-spotkania-architektura-w-azure---governance-azuresolutionsarchitect&quot;&gt;Notatka ze spotkania ‘Architektura w Azure - Governance’ #azuresolutionsarchitect&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/buLZfbBVRW4&quot;&gt;Nagranie&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;-zadanie-na-którym-się-wzorowaliśmy&quot;&gt;🚀🚀🚀 Zadanie, na którym się wzorowaliśmy&lt;/h3&gt;
+&lt;p&gt;Firma ACME Inc 😉 chce przenieść swoje zasoby utrzymywane we własnej serwerowni do chmury. Będzie to pierwsza mała testowa migracja nie kluczowych systemów.
+Systemy które będą migrowane to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;2 aplikacje napisane w NodeJS do HR (rekrutacja) oraz obsługi urlopów&lt;/li&gt;
+  &lt;li&gt;1 aplikacja napisana w .NET Framework do obsługi sklepu internetowego&lt;/li&gt;
+  &lt;li&gt;1 aplikacja napisana w Delphi - obecnie działa ona na maszynie wirtualnej, jest to aplikacja do obsługi zamówień w firmie (długopisy, papier do drukarek itp.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Jedynie sklep internetowy powinien być dostępny przez cały miesiąc z możliwym 24h oknem serwisowym w miesiącu.
+Powinny być utworzone oddzielne środowiska dla produkcji oraz development, dział finansowy chciałby mieć możliwość śledzenia kosztów poszczególnych usług, oraz projektów jakie będą się toczyły&lt;/p&gt;
+
+&lt;h3 id=&quot;o-czym-dyskutowaliśmy&quot;&gt;O czym dyskutowaliśmy:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;jak wygląda podejście do Governance w firmach, które znamy&lt;/li&gt;
+  &lt;li&gt;po co nam CAF i czy biznes go lubi&lt;/li&gt;
+  &lt;li&gt;jak przekonać biznes do korzystania z Landing Zone&lt;/li&gt;
+  &lt;li&gt;omawialiśmy Terraformowy Landing Zone z doświadczeń Łukasza&lt;/li&gt;
+  &lt;li&gt;rozmawialiśmy o odpowiednim parowaniu regionów dla usług&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;linki&quot;&gt;Linki&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/governance/policy/overview&quot;&gt;Azure Policy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/governance/blueprints/overview&quot;&gt;Azure Blueprints&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/answers/questions/177308/index.html&quot;&gt;Azure Blueprints - roadmap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/&quot;&gt;Cloud Adoption Framework&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone&quot;&gt;Azure Landing Zone&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/architecture#high-level-architecture&quot;&gt;Azure Landing Zone - High Level Architecture&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Azure/caf-terraform-landingzones/blob/master/documentation/code_architecture/hierarchy.md&quot;&gt;Narzędzie do Azure Landing Zone - High Level Architecture&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.arnaudlheureux.io/&quot;&gt;Blog Arnaud Lheureux - Azure Landing Zone + Terraform&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions&quot;&gt;Paired regions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[&quot;aryll&quot;, &quot;maciejgos&quot;]</name></author><category term="Architecture Meetings" /><category term="Governance" /><category term="Landing Zone" /><category term="Cloud Adoption Framework" /><category term="Blueprints" /><category term="Policy" /><summary type="html">Notatka ze spotkania ‘Architektura w Azure - Governance’ #azuresolutionsarchitect</summary></entry><entry><title type="html">[Notatka] Architektura w Azure - Messaging</title><link href="https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-messaging" rel="alternate" type="text/html" title="[Notatka] Architektura w Azure - Messaging" /><published>2021-01-21T00:00:00+01:00</published><updated>2021-01-21T00:00:00+01:00</updated><id>https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-messaging</id><content type="html" xml:base="https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-messaging">&lt;h2 id=&quot;notatka-ze-spotkania-architektura-w-azure---messaging-azuresolutionsarchitect&quot;&gt;Notatka ze spotkania ‘Architektura w Azure - Messaging’ #azuresolutionsarchitect&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/9U9ExZ7Bbro&quot;&gt;Nagranie&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.canva.com/design/DAETrlus2qU/aW6zfZ26qwZa588zd8TOvQ/view?utm_content=DAETrlus2qU&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=link&amp;amp;utm_source=viewer&quot;&gt;Prezentacja&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;-zadanie-które-omawialiśmy&quot;&gt;🚀🚀🚀 Zadanie które omawialiśmy&lt;/h3&gt;
+&lt;p&gt;Zaprojektuj architekturę dla systemu rezerwacji biletów. Płatności muszą być obsługiwane przez system postawiony na on-premises (ze względów prawnych nie można go przenieść do chmury), reszta systemu może być hostowana w chmurze.&lt;/p&gt;
+
+&lt;p&gt;Założenia:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;komunikacja powinna odbywać się 𝐚𝐬𝐲𝐧𝐜𝐡𝐫𝐨𝐧𝐢𝐜𝐳𝐧𝐢𝐞&lt;/li&gt;
+  &lt;li&gt;w ramach niepoprawnej płatności użytkownik powinien być powiadomiony 𝐦𝐚𝐢𝐥𝐨𝐰𝐨&lt;/li&gt;
+  &lt;li&gt;ilość użytkowników aplikacji będzie na poziomie 10000 dziennie&lt;/li&gt;
+  &lt;li&gt;wielkość pojedynczego żądania jest na poziomie 100 kb&lt;/li&gt;
+  &lt;li&gt;ze względu na ograniczoną ilość biletów ważna jest kolejność zgłoszeń&lt;/li&gt;
+  &lt;li&gt;każda 𝐳𝐦𝐢𝐚𝐧𝐚 𝐳𝐚𝐬𝐨𝐛𝐮 w Azure powinna być zgłaszana mailowo do osoby odpowiedzialnej za audyt zasobów Azure&lt;/li&gt;
+  &lt;li&gt;każde wyświetlenie danego biletu powinno być 𝐩𝐫𝐳𝐞𝐜𝐡𝐨𝐰𝐲𝐰𝐚𝐧𝐞 w dowolnej formie&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;🤔 Jakich mechanizmów integracyjnych Azure byś użył i dlaczego?&lt;/p&gt;
+
+&lt;h3 id=&quot;technologie-których-używaliśmy&quot;&gt;Technologie, których używaliśmy&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Azure Service Bus&lt;/li&gt;
+  &lt;li&gt;Azure Event Grid&lt;/li&gt;
+  &lt;li&gt;Azure Event Hubs&lt;/li&gt;
+  &lt;li&gt;Azure Storage Queues&lt;/li&gt;
+  &lt;li&gt;Azure Relay&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;omawialiśmy-diagramy&quot;&gt;Omawialiśmy diagramy&lt;/h3&gt;
+&lt;h4 id=&quot;phaate-ls&quot;&gt;phaate-ls&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/posts-data/2021-01-21/phaate-ls.png&quot; alt=&quot;phaate-ls&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;maciejgos&quot;&gt;maciejgos&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/posts-data/2021-01-21/maciejgos.png&quot; alt=&quot;maciejgos&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;aryll&quot;&gt;aryll&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/posts-data/2021-01-21/aryll.png&quot; alt=&quot;aryll&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;wasze-opinie&quot;&gt;Wasze opinie&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Duzym minusem Storage Queues jest: Azure Storage Queues nie wpieraja CMEK (Customer Managed Encryption Keys).
+Takie kolejki w instytucjach regulowanych np przez KNF ;) nie moga byc wykorzystane do przechowywania danych chroninych.&lt;/code&gt; Łukasz C&lt;/p&gt;
+
+&lt;h3 id=&quot;linki&quot;&gt;Linki&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging&quot;&gt;Wzorce messaging&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services&quot;&gt;Porównanie usług messagingowych&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted&quot;&gt;Storage Queues vs Service Bus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/MicrosoftDocs/azure-docs/issues/60531&quot;&gt;Service Bus FIFO&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://devblogs.microsoft.com/premier-developer/ordering-messages-in-azure-service-bus/&quot;&gt;Kolejność w Service Bus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/enterprise-integration/queues-events&quot;&gt;Architektura wykorzystująca kolejki i eventy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[&quot;aryll&quot;, &quot;maciejgos&quot;]</name></author><category term="Architecture Meetings" /><category term="Service Bus" /><category term="Event Grid" /><category term="Event Hubs" /><category term="Storage Queues" /><category term="Azure Relay" /><summary type="html">Notatka ze spotkania ‘Architektura w Azure - Messaging’ #azuresolutionsarchitect</summary></entry><entry><title type="html">Architektura w Azure - Messaging</title><link href="https://azurecommunity.pl/blog/azure-solutions-architect-qa-messaging" rel="alternate" type="text/html" title="Architektura w Azure - Messaging" /><published>2021-01-04T00:00:00+01:00</published><updated>2021-01-04T00:00:00+01:00</updated><id>https://azurecommunity.pl/blog/azure-solutions-architect-qa-messaging</id><content type="html" xml:base="https://azurecommunity.pl/blog/azure-solutions-architect-qa-messaging">&lt;p&gt;Cześć! 🙂
+Nowy rok - nowy temat do nauki architektury w Azure! Na następnym spotkaniu spróbujemy poznać różnice między różnymi serwisami przesyłania komunikatów oraz jak je łączyć w jedną architekturę!
+Skupimy się na takich technologiach jak:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Azure Service Bus,&lt;/li&gt;
+  &lt;li&gt;Azure Event Grid,&lt;/li&gt;
+  &lt;li&gt;Azure Event Hubs,&lt;/li&gt;
+  &lt;li&gt;Storage Queues oraz&lt;/li&gt;
+  &lt;li&gt;Azure Relay.
+Następne spotkanie 21/01/2021 godzina 20:00&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;🚀🚀🚀 Zadanie 🚀🚀🚀
+Zaprojektuj architekturę dla systemu rezerwacji biletów. Płatności muszą być obsługiwane przez system postawiony na on-premises (ze względów prawnych nie można go przenieść do chmury), reszta systemu może być hostowana w chmurze.&lt;/p&gt;
+
+&lt;p&gt;Założenia:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;komunikacja powinna odbywać się 𝐚𝐬𝐲𝐧𝐜𝐡𝐫𝐨𝐧𝐢𝐜𝐳𝐧𝐢𝐞&lt;/li&gt;
+  &lt;li&gt;w ramach niepoprawnej płatności użytkownik powinien być powiadomiony 𝐦𝐚𝐢𝐥𝐨𝐰𝐨&lt;/li&gt;
+  &lt;li&gt;ilość użytkowników aplikacji będzie na poziomie 10000 dziennie&lt;/li&gt;
+  &lt;li&gt;wielkość pojedynczego żądania jest na poziomie 100 kb&lt;/li&gt;
+  &lt;li&gt;ze względu na ograniczoną ilość biletów ważna jest kolejność zgłoszeń&lt;/li&gt;
+  &lt;li&gt;każda 𝐳𝐦𝐢𝐚𝐧𝐚 𝐳𝐚𝐬𝐨𝐛𝐮 w Azure powinna być zgłaszana mailowo do osoby odpowiedzialnej za audyt zasobów Azure&lt;/li&gt;
+  &lt;li&gt;każde wyświetlenie danego biletu powinno być 𝐩𝐫𝐳𝐞𝐜𝐡𝐨𝐰𝐲𝐰𝐚𝐧𝐞 w dowolnej formie&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;🤔 Jakich mechanizmów integracyjnych Azure byś użył i dlaczego?
+Czekamy na Wasze diagramy i wyceny tutaj: &lt;a href=&quot;https://bit.ly/2LjDOlM&quot;&gt;https://bit.ly/2LjDOlM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Przydatne linki&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services&quot;&gt;https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted&quot;&gt;https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;💻 Link do spotkania: &lt;a href=&quot;https://bit.ly/358gJcV&quot;&gt;https://bit.ly/358gJcV&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;📅 Kalendarz: &lt;a href=&quot;https://calndr.link/event/4w53WG3g2Y&quot;&gt;https://calndr.link/event/4w53WG3g2Y&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;📖 Poprzednie spotkania (wraz z nagraniami): &lt;a href=&quot;https://azurecommunity.pl/&quot;&gt;https://azurecommunity.pl/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Masz pytanie? Napisz do Agnieszka Cent lub Maciej Gos !&lt;/p&gt;
+
+&lt;p&gt;O cyklu spotkań #azure-solution-architect:
+Uczymy się tworzyć architekturę w Azure! Jeśli myślisz, że to też Twoja ścieżka - dołącz do nas! Zapraszamy osoby o każdym poziomie zaawansowania!
+Każde spotkanie to nowe architektoniczne zadanie, które pozwala nam poznać dany fragment Azure - omawiamy nasze propozycje i w ten sposób zdobywamy wiedzę! Bazujemy na wiedzy wymaganej na egzaminach AZ-303 oraz AZ-304, ale głównie skupiamy się na bardziej praktycznych i życiowych problemach.&lt;/p&gt;</content><author><name>[&quot;aryll&quot;, &quot;maciejgos&quot;]</name></author><category term="Architecture Meetings" /><category term="Service Bus" /><category term="Event Grid" /><category term="Event Hubs" /><category term="Storage Queues" /><category term="Azure Relay" /><summary type="html">Cześć! 🙂 Nowy rok - nowy temat do nauki architektury w Azure! Na następnym spotkaniu spróbujemy poznać różnice między różnymi serwisami przesyłania komunikatów oraz jak je łączyć w jedną architekturę! Skupimy się na takich technologiach jak:</summary></entry><entry><title type="html">Wykorzystanie Azure AD w aplikacjach - część 2</title><link href="https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-part2" rel="alternate" type="text/html" title="Wykorzystanie Azure AD w aplikacjach - część 2" /><published>2020-12-10T00:00:00+01:00</published><updated>2020-12-10T00:00:00+01:00</updated><id>https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-part2</id><content type="html" xml:base="https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-part2">&lt;h1 id=&quot;azure-solutions-architect-wykorzystanie-azure-ad-w-aplikacjach---część-2&quot;&gt;#azure-solutions-architect Wykorzystanie Azure AD w aplikacjach - część 2&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bit.ly/3loHI9n&quot;&gt;Add to calendar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bit.ly/36jLuwk&quot;&gt;Meeting link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=LVDt0l-u8Y8&quot;&gt;Recording&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;agenda&quot;&gt;Agenda&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Omówienie zaproponowanego rozwiązania zadania&lt;/li&gt;
+  &lt;li&gt;Application flows - czyli jak połączyć użytkowników AAD z aplikacją hostowaną w chmurze&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;zadanie&quot;&gt;Zadanie&lt;/h2&gt;
+&lt;p&gt;Połącz w bezpieczny sposób aplikację web z bazą danych (np. Cosmos DB) i pobierz informacje korzystając z tokenu użytkownika.&lt;/p&gt;
+
+&lt;p&gt;Elementy który warto wziąć pod uwagę to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;App Service&lt;/li&gt;
+  &lt;li&gt;Cosmos DB&lt;/li&gt;
+  &lt;li&gt;Azure AD&lt;/li&gt;
+  &lt;li&gt;Private Endpoint (dla BARDZO chętnych)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;linki&quot;&gt;Linki&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols&quot;&gt;OAuth 2.0 oraz OpenID Connect&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow&quot;&gt;Implicit flow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow&quot;&gt;Authorization code flow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow&quot;&gt;On-Behalf-Of flow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/cosmos-db/secure-access-to-data&quot;&gt;Ograniczanie dostępu do danych w CosmosDB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/app-service/app-service-authentication-how-to&quot;&gt;Autoryzacja i uwierzytelnianie w App Service&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad&quot;&gt;Konfiguracja App Service w Azure AD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[&quot;aryll&quot;, &quot;maciejgos&quot;]</name></author><category term="Architecture Meetings" /><category term="Azure AD" /><category term="CosmosDB" /><category term="App Service" /><category term="Private endpoints" /><summary type="html">#azure-solutions-architect Wykorzystanie Azure AD w aplikacjach - część 2</summary></entry><entry><title type="html">Wykorzystanie Azure AD w aplikacjach - część 1</title><link href="https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-part1" rel="alternate" type="text/html" title="Wykorzystanie Azure AD w aplikacjach - część 1" /><published>2020-11-26T00:00:00+01:00</published><updated>2020-11-26T00:00:00+01:00</updated><id>https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-part1</id><content type="html" xml:base="https://azurecommunity.pl/blog/azure-solutions-architect-qa-aad-part1">&lt;h1 id=&quot;azure-solutions-architect-wykorzystanie-azure-ad-w-aplikacjach&quot;&gt;#azure-solutions-architect Wykorzystanie Azure AD w aplikacjach&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://evt.mx/g5eQsKRs&quot;&gt;Add to calendar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bit.ly/3mI0gm0&quot;&gt;Meeting link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Wa81cuppsdg&amp;amp;feature=youtu.be&amp;amp;fbclid=IwAR1goGX_TP9rpd9LoN-U7tr7Zoap0d3A5yLy0VSRQ9tp-jmYX12pKWUzHfA&quot;&gt;Recording&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www2.slideshare.net/secret/lgU9qapOYBWwEf&quot;&gt;Prezentacja&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;agenda&quot;&gt;Agenda&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Dyskusja o AAD i AD&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;zadanie&quot;&gt;Zadanie&lt;/h2&gt;
+&lt;p&gt;Połącz w bezpieczny sposób aplikację web z bazą danych (np. Cosmos DB) i pobierz informacje korzystając z tokenu użytkownika.&lt;/p&gt;
+
+&lt;p&gt;Elementy który warto wziąć pod uwagę to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;App Service&lt;/li&gt;
+  &lt;li&gt;Cosmos DB&lt;/li&gt;
+  &lt;li&gt;Azure AD&lt;/li&gt;
+  &lt;li&gt;Private Endpoint (dla BARDZO chętnych)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;linki&quot;&gt;Linki&lt;/h2&gt;
+
+&lt;h3 id=&quot;ogólne-linki-architektoniczne&quot;&gt;Ogólne linki architektoniczne&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/patterns/&quot;&gt;Cloud Design Patterns&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/browse/&quot;&gt;Architektury Azure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;infrastruktura--private-endpoints&quot;&gt;Infrastruktura &amp;amp; private endpoints&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7EJtmX1Vcmc&quot;&gt;Projektowanie sieci w chmurze z perspektywy bezpieczeństwa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;active-directory&quot;&gt;Active Directory&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=xBG076ablpg&quot;&gt;Autoryzacja vs uwierzytelnianie&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/develop/&quot;&gt;Microsoft identity platform documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-object&quot;&gt;Application and service principal objects in Azure Active Directory&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types&quot;&gt;Application types for Microsoft identity platform&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-flows-app-scenarios&quot;&gt;Authentication flows and application scenarios&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/cosmos-db/managed-identity-based-authentication&quot;&gt;Use system-assigned managed identities to access Azure Cosmos DB data&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory-domain-services/overview#:~:text=Azure%20Active%20Directory%20Domain%20Services%20&amp;lpar;AD%20DS&amp;rpar;%20provides%20managed%20domain,&amp;lpar;DCs&amp;rpar;%20in%20the%20cloud&quot;&gt;Azure AD DS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory-domain-services/compare-identity-solutions&quot;&gt;Porównanie Azure AD DS i Self-managed AD DS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[&quot;aryll&quot;, &quot;maciejgos&quot;]</name></author><category term="Architecture Meetings" /><category term="Azure AD" /><category term="CosmosDB" /><category term="App Service" /><category term="Private endpoints" /><summary type="html">#azure-solutions-architect Wykorzystanie Azure AD w aplikacjach</summary></entry><entry><title type="html">Zabezpieczenie komunikacji pomiedzy on-prem a Azure</title><link href="https://azurecommunity.pl/blog/azure-solutions-architect-qa-secure-network" rel="alternate" type="text/html" title="Zabezpieczenie komunikacji pomiedzy on-prem a Azure" /><published>2020-10-22T00:00:00+02:00</published><updated>2020-10-22T00:00:00+02:00</updated><id>https://azurecommunity.pl/blog/azure-solutions-architect-qa-secure-network</id><content type="html" xml:base="https://azurecommunity.pl/blog/azure-solutions-architect-qa-secure-network">&lt;h1 id=&quot;azure-solutions-architect-zabezpieczenie-komunikacji-pomiedzy-on-prem-a-azure&quot;&gt;#azure-solutions-architect zabezpieczenie komunikacji pomiedzy on-prem a Azure&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://evt.mx/nLArx0BI&quot;&gt;Add to calendar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGYzOTZjYWYtNDliNi00NzJiLWFkNWEtYjRhMzJhMGFiMzcw%40thread.v2/0?context=%7b%22Tid%22%3a%22ef60a5a4-900c-4789-89cd-0c42f28ef541%22%2c%22Oid%22%3a%22843f36ea-2af5-4be3-a168-6b8fd3acd1b3%22%7d&quot;&gt;Meeting link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/H2Wf1lo-3ts&quot;&gt;Recording&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;agenda&quot;&gt;Agenda&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Przegląd przygotowanych rozwiązań.&lt;/li&gt;
+  &lt;li&gt;Q&amp;amp;A.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;dyskusja&quot;&gt;Dyskusja&lt;/h1&gt;
+
+&lt;h2 id=&quot;przegląd-projektu-architektury&quot;&gt;Przegląd projektu architektury&lt;/h2&gt;
+
+&lt;h3 id=&quot;zadanie&quot;&gt;Zadanie&lt;/h3&gt;
+&lt;p&gt;Firma chce zabezpieczyć komunikację sieciową pomiędzy zasobami, które są hostowane na Azure oraz zasobami uruchomionymi w sieci lokalnej firmy. Cała infrastruktura powinna być dostępna tylko z sieci firmowej, oraz w ramach podsieci dla maszyn wirtualnych. W chwili obecnej podjęta została decyzja o przeniesieniu całych maszyn wirtualnych wraz z zasobami. Zaproponowane rozwiązanie powinno uwzględnić możliwość użycia różnych zasobów Azure w przyszłości.&lt;/p&gt;
+
+&lt;h3 id=&quot;wymagania&quot;&gt;Wymagania:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;dwie wersje systemu: 
+1) stosunkowo bezpieczna i tania 
+2) droższa ale bardziej zabezpieczona&lt;/li&gt;
+  &lt;li&gt;należy policzyć koszty rozwiązania (bez kosztów maszyn wirtualnych)
+istotna jest analiza wdrożenia innych usług hostowanych na Azure w przyszłości&lt;/li&gt;
+  &lt;li&gt;nakład pracy potrzebny do wdrożenia obu rozwiązań&lt;/li&gt;
+  &lt;li&gt;sposób monitorowania / zarządzania rozwiązaniami&lt;/li&gt;
+  &lt;li&gt;analiza SLA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;poglądowy-schemat-architektury&quot;&gt;Poglądowy schemat architektury:&lt;/h3&gt;
+&lt;h4 id=&quot;private-link&quot;&gt;Private link&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/posts/2020-10-22/private_link.png&quot; alt=&quot;Schemat architektury - Private Link&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;service-endpoints&quot;&gt;Service endpoints&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/posts/2020-10-22/service_endpoint.png&quot; alt=&quot;Schemat architektury - Service endpoints&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;qa&quot;&gt;Q&amp;amp;A&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;miesięczny koszt rozwiązania opartego o Private Link to ok. $9. Przy załozeniu transferu inbound/outbound na poziomie 100GB, oraz wykorzystaniu jednego “link” dla usług!!!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;linki-związane-z-tematem&quot;&gt;Linki związane z tematem&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview&quot;&gt;Service enpoints&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview&quot;&gt;Private endpoint&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/private-link/private-link-service-overview&quot;&gt;Private link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/learn/modules/connect-on-premises-network-with-vpn-gateway&quot;&gt;Łączenie sieci on-premises przez VPN Gateway&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/learn/modules/connect-on-premises-network-with-expressroute&quot;&gt;Łączenie sieci on-premises przez ExpressRoute&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-gb/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints/&quot;&gt;NSG &amp;amp; Service Endpoint&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-gb/learn/modules/connect-on-premises-network-with-vpn-gateway/&quot;&gt;VPN Gateway + on-premises&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke&quot;&gt;Architektura Hub-spoke&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://azure.microsoft.com/en-us/pricing/details/private-link/&quot;&gt;Private Link pricing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;egzaminy-microsoft&quot;&gt;Egzaminy Microsoft:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4wyqh&quot;&gt;Azure certifications&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI&quot;&gt;Wszystkie certyfikaty z linkami&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;materiały-do-nauki&quot;&gt;Materiały do nauki:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/learn/&quot;&gt;Microsoft learn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://events.microsoft.com/?timeperiod=next30Days&amp;amp;isSharedInLocalViewMode=true&amp;amp;country=Poland&amp;amp;language=English&quot;&gt;Eventy (też takie gdzie można dostać vouchery na egzaminy)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://info.microsoft.com/CE-SCRTY-CATALOG-FY21-07Jul-29-WtorkizSecurity-SRDEM32279_CatalogDisplayPage.html&quot;&gt;Wtorki z security&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://info.microsoft.com/CE-AzureINFRA-CATALOG-FY20-04Apr-28-ThursdayswithAzure-SRDEM21201_CatalogDisplayPage.html&quot;&gt;Czwartki z Azure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.pluralsight.com/partners/microsoft/azure&quot;&gt;Pluralsight + Azure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCdmEIMC3LBil4o0tjaTbj0w&quot;&gt;Kurs AZ-900 Adama (podstawy Azure)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[&quot;aryll&quot;, &quot;maciejgos&quot;]</name></author><category term="Architecture Meetings" /><category term="Service endpoints" /><category term="Private endpoints" /><summary type="html">#azure-solutions-architect zabezpieczenie komunikacji pomiedzy on-prem a Azure</summary></entry><entry><title type="html">Tworzenie formularza typeform do głosowania bazującego na odpowiedziach udzielonych w ramach innego formularza</title><link href="https://azurecommunity.pl/blog/tworzenie-formularza-typeform-do-glosowania-bazujacego-na-odpowiedziach" rel="alternate" type="text/html" title="Tworzenie formularza typeform do głosowania bazującego na odpowiedziach udzielonych w ramach innego formularza" /><published>2020-09-15T00:00:00+02:00</published><updated>2020-09-15T00:00:00+02:00</updated><id>https://azurecommunity.pl/blog/tworzenie-formularza-typeform-do-glosowania-bazujacego-na-odpowiedziach</id><content type="html" xml:base="https://azurecommunity.pl/blog/tworzenie-formularza-typeform-do-glosowania-bazujacego-na-odpowiedziach">&lt;h2 id=&quot;w-tym-manualu-znajdziesz-informacje&quot;&gt;W tym manualu znajdziesz informacje&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;jak wykorzystać szablony Liquid w Logic App&lt;/li&gt;
+  &lt;li&gt;jak pobrać odpowiedzi udzielone do formularza typeform&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;trigger-http&quot;&gt;Trigger Http&lt;/h3&gt;
+
+&lt;p&gt;Tworzymy nowy Logic App z triggerem Http w którym oczekujemy na wejściu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;formId&lt;/code&gt; formularza z którego będziemy pobierać odpowiedzi, tytuł nowego formularza oraz informacje umieszczane na pierwszym stronie formularza:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;formId&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;gsmgXXSu&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Głosowanie na sesje na 42 spotkanie Microsoft Azure User Group Poland&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;welcome-screen-details&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Wybór należy do Ciebie!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Głosowanie na sesje podczas 42 spotkania Microsoft Azure User Group Poland&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Data: 09 września od 18:00&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Miejsce: Online&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Treść tego jsona możemy wykorzstać to wygenerowania schematu oczekiwanego jsona dla triggera. Lub wykorzystać poniższy.&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;properties&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;formId&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;string&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;string&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;welcome-screen-details&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;string&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;object&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;pobranie-odpowiedzi-z-formularza-typeform&quot;&gt;Pobranie odpowiedzi z formularza typeform&lt;/h3&gt;
+
+&lt;p&gt;Aby pobrać odpowiedzi z formularza należy wywołać zapytanie HTTP GET na adres  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://api.typeform.com/forms/&amp;lt;formId&amp;gt;/responses&lt;/code&gt; z wykorzystaniem zadania &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HTTP - Choose a REST API to invoke&lt;/code&gt; gdzie ustawiamy:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/posts/2020-09-15/typeform-logic-apps-read-responses.png&quot; alt=&quot;Konfiguracja zadania Logic Apps do odczytu wiadomości&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Method&lt;/code&gt; na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GET&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;URI&lt;/code&gt; na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://api.typeform.com/forms/&amp;lt;formId&amp;gt;/responses&lt;/code&gt; gdzie ‘formId` pobieramy z triggera&lt;/li&gt;
+  &lt;li&gt;nagłówek &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Authorization&lt;/code&gt; na &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bearer &amp;lt;personal-token&amp;gt;&lt;/code&gt; - token musi mieć &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Read responses&lt;/code&gt; scope&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/posts/2020-09-15/typeform-toekn-read-responses-scope.png&quot; alt=&quot;Konfiguracja tokena do odczytu wiadomości&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ekstrakcja-danych-z-odpowiedzi&quot;&gt;Ekstrakcja danych z odpowiedzi&lt;/h3&gt;
+
+&lt;p&gt;W tym kroku wykorzystamy szablon &lt;a href=&quot;https://github.com/dotliquid/dotliquid&quot;&gt;Liquid&lt;/a&gt; aby wydzielić dane których potrzebujemy do zbudowania formularza dla głosowania. A są to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;imię i nazwisko&lt;/li&gt;
+  &lt;li&gt;czas trwania sesji&lt;/li&gt;
+  &lt;li&gt;poziom sesji&lt;/li&gt;
+  &lt;li&gt;tytuł sesji&lt;/li&gt;
+  &lt;li&gt;opis sesji&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Aby wykorzystać szablon Liquid w Logic apps nalezy dodać dodać go do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Integration Acount&lt;/code&gt;. Szczegółowy opis znajduje się &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-liquid-transform#upload-the-template&quot;&gt;tutaj&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Kiedy szablon jest już wgrany sama konfiguracja zadania Liquid jest bardzo prosta. Z zadań Liquid wybieramy &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tranform JSON to JSON&lt;/code&gt;a następnie wpisujemy jako Content body z zadania w którym pobraliśmy odpowiedzi, a jako Map wskazujemy wcześniej wgrany plik. Sam szablon wygląda następująco:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/posts/2020-09-15/logic-apps-liquid-actions.png&quot; alt=&quot;Wybór zadania Liquid&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'papers'&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/posts/2020-09-15/typeform-tranform-reposnes-into-json.png&quot; alt=&quot;Konfiguracja zadania pobierającego dane z odpowiedzi&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pisząc szablon na względzie że w Logic Apps dane wejściowe trafiają do właściwości content i dlatego należy w szabloni użyć &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;content.items&lt;/code&gt; zamiast &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;items&lt;/code&gt;, co ma znaczenie prze debugowaniu szablonu lokalnie. Podanto w szablonie korzystam z apostrofu zamiast cudzysłowia, ponieważ w przypadku tego drugiego występuje błąd przy przetwarzaniu danych wejściowych jeśli w ich treści znajduje się cudzysłów.&lt;/p&gt;
+
+&lt;h3 id=&quot;budowa-treści-formularza-w-opraciu-o-dane-pozyskane-z-odpowiedzi&quot;&gt;Budowa treści formularza w opraciu o dane pozyskane z odpowiedzi&lt;/h3&gt;
+
+&lt;p&gt;W tym kroku również posłużymy się szablonem Liquid (zadanie &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tranform JSON to JSON&lt;/code&gt;), tak więc podobnie jak wcześniej należy wgrać go przez &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Integration Account&lt;/code&gt;. W szablonie mapujemy każdy rekrod z kolekcji do indywidualnej strony na której wyświetlamy informacje o sesji, oraz do strony na której głosujemy na wybrane sesje.&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'fields':&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Za chwilę zapoznasz się z  opisami sesji, a następnie otrzymasz możliwość zagłosowania na dwie z nich.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;ref&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;d37c0f54-2427-45c3-9da8-e1a682f0042e&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;properties&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;button_text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Continue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;hide_marks&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;statement&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'title':&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'Na&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;które&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;sesje&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;głosujesz?&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;MASZ&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;DWA&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;GŁOSY!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'ref':&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'ccf&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3-0&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;fd&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6-497&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;-816&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;a-fee&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1542e35&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'properties':&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'description':&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'Wybierz&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;mądrze!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'randomize':&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'allow_multiple_selection':&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'allow_other_choice':&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'vertical_alignment':&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'choices':&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            
+            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`validations`:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`required`:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`min_selection`:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`max_selection`:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`type`:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`multiple_choice`&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/posts/2020-09-15/typeform-tranform-json-into-form-body.png&quot; alt=&quot;Konfiguracja zadania tworzącego treść formularza&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;stworzenie-formularza&quot;&gt;Stworzenie formularza&lt;/h3&gt;
+
+&lt;p&gt;W ostatnim kroku tworzymy formularz wykorzystując wcześniej utworzony json:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;fields&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;body('Vote_fields')&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'fields'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;settings&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;are_uploads_public&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;is_public&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;is_trial&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;language&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pl&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;meta&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;allow_indexing&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;progress_bar&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;proportion&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;show_progress_bar&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;show_typeform_branding&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;thankyou_screens&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;attachment&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;href&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://images.typeform.com/images/5wiGh2PYKXyW&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;properties&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;image&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;properties&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;button_mode&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;reload&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;button_text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;again&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;share_icons&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;show_button&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;ref&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;c1ad6960-d547-48c2-91bc-ad2c97005bdb&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Dzięki!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Do zobaczenia na spotkaniu!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Przy okazji sprawdź nasze nowe miejsce do dyskusji zamiast grupy na FB 😎⬇️&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;[*https://github.com/AzureCommunityPL/group/discussions*](https://github.com/AzureCommunityPL/group/discussions)&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;properties&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;share_icons&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;show_button&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;ref&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;default_tys&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Udało się! Twoje informacje zostały przesłane.&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;theme&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;href&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.typeform.com/themes/qHWOQ7&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;@{triggerBody()?['title']}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;form&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;welcome_screens&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;attachment&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;href&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://images.typeform.com/images/8ZTgZWCqn7eA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;properties&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;image&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;properties&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;button_text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Start&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;show_button&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;ref&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;290bb413-4f1a-4dba-9d53-48e44ce76403&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;@{triggerBody()?['welcome-screen-details']}&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;workspace&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;href&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.typeform.com/workspaces/k9Jbqi&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;w body tym przekazujemy&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;pola utworzone w poprzednim kroku - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;fields&quot;: @{body('Vote_fields')['fields']},&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;treść ekranu powidatlnego - ‘“title”: “@{triggerBody()?[‘welcome-screen-details’]}”’&lt;/li&gt;
+  &lt;li&gt;tytuł formularza - ‘“title”: “@{triggerBody()?[‘title’]}”,’&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sam sposób tworzenia formularza znajduje się &lt;a href=&quot;create-form-in-typeform.md&quot;&gt;tutaj&lt;/a&gt;.&lt;/p&gt;</content><author><name>[&quot;kmadof&quot;]</name></author><category term="Examples" /><category term="Logic Apps" /><summary type="html">W tym manualu znajdziesz informacje jak wykorzystać szablony Liquid w Logic App jak pobrać odpowiedzi udzielone do formularza typeform Trigger Http Tworzymy nowy Logic App z triggerem Http w którym oczekujemy na wejściu formId formularza z którego będziemy pobierać odpowiedzi, tytuł nowego formularza oraz informacje umieszczane na pierwszym stronie formularza: { &quot;formId&quot;: &quot;gsmgXXSu&quot;, &quot;title&quot;: &quot;Głosowanie na sesje na 42 spotkanie Microsoft Azure User Group Poland&quot;, &quot;welcome-screen-details&quot;: &quot;Wybór należy do Ciebie!\nGłosowanie na sesje podczas 42 spotkania Microsoft Azure User Group Poland\n\nData: 09 września od 18:00\nMiejsce: Online&quot; } Treść tego jsona możemy wykorzstać to wygenerowania schematu oczekiwanego jsona dla triggera. Lub wykorzystać poniższy. { &quot;properties&quot;: { &quot;formId&quot;: { &quot;type&quot;: &quot;string&quot; }, &quot;title&quot;: { &quot;type&quot;: &quot;string&quot; }, &quot;welcome-screen-details&quot;: { &quot;type&quot;: &quot;string&quot; } }, &quot;type&quot;: &quot;object&quot; } Pobranie odpowiedzi z formularza typeform Aby pobrać odpowiedzi z formularza należy wywołać zapytanie HTTP GET na adres https://api.typeform.com/forms/&amp;lt;formId&amp;gt;/responses z wykorzystaniem zadania HTTP - Choose a REST API to invoke gdzie ustawiamy: Method na GET URI na https://api.typeform.com/forms/&amp;lt;formId&amp;gt;/responses gdzie ‘formId` pobieramy z triggera nagłówek Authorization na Bearer &amp;lt;personal-token&amp;gt; - token musi mieć Read responses scope Ekstrakcja danych z odpowiedzi W tym kroku wykorzystamy szablon Liquid aby wydzielić dane których potrzebujemy do zbudowania formularza dla głosowania. A są to: imię i nazwisko czas trwania sesji poziom sesji tytuł sesji opis sesji Aby wykorzystać szablon Liquid w Logic apps nalezy dodać dodać go do Integration Acount. Szczegółowy opis znajduje się tutaj. Kiedy szablon jest już wgrany sama konfiguracja zadania Liquid jest bardzo prosta. Z zadań Liquid wybieramy Tranform JSON to JSONa następnie wpisujemy jako Content body z zadania w którym pobraliśmy odpowiedzi, a jako Map wskazujemy wcześniej wgrany plik. Sam szablon wygląda następująco: { 'papers' : [ ] } Pisząc szablon na względzie że w Logic Apps dane wejściowe trafiają do właściwości content i dlatego należy w szabloni użyć content.items zamiast items, co ma znaczenie prze debugowaniu szablonu lokalnie. Podanto w szablonie korzystam z apostrofu zamiast cudzysłowia, ponieważ w przypadku tego drugiego występuje błąd przy przetwarzaniu danych wejściowych jeśli w ich treści znajduje się cudzysłów. Budowa treści formularza w opraciu o dane pozyskane z odpowiedzi W tym kroku również posłużymy się szablonem Liquid (zadanie Tranform JSON to JSON), tak więc podobnie jak wcześniej należy wgrać go przez Integration Account. W szablonie mapujemy każdy rekrod z kolekcji do indywidualnej strony na której wyświetlamy informacje o sesji, oraz do strony na której głosujemy na wybrane sesje. { { 'fields': [ { &quot;title&quot;: &quot;Za chwilę zapoznasz się z opisami sesji, a następnie otrzymasz możliwość zagłosowania na dwie z nich.&quot;, &quot;ref&quot;: &quot;d37c0f54-2427-45c3-9da8-e1a682f0042e&quot;, &quot;properties&quot;: { &quot;button_text&quot;: &quot;Continue&quot;, &quot;hide_marks&quot;: false }, &quot;type&quot;: &quot;statement&quot; }, { 'title': 'Na, które sesje głosujesz? MASZ DWA GŁOSY!', 'ref': 'ccf7d0a3-0fd6-497b-816a-fee1542e35b0', 'properties': { 'description': 'Wybierz mądrze!', 'randomize': true, 'allow_multiple_selection': true, 'allow_other_choice': false, 'vertical_alignment': true, 'choices': [ ] }, `validations`: { `required`: true, `min_selection`: 1, `max_selection`: 2 }, `type`: `multiple_choice` } ] } Stworzenie formularza W ostatnim kroku tworzymy formularz wykorzystując wcześniej utworzony json: { &quot;fields&quot;: @{body('Vote_fields')['fields']}, &quot;settings&quot;: { &quot;are_uploads_public&quot;: false, &quot;is_public&quot;: true, &quot;is_trial&quot;: false, &quot;language&quot;: &quot;pl&quot;, &quot;meta&quot;: { &quot;allow_indexing&quot;: false }, &quot;progress_bar&quot;: &quot;proportion&quot;, &quot;show_progress_bar&quot;: true, &quot;show_typeform_branding&quot;: true }, &quot;thankyou_screens&quot;: [ { &quot;attachment&quot;: { &quot;href&quot;: &quot;https://images.typeform.com/images/5wiGh2PYKXyW&quot;, &quot;properties&quot;: {}, &quot;type&quot;: &quot;image&quot; }, &quot;properties&quot;: { &quot;button_mode&quot;: &quot;reload&quot;, &quot;button_text&quot;: &quot;again&quot;, &quot;share_icons&quot;: false, &quot;show_button&quot;: false }, &quot;ref&quot;: &quot;c1ad6960-d547-48c2-91bc-ad2c97005bdb&quot;, &quot;title&quot;: &quot;Dzięki!\n\nDo zobaczenia na spotkaniu!\n\nPrzy okazji sprawdź nasze nowe miejsce do dyskusji zamiast grupy na FB 😎⬇️\n\n[*https://github.com/AzureCommunityPL/group/discussions*](https://github.com/AzureCommunityPL/group/discussions)&quot; }, { &quot;properties&quot;: { &quot;share_icons&quot;: false, &quot;show_button&quot;: false }, &quot;ref&quot;: &quot;default_tys&quot;, &quot;title&quot;: &quot;Udało się! Twoje informacje zostały przesłane.&quot; } ], &quot;theme&quot;: { &quot;href&quot;: &quot;https://api.typeform.com/themes/qHWOQ7&quot; }, &quot;title&quot;: &quot;@{triggerBody()?['title']}&quot;, &quot;type&quot;: &quot;form&quot;, &quot;welcome_screens&quot;: [ { &quot;attachment&quot;: { &quot;href&quot;: &quot;https://images.typeform.com/images/8ZTgZWCqn7eA&quot;, &quot;properties&quot;: {}, &quot;type&quot;: &quot;image&quot; }, &quot;properties&quot;: { &quot;button_text&quot;: &quot;Start&quot;, &quot;show_button&quot;: true }, &quot;ref&quot;: &quot;290bb413-4f1a-4dba-9d53-48e44ce76403&quot;, &quot;title&quot;: &quot;@{triggerBody()?['welcome-screen-details']}&quot; } ], &quot;workspace&quot;: { &quot;href&quot;: &quot;https://api.typeform.com/workspaces/k9Jbqi&quot; } } w body tym przekazujemy pola utworzone w poprzednim kroku - &quot;fields&quot;: @{body('Vote_fields')['fields']}, treść ekranu powidatlnego - ‘“title”: “@{triggerBody()?[‘welcome-screen-details’]}”’ tytuł formularza - ‘“title”: “@{triggerBody()?[‘title’]}”,’ Sam sposób tworzenia formularza znajduje się tutaj.</summary></entry></feed>

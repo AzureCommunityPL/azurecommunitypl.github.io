@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head><!-- meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>Tworzenie formularza typeform do głosowania bazującego na odpowiedziach udzielonych w ramach innego formularza</title>
+
+
+
+
+<meta content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+" name="description">
+
+
+<!-- SEO --><meta content="Microsoft Azure User Group Poland" property="og:site_name">
+
+<meta content="Tworzenie formularza typeform do głosowania bazującego na odpowiedziach udzielonych w ramach innego formularza" property="og:title">
+
+
+<meta content="article" property="og:type">
+
+
+<meta content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+" property="og:description">
+
+
+<meta content="https://azurecommunity.pl/blog/tworzenie-formularza-typeform-do-glosowania-bazujacego-na-odpowiedziach" property="og:url">
+
+
+<meta content="2020-09-15T00:00:00+02:00" property="article:published_time">
+<meta content="https://azurecommunity.pl/about/" property="article:author">
+
+
+<meta content="https://azurecommunitypl.azurefd.net/og-image/https://azurecommunity.pl/og-image/tworzenie-formularza-typeform-do-glosowania-bazujacego-na-odpowiedziach" property="og:image">
+
+
+
+<meta content="Examples" property="article:section">
+
+
+
+
+<meta content="Logic Apps" property="article:tag">
+
+<!-- SEO -->
+
+<!-- Twitter card --><meta name="twitter:site" content="@AzureGroupPL">
+
+
+<meta name="twitter:creator" content="@kmadof">
+
+
+<meta name="twitter:title" content="Tworzenie formularza typeform do głosowania bazującego na odpowiedziach udzielonych w ramach innego formularza">
+
+
+<meta name="twitter:description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://image.thum.io/get/ogImage/https://azurecommunity.pl/og-image/tworzenie-formularza-typeform-do-glosowania-bazujacego-na-odpowiedziach">
+<!-- Twitter card -->
+
+<!-- Favicon Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- inject css start -->
+
+<link href="/assets/css/theme-plugin.css" rel="stylesheet" />
+<link href="/assets/css/style.min.css" rel="stylesheet" />
+
+<!-- inject css end --></head>
+
+<body>
+
+  <!-- page wrapper start -->
+
+  <div class="page-wrapper">
+
+    <!--header start--><header class="site-header">
+  <div id="header-wrap">
+    <div class="container">
+      <div class="row">
+        <!--menu start-->
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand logo text-primary mb-0 font-w-7" href="/">
+              Microsoft<span class="text-dark font-w-4"> Azure User Group Poland</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle active" href="#"
+                    data-toggle="dropdown">Home</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="contribution.html">Dołącz do Nas</a>
+                    </li>
+                    <li><a class="dropdown-item" href="index-2.html">Landing 2</a>
+                    </li>
+                    <li><a class="dropdown-item" href="index-3.html">Landing 3</a>
+                    </li>
+                    <li><a class="dropdown-item" href="index-4.html">Landing 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#"
+                    data-toggle="dropdown">Pages</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Company</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about-us-1.html">About Us</a>
+                        </li>
+                        <li><a class="dropdown-item" href="about-us-2.html">About Us 2</a>
+                        </li>
+                        <li><a class="dropdown-item" href="career.html">Career</a>
+                        </li>
+                        <li><a class="dropdown-item" href="career-single.html">Career Single</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Blogs</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="blog-card.html">Blog Card</a>
+                        </li>
+                        <li><a class="dropdown-item" href="blog-listing.html">Blog Listing 1</a>
+                        </li>
+                        <li><a class="dropdown-item" href="blog-listing-2.html">Blog Listing 2</a>
+                        </li>
+                        <li><a class="dropdown-item" href="blog-single.html">Blog Single</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Contacts</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="contact-us.html">Contact 1</a>
+                        </li>
+                        <li><a class="dropdown-item" href="contact-us-2.html">Contact 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Account</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="login.html">Sign In</a>
+                        </li>
+                        <li><a class="dropdown-item" href="login-2.html">Sign In 2</a>
+                        </li>
+                        <li><a class="dropdown-item" href="signup.html">Sign Up</a>
+                        </li>
+                        <li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Utilities</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="pricing.html">Pricing</a>
+                        </li>
+                        <li><a class="dropdown-item" href="faq.html">Faq</a>
+                        </li>
+                        <li><a class="dropdown-item" href="maintenance.html">Maintenance</a>
+                        </li>
+                        <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+                        </li>
+                        <li><a class="dropdown-item" href="error-404.html">Error 404</a>
+                        </li>
+                        <li><a class="dropdown-item" href="privacy-policy.html">Privacy & Policy</a>
+                        </li>
+                        <li><a class="dropdown-item" href="terms-and-conditions.html">Terms & Conditions</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+        <!--menu end-->
+      </div>
+    </div>
+  </div>
+</header><!--header end-->
+
+
+    <!--body content start-->
+
+    <!--hero section start-->
+
+<section class="hero-banner position-relative custom-pt-1 custom-pb-2 bg-dark" data-bg-img="/assets/images/bg/02.png">
+  <div class="container">
+    <div class="row text-white text-center z-index-1">
+      <div class="col">
+        <h1 class="text-white">Tworzenie formularza typeform do głosowania bazującego na odpowiedziach udzielonych w ramach innego formularza</h1>
+      </div>
+    </div>
+    <!-- / .row -->
+  </div>
+  <!-- / .container -->
+  <div class="shape-1 bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,208C672,213,768,267,864,245.3C960,224,1056,128,1152,96C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+</section>
+
+<!--hero section end-->
+
+<!--body content start-->
+
+<div class="page-content">
+
+  <!--blog start-->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Blog Card -->
+          <div class="card border-0 bg-transparent">
+            <div class="card-body post pt-5 px-0">
+              <div>
+                <div class="d-inline-block bg-light text-center px-2 py-1 rounded mr-2"><span class="text-primary">15</span>
+                  Sep 2020</div>
+                
+                <a class="d-inline-block btn-link" href="/category/examples#">Examples</a>
+                
+              </div>
+              <h2 id="w-tym-manualu-znajdziesz-informacje">W tym manualu znajdziesz informacje</h2>
+
+<ul>
+  <li>jak wykorzystać szablony Liquid w Logic App</li>
+  <li>jak pobrać odpowiedzi udzielone do formularza typeform</li>
+</ul>
+
+<h3 id="trigger-http">Trigger Http</h3>
+
+<p>Tworzymy nowy Logic App z triggerem Http w którym oczekujemy na wejściu <code class="language-plaintext highlighter-rouge">formId</code> formularza z którego będziemy pobierać odpowiedzi, tytuł nowego formularza oraz informacje umieszczane na pierwszym stronie formularza:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+	</span><span class="nl">"formId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gsmgXXSu"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Głosowanie na sesje na 42 spotkanie Microsoft Azure User Group Poland"</span><span class="p">,</span><span class="w">
+	</span><span class="nl">"welcome-screen-details"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wybór należy do Ciebie!</span><span class="se">\n</span><span class="s2">Głosowanie na sesje podczas 42 spotkania Microsoft Azure User Group Poland</span><span class="se">\n\n</span><span class="s2">Data: 09 września od 18:00</span><span class="se">\n</span><span class="s2">Miejsce: Online"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Treść tego jsona możemy wykorzstać to wygenerowania schematu oczekiwanego jsona dla triggera. Lub wykorzystać poniższy.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"formId"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"welcome-screen-details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="pobranie-odpowiedzi-z-formularza-typeform">Pobranie odpowiedzi z formularza typeform</h3>
+
+<p>Aby pobrać odpowiedzi z formularza należy wywołać zapytanie HTTP GET na adres  <code class="language-plaintext highlighter-rouge">https://api.typeform.com/forms/&lt;formId&gt;/responses</code> z wykorzystaniem zadania <code class="language-plaintext highlighter-rouge">HTTP - Choose a REST API to invoke</code> gdzie ustawiamy:</p>
+
+<p><img src="../assets/images/posts/2020-09-15/typeform-logic-apps-read-responses.png" alt="Konfiguracja zadania Logic Apps do odczytu wiadomości" /></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Method</code> na <code class="language-plaintext highlighter-rouge">GET</code></li>
+  <li><code class="language-plaintext highlighter-rouge">URI</code> na <code class="language-plaintext highlighter-rouge">https://api.typeform.com/forms/&lt;formId&gt;/responses</code> gdzie ‘formId` pobieramy z triggera</li>
+  <li>nagłówek <code class="language-plaintext highlighter-rouge">Authorization</code> na <code class="language-plaintext highlighter-rouge">Bearer &lt;personal-token&gt;</code> - token musi mieć <code class="language-plaintext highlighter-rouge">Read responses</code> scope</li>
+</ul>
+
+<p><img src="../assets/images/posts/2020-09-15/typeform-toekn-read-responses-scope.png" alt="Konfiguracja tokena do odczytu wiadomości" /></p>
+
+<h3 id="ekstrakcja-danych-z-odpowiedzi">Ekstrakcja danych z odpowiedzi</h3>
+
+<p>W tym kroku wykorzystamy szablon <a href="https://github.com/dotliquid/dotliquid">Liquid</a> aby wydzielić dane których potrzebujemy do zbudowania formularza dla głosowania. A są to:</p>
+
+<ul>
+  <li>imię i nazwisko</li>
+  <li>czas trwania sesji</li>
+  <li>poziom sesji</li>
+  <li>tytuł sesji</li>
+  <li>opis sesji</li>
+</ul>
+
+<p>Aby wykorzystać szablon Liquid w Logic apps nalezy dodać dodać go do <code class="language-plaintext highlighter-rouge">Integration Acount</code>. Szczegółowy opis znajduje się <a href="https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-liquid-transform#upload-the-template">tutaj</a>.</p>
+
+<p>Kiedy szablon jest już wgrany sama konfiguracja zadania Liquid jest bardzo prosta. Z zadań Liquid wybieramy <code class="language-plaintext highlighter-rouge">Tranform JSON to JSON</code>a następnie wpisujemy jako Content body z zadania w którym pobraliśmy odpowiedzi, a jako Map wskazujemy wcześniej wgrany plik. Sam szablon wygląda następująco:</p>
+
+<p><img src="../assets/images/posts/2020-09-15/logic-apps-liquid-actions.png" alt="Wybór zadania Liquid" /></p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+</span><span class="err">'papers'</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="../assets/images/posts/2020-09-15/typeform-tranform-reposnes-into-json.png" alt="Konfiguracja zadania pobierającego dane z odpowiedzi" /></p>
+
+<p>Pisząc szablon na względzie że w Logic Apps dane wejściowe trafiają do właściwości content i dlatego należy w szabloni użyć <code class="language-plaintext highlighter-rouge">content.items</code> zamiast <code class="language-plaintext highlighter-rouge">items</code>, co ma znaczenie prze debugowaniu szablonu lokalnie. Podanto w szablonie korzystam z apostrofu zamiast cudzysłowia, ponieważ w przypadku tego drugiego występuje błąd przy przetwarzaniu danych wejściowych jeśli w ich treści znajduje się cudzysłów.</p>
+
+<h3 id="budowa-treści-formularza-w-opraciu-o-dane-pozyskane-z-odpowiedzi">Budowa treści formularza w opraciu o dane pozyskane z odpowiedzi</h3>
+
+<p>W tym kroku również posłużymy się szablonem Liquid (zadanie <code class="language-plaintext highlighter-rouge">Tranform JSON to JSON</code>), tak więc podobnie jak wcześniej należy wgrać go przez <code class="language-plaintext highlighter-rouge">Integration Account</code>. W szablonie mapujemy każdy rekrod z kolekcji do indywidualnej strony na której wyświetlamy informacje o sesji, oraz do strony na której głosujemy na wybrane sesje.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="err">'fields':</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Za chwilę zapoznasz się z  opisami sesji, a następnie otrzymasz możliwość zagłosowania na dwie z nich."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d37c0f54-2427-45c3-9da8-e1a682f0042e"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"button_text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Continue"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"hide_marks"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"statement"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+
+    </span><span class="p">{</span><span class="w">
+        </span><span class="err">'title':</span><span class="w"> </span><span class="err">'Na</span><span class="p">,</span><span class="w"> </span><span class="err">które</span><span class="w"> </span><span class="err">sesje</span><span class="w"> </span><span class="err">głosujesz?</span><span class="w"> </span><span class="err">MASZ</span><span class="w"> </span><span class="err">DWA</span><span class="w"> </span><span class="err">GŁOSY!'</span><span class="p">,</span><span class="w">
+        </span><span class="err">'ref':</span><span class="w"> </span><span class="err">'ccf</span><span class="mi">7</span><span class="err">d</span><span class="mi">0</span><span class="err">a</span><span class="mi">3-0</span><span class="err">fd</span><span class="mi">6-497</span><span class="err">b</span><span class="mi">-816</span><span class="err">a-fee</span><span class="mi">1542e35</span><span class="err">b</span><span class="mi">0</span><span class="err">'</span><span class="p">,</span><span class="w">
+        </span><span class="err">'properties':</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="err">'description':</span><span class="w"> </span><span class="err">'Wybierz</span><span class="w"> </span><span class="err">mądrze!'</span><span class="p">,</span><span class="w">
+            </span><span class="err">'randomize':</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="err">'allow_multiple_selection':</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="err">'allow_other_choice':</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="err">'vertical_alignment':</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="err">'choices':</span><span class="w"> </span><span class="p">[</span><span class="w">
+            
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="err">`validations`:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="err">`required`:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="err">`min_selection`:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="err">`max_selection`:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="err">`type`:</span><span class="w"> </span><span class="err">`multiple_choice`</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="../assets/images/posts/2020-09-15/typeform-tranform-json-into-form-body.png" alt="Konfiguracja zadania tworzącego treść formularza" /></p>
+
+<h3 id="stworzenie-formularza">Stworzenie formularza</h3>
+
+<p>W ostatnim kroku tworzymy formularz wykorzystując wcześniej utworzony json:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"fields"</span><span class="p">:</span><span class="w"> </span><span class="err">@</span><span class="p">{</span><span class="err">body('Vote_fields')</span><span class="p">[</span><span class="err">'fields'</span><span class="p">]},</span><span class="w">
+  </span><span class="nl">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"are_uploads_public"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"is_public"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"is_trial"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pl"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"allow_indexing"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"progress_bar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"proportion"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"show_progress_bar"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"show_typeform_branding"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"thankyou_screens"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://images.typeform.com/images/5wiGh2PYKXyW"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"button_mode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reload"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"button_text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"again"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"share_icons"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"show_button"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c1ad6960-d547-48c2-91bc-ad2c97005bdb"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dzięki!</span><span class="se">\n\n</span><span class="s2">Do zobaczenia na spotkaniu!</span><span class="se">\n\n</span><span class="s2">Przy okazji sprawdź nasze nowe miejsce do dyskusji zamiast grupy na FB 😎⬇️</span><span class="se">\n\n</span><span class="s2">[*https://github.com/AzureCommunityPL/group/discussions*](https://github.com/AzureCommunityPL/group/discussions)"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"share_icons"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"show_button"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"default_tys"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Udało się! Twoje informacje zostały przesłane."</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"theme"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.typeform.com/themes/qHWOQ7"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@{triggerBody()?['title']}"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"form"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"welcome_screens"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://images.typeform.com/images/8ZTgZWCqn7eA"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"button_text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Start"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"show_button"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"290bb413-4f1a-4dba-9d53-48e44ce76403"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@{triggerBody()?['welcome-screen-details']}"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"workspace"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.typeform.com/workspaces/k9Jbqi"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>w body tym przekazujemy</p>
+
+<ul>
+  <li>pola utworzone w poprzednim kroku - <code class="language-plaintext highlighter-rouge">"fields": @{body('Vote_fields')['fields']},</code></li>
+  <li>treść ekranu powidatlnego - ‘“title”: “@{triggerBody()?[‘welcome-screen-details’]}”’</li>
+  <li>tytuł formularza - ‘“title”: “@{triggerBody()?[‘title’]}”,’</li>
+</ul>
+
+<p>Sam sposób tworzenia formularza znajduje się <a href="create-form-in-typeform.md">tutaj</a>.</p>
+
+            </div>
+
+            <div class="d-md-flex justify-content-between">
+              <div class="d-flex align-items-center">
+                <h6 class="mb-0 mr-4">Share It:</h6>
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https://azurecommunity.pl/blog/tworzenie-formularza-typeform-do-glosowania-bazujacego-na-odpowiedziach"><i
+                        class="la la-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://twitter.com/intent/tweet?url=https://azurecommunity.pl/blog/tworzenie-formularza-typeform-do-glosowania-bazujacego-na-odpowiedziach&text="><i
+                        class="la la-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                      href="https://www.linkedin.com/shareArticle?mini=true&url=https://azurecommunity.pl/blog/tworzenie-formularza-typeform-do-glosowania-bazujacego-na-odpowiedziach&title=&summary=&source="><i
+                        class="la la-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center text-md-right mt-5 mt-md-0">
+                <h6 class="mb-0 mr-4">Tagi: </h6>
+                <ul class="list-inline mb-0">
+                  
+                  <li class="list-inline-item">
+                    <a class="btn-link rounded d-inline-block p-2 bg-light m-1" href="/tag/logic-apps">Logic Apps</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div><div class="mt-6 shadow p-5">
+              <div class="mb-4">
+                <h2>
+                  
+                  Autor
+                  
+                </h2>
+              </div>
+              
+              
+              <div class="d-block d-md-flex my-5">
+                <div class="mr-md-4 mb-4 mb-md-0">
+                  <img class="img-fluid rounded-circle img-author" alt="image" src="https://github.com/kmadof.png?size=200">
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
+                    <h6 class="mb-0">Krzysztof Madej</h6>
+                  </div>
+                  <p>
+                    To jakieś bio
+
+                  </p>
+                  <ul class="list-inline mb-0">
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://github.com/kmadof"><i class="la la-github"></i></a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="hhttp://thecodemanual.pl/"><i class="la la-link"></i></a>
+                    </li>
+                    
+                    
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://twitter.com/kmadof"><i class="la la-twitter"></i></a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item"><a class="border rounded px-2 py-1 text-dark"
+                        href="https://www.linkedin.com/in/krzysztof-madej/"><i class="la la-linkedin"></i></a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+              
+            </div></div>
+          <!-- End Blog Card -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--blog end-->
+
+</div>
+
+<!--body content end-->
+
+    <!--body content end-->
+
+
+    <!--footer start--><footer class="bg-dark py-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-5 col-xl-4 mr-auto mb-5 mb-lg-0">
+        <a class="footer-logo h2 text-primary mb-0 font-w-7" href="index.html">
+          W<span class="text-white font-w-4">inck.</span>
+        </a>
+        <p class="my-3 text-light">Winck - Bootstrap 5 Multipurpose Landing Page Is fully responsible, Build whatever
+          you like with the Winck.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-facebook"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-dribbble"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-instagram"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-twitter"></i></a>
+          </li>
+          <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
+                class="la la-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-7">
+        <div class="row">
+          <div class="col-12 col-sm-4">
+            <h5 class="mb-4 text-white">Pages</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3"><a class="list-group-item-action text-light" href="about-us-1.html">About</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="product-grid.html">Shop</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="faq.html">Faq</a>
+              </li>
+              <li><a class="list-group-item-action text-light" href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4 mt-6 mt-sm-0">
+            <h5 class="mb-4 text-white">Service</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3"><a class="list-group-item-action text-light" href="#">Content Writing</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="#">Documentation</a>
+              </li>
+              <li class="mb-3"><a class="list-group-item-action text-light" href="login.html">Account</a>
+              </li>
+              <li><a class="list-group-item-action text-light" href="career.html">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4 mt-6 mt-sm-0">
+            <h5 class="mb-4 text-white">Our Address</h5>
+            <div class="mb-3">
+              <p class="mb-0 text-light">423B, Road Wordwide Country, USA</p>
+            </div>
+            <div class="mb-3">
+              <a class="btn-link text-light" href="mailto:themeht23@gmail.com"> themeht23@gmail.com</a>
+            </div>
+            <div>
+              <a class="btn-link text-light" href="tel:+912345678900">+91-234-567-8900</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col">
+        <hr class="m-0">
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6 text-light">
+        Copyright ©2020 All rights reserved | Winck is made by <i class="lar la-heart text-primary heartBeat2"></i>
+        <u><a class="text-primary" href="#">ThemeHt</a></u></div>
+      <div class="col-md-6 text-md-right">
+        <ul class="list-inline mb-0">
+          <li class="mr-3 list-inline-item"> <a class="list-group-item-action text-light" href="#">
+              Term Of Service
+            </a>
+          </li>
+          <li class="mr-3 list-inline-item"> <a class="list-group-item-action text-light" href="#">
+              Privacy Policy
+            </a>
+          </li>
+          <li class="list-inline-item"> <a class="list-group-item-action text-light" href="#">
+              Support
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer><!--footer end-->
+
+  </div>
+
+  <!-- page wrapper end -->
+
+
+  <!--back-to-top start-->
+
+  <div class="scroll-top"><a class="smoothscroll" href="#top">Do góry</a></div>
+
+  <!--back-to-top end-->
+
+  <!-- inject js start -->
+
+  <script src="/assets/js/theme-plugin.js"></script>
+  <script src="/assets/js/theme-script.js"></script>
+
+  <!-- inject js end -->
+
+</body>
+
+</html>
